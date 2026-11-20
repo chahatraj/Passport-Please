@@ -107,17 +107,30 @@ def _assign_country():
     return rng.choice(COUNTRIES)
 MY_COUNTRY = _assign_country()
 
-print("Loading models (first time downloads about 5 GB)...")
+import gc
+def free_ram():
+    # Free Colab has about 12 GB of RAM: load each model straight to the GPU and clean up after it.
+    gc.collect(); torch.cuda.empty_cache()
+
+print("Loading models (first time downloads about 11 GB)...")
 tok = AutoTokenizer.from_pretrained("Qwen/Qwen2.5-1.5B-Instruct", padding_side="left")
-lm = AutoModelForCausalLM.from_pretrained("Qwen/Qwen2.5-1.5B-Instruct", torch_dtype=DT).to(DEV).eval()
-sd = AutoPipelineForText2Image.from_pretrained("stabilityai/sd-turbo", torch_dtype=DT, variant="fp16").to(DEV)
+# Load in the stored format straight onto the GPU, then convert there (converting in RAM crashes free Colab).
+lm = AutoModelForCausalLM.from_pretrained("Qwen/Qwen2.5-1.5B-Instruct", torch_dtype="auto", device_map=DEV).half().eval()
+free_ram()
+try:
+    sd = AutoPipelineForText2Image.from_pretrained("stabilityai/sd-turbo", torch_dtype=DT, variant="fp16", device_map=DEV)
+except Exception:  # older diffusers without device_map for pipelines
+    sd = AutoPipelineForText2Image.from_pretrained("stabilityai/sd-turbo", torch_dtype=DT, variant="fp16").to(DEV)
+free_ram()
 sd.set_progress_bar_config(disable=True)
-clip = CLIPModel.from_pretrained("openai/clip-vit-large-patch14", torch_dtype=DT).to(DEV).eval()
+clip = CLIPModel.from_pretrained("openai/clip-vit-large-patch14", torch_dtype=DT, device_map=DEV).eval()
+free_ram()
 clip_proc = CLIPProcessor.from_pretrained("openai/clip-vit-large-patch14")
 vlm_proc = AutoProcessor.from_pretrained("Qwen/Qwen2-VL-2B-Instruct", min_pixels=256 * 28 * 28,
                                          max_pixels=400 * 28 * 28)
 vlm_proc.tokenizer.padding_side = "left"
-vlm = AutoModelForImageTextToText.from_pretrained("Qwen/Qwen2-VL-2B-Instruct", torch_dtype=DT).to(DEV).eval()
+vlm = AutoModelForImageTextToText.from_pretrained("Qwen/Qwen2-VL-2B-Instruct", torch_dtype="auto", device_map=DEV).half().eval()
+free_ram()
 
 # ---------- helpers ----------
 def words(s):

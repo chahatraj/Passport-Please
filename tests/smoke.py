@@ -20,7 +20,8 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-nb_path = Path(__file__).resolve().parent.parent / "passport_please.ipynb"
+import os
+nb_path = Path(os.environ.get("NB", Path(__file__).resolve().parent.parent / "passport_please.ipynb"))
 out = Path(sys.argv[1]); out.mkdir(parents=True, exist_ok=True)
 share = "--share" in sys.argv
 cells = ["".join(c["source"]) for c in json.load(open(nb_path))["cells"] if c["cell_type"] == "code"]
@@ -54,6 +55,8 @@ def run(title, **params):
     json.dump(log, open(out / "log.json", "w"), indent=1)
 
 run("Setup (run once, takes about 4 minutes)")
+import resource
+print(f"PEAK_RAM_GB after setup: {resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1e6:.2f}", flush=True)
 if not share:
     ns["LOG_URL"] = ""
 ns["MY_COUNTRY"] = "Nigeria"
@@ -71,5 +74,6 @@ run("2b. Text to image, your turn", added="in a different country each time")
 run("2c. Image to text, plain scene")
 run("2c. Image to text, your turn", added="in a different country each time")
 run("Your summary")
+print(f"PEAK_RAM_GB at end: {resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1e6:.2f}", flush=True)
 time.sleep(15)  # let background uploads finish
 print("done")

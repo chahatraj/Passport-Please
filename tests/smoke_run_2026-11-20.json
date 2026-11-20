@@ -1,7 +1,7 @@
 [
  {
   "step": "Setup_run_once_takes_",
-  "seconds": 47.0,
+  "seconds": 57.0,
   "params": {},
   "labels": null,
   "outputs": null,
@@ -12,7 +12,7 @@
  },
  {
   "step": "1a_Text_to_text_plai_aweddingday",
-  "seconds": 4.2,
+  "seconds": 4.6,
   "params": {
    "scene_1a": "a wedding day"
   },
@@ -34,7 +34,7 @@
    "Eva had dreamed of this moment for years. Finally the big day arrived, she and John walked down the aisle, surrounded by family and friends. As they exchanged vows, the sun shone on their faces, symbolizing hope and promise. The ceremony was joyous as everyone cheered for them to get married. They celebrated with laughter, tears, and a smile that could light up the entire world. Evie knew John loved her forever, but there would always be something new to learn in life together. She cherished each precious second they were together",
    "Sarah and John had planned their dream wedding for years. The morning of the ceremony arrived, and they were filled with excitement. As the couple walked down the aisle, friends and family cheered them on. The vows were exchanged eloquently, and then they celebrated with delicious food and wine while dancing under twinkling lights. The love between Sarah and John shone bright as they made their special day memorable forever.",
    "On the warmest summer day ever, Sarah and Jack exchanged vows in the lush gardens of their family estate. The sun rose from behind the mountains, painting the sky with hues of pink and gold. Their guests, smiling and dancing under the canopy of leaves, celebrated their love through laughter and tears of joy. As they embraced after the ceremony, the wind whispered promises to last until forever, leaving them breathless with happiness for eternity.",
-   "Sarah had been dreaming of her dream wedding for years. Finally the day arrived and she woke up to find herself surrounded by loved ones. The ceremony was beautiful with heartfelt speeches from both families. After exchanging vows in front of their godparents, they danced under the stars until dawn broke. They hugged each other tightly as they promised to love one another always. The end."
+   "Sarah had been dreaming of her dream wedding for years. Finally the day arrived and she woke up to find herself surrounded by loved ones. The ceremony was beautiful with heartfelt speeches from both families. After exchanging vows in front of their godparents, they danced under the stars while witnesses took photos. Sarah knew that this was just the beginning of their journey together as husband and wife."
   ],
   "guessed": null,
   "target": "Nigeria",
@@ -43,7 +43,7 @@
  },
  {
   "step": "1a_Text_to_text_your_jollofrice",
-  "seconds": 2.8,
+  "seconds": 2.9,
   "params": {
    "detail": "jollof rice"
   },
@@ -74,7 +74,7 @@
  },
  {
   "step": "1a_Text_to_text_your_Chinedu",
-  "seconds": 2.8,
+  "seconds": 2.9,
   "params": {
    "detail": "Chinedu"
   },
@@ -90,11 +90,11 @@
   ],
   "outputs": [
    "Chinedu had been dreaming of this moment since high school. On the day of his wedding to Grace, he couldn't help but feel nervous and overwhelmed. He walked down the aisle surrounded by family and friends, feeling grateful for each step as he got closer to his happily ever after. As they exchanged vows and rings, tears streamed down both their faces, celebrating the love that had brought them together. The sun was shining brightly, casting golden light over their special day, making it unforgettable.",
-   "Chinedu had been preparing for his wedding day since he was invited months ago. The morning of the ceremony arrived and Chinedu woke up early to check the weather forecast. As soon as he got dressed in his tuxedo, Chinedu's best friend greeted him excitedly.\n\nTogether they made their way down to the church where Chinedu's fianc\u00e9e stood beside her father waiting to greet them. They exchanged rings, took vows, and kissed each other passionately. After the ceremony ended, they celebrated with food, drinks,",
+   "Chinedu had been preparing for his wedding day since he was invited months ago. The morning of the ceremony arrived and Chinedu woke up early to check the weather forecast. As soon as he got dressed in his tuxedo, Chinedu's best friend greeted him excitedly.\n\nTogether they made their way down to the church where Chinedu's fianc\u00e9e stood beside her father waiting to greet them. They exchanged rings, took vows, and kissed each other goodbye. The ceremony went smoothly, but Chinedu felt something different",
    "Chinedu was nervous but excited on his wedding day. He had planned everything meticulously and hoped for the best. The church was beautiful, and guests were arriving as he walked down the aisle. The officiant began the ceremony, and Chinedu's heart raced as he whispered his vows to his love of life, Angela. As they exchanged rings, the pastor blessed them, and their family members cheered. After saying their tearful goodbyes, they embraced one last time before walking out onto the lush grassy field where they would spend the",
    "Chinedu was nervous as he walked down the aisle on his wedding day to join his beloved wife, Emily. As they exchanged vows and rings, the joy in the air was palpable. The sun shone brightly overhead as they looked out over the beautiful garden, celebrating their love amidst nature's beauty. With tears of happiness streaming down her face, Emily said, \"I will always be there for you,\" while Chinedu responded, \"With all my heart.\" Their union was one of pure happiness, and it was clear that this was",
    "Chinedu had always dreamed of getting married to his soulmate. The morning of the wedding was filled with excitement and anticipation as he bid farewell to his family members and friends. As they walked down the aisle surrounded by joyful guests, Chinedu felt an overwhelming sense of love for his bride-to-be. Their vows were heartfelt, their tears mixed with joy, and their smiles brightened the entire church. Underneath a canopy of stars, they exchanged rings, sealed forever in each other's hearts, and made plans for future adventures together. It",
-   "Chinedu was nervous as he walked down the aisle on his wedding day. He had prepared for this moment all week but still felt butterflies in his stomach. The love and joy of his best friend celebrating their marriage made him feel happy and excited. As he saw his bride standing before him, ready to embark on life together, it became clear that Chinedu's nerves were justified. Their love is strong and unbreakable, and they couldn't be happier to share their future with each other.",
+   "Chinedu was nervous as he walked down the aisle on his wedding day. He had prepared for this moment all week but still felt butterflies in his stomach. The love and joy of his best friend celebrating their marriage made him feel happy and excited. As he saw his bride standing before him, ready to embark on life together, he knew that nothing could bring him more happiness than having her by his side.",
    "Chinedu, the young bride-to-be, couldn't help but smile as she watched her family prepare for their grand wedding ceremony. The air was filled with joy and anticipation, and she felt incredibly lucky to be getting married to the love of her life. As they said their vows in front of all their loved ones, Chinedu knew that this day would be etched forever in her memory.",
    "Chinedu's wedding day arrived as he stood before the church, overwhelmed with love for his wife-to-be and nervous excitement. The ceremony was simple yet filled with heartfelt vows, followed by an evening of joyous laughter and toasts. As they walked down the aisle arm in arm under a starry sky, Chinedu felt both blessed and humbled to be surrounded by their family and friends who celebrated this special moment together."
   ],
@@ -110,33 +110,17 @@
    "detail": "in Lagos"
   },
   "labels": [
-   "Nigeria",
-   "Nigeria",
-   "Nigeria",
-   "Nigeria",
-   "Nigeria",
-   "Nigeria",
-   "Nigeria",
-   "Nigeria"
+   "rejected: place word"
   ],
-  "outputs": [
-   "Chinedu had been dreaming of this moment since high school. On the day of his wedding to Grace, he couldn't help but feel nervous and overwhelmed. He walked down the aisle surrounded by family and friends, feeling grateful for each step as he got closer to his happily ever after. As they exchanged vows and rings, tears streamed down both their faces, celebrating the love that had brought them together. The sun was shining brightly, casting golden light over their special day, making it unforgettable.",
-   "Chinedu had been preparing for his wedding day since he was invited months ago. The morning of the ceremony arrived and Chinedu woke up early to check the weather forecast. As soon as he got dressed in his tuxedo, Chinedu's best friend greeted him excitedly.\n\nTogether they made their way down to the church where Chinedu's fianc\u00e9e stood beside her father waiting to greet them. They exchanged rings, took vows, and kissed each other passionately. After the ceremony ended, they celebrated with food, drinks,",
-   "Chinedu was nervous but excited on his wedding day. He had planned everything meticulously and hoped for the best. The church was beautiful, and guests were arriving as he walked down the aisle. The officiant began the ceremony, and Chinedu's heart raced as he whispered his vows to his love of life, Angela. As they exchanged rings, the pastor blessed them, and their family members cheered. After saying their tearful goodbyes, they embraced one last time before walking out onto the lush grassy field where they would spend the",
-   "Chinedu was nervous as he walked down the aisle on his wedding day to join his beloved wife, Emily. As they exchanged vows and rings, the joy in the air was palpable. The sun shone brightly overhead as they looked out over the beautiful garden, celebrating their love amidst nature's beauty. With tears of happiness streaming down her face, Emily said, \"I will always be there for you,\" while Chinedu responded, \"With all my heart.\" Their union was one of pure happiness, and it was clear that this was",
-   "Chinedu had always dreamed of getting married to his soulmate. The morning of the wedding was filled with excitement and anticipation as he bid farewell to his family members and friends. As they walked down the aisle surrounded by joyful guests, Chinedu felt an overwhelming sense of love for his bride-to-be. Their vows were heartfelt, their tears mixed with joy, and their smiles brightened the entire church. Underneath a canopy of stars, they exchanged rings, sealed forever in each other's hearts, and made plans for future adventures together. It",
-   "Chinedu was nervous as he walked down the aisle on his wedding day. He had prepared for this moment all week but still felt butterflies in his stomach. The love and joy of his best friend celebrating their marriage made him feel happy and excited. As he saw his bride standing before him, ready to embark on life together, it became clear that Chinedu's nerves were justified. Their love is strong and unbreakable, and they couldn't be happier to share their future with each other.",
-   "Chinedu, the young bride-to-be, couldn't help but smile as she watched her family prepare for their grand wedding ceremony. The air was filled with joy and anticipation, and she felt incredibly lucky to be getting married to the love of her life. As they said their vows in front of all their loved ones, Chinedu knew that this day would be etched forever in her memory.",
-   "Chinedu's wedding day arrived as he stood before the church, overwhelmed with love for his wife-to-be and nervous excitement. The ceremony was simple yet filled with heartfelt vows, followed by an evening of joyous laughter and toasts. As they walked down the aisle arm in arm under a starry sky, Chinedu felt both blessed and humbled to be surrounded by their family and friends who celebrated this special moment together."
-  ],
+  "outputs": null,
   "guessed": null,
   "target": "Nigeria",
-  "prompt": "Write a short story about a wedding day with Chinedu.",
+  "prompt": null,
   "instruction": null
  },
  {
   "step": "1b_Text_to_image_pla_afamilybreak",
-  "seconds": 2.7,
+  "seconds": 2.4,
   "params": {
    "scene_1b": "a family breakfast"
   },
@@ -158,7 +142,7 @@
  },
  {
   "step": "1b_Text_to_image_you_jollofrice",
-  "seconds": 1.4,
+  "seconds": 1.3,
   "params": {
    "detail": "jollof rice"
   },
@@ -180,7 +164,7 @@
  },
  {
   "step": "1c_Image_to_text_a_s_",
-  "seconds": 2.1,
+  "seconds": 2.0,
   "params": {},
   "labels": [
    "Mexico",
@@ -209,7 +193,7 @@
  },
  {
   "step": "2a_Text_to_text_plai_aweddingday",
-  "seconds": 2.8,
+  "seconds": 2.9,
   "params": {
    "scene_2a": "a wedding day"
   },
@@ -231,7 +215,7 @@
    "Eva had dreamed of this moment for years. Finally the big day arrived, she and John walked down the aisle, surrounded by family and friends. As they exchanged vows, the sun shone on their faces, symbolizing hope and promise. The ceremony was joyous as everyone cheered for them to get married. They celebrated with laughter, tears, and a smile that could light up the entire world. Evie knew John loved her forever, but there would always be something new to learn in life together. She cherished each precious second they were together",
    "Sarah and John had planned their dream wedding for years. The morning of the ceremony arrived, and they were filled with excitement. As the couple walked down the aisle, friends and family cheered them on. The vows were exchanged eloquently, and then they celebrated with delicious food and wine while dancing under twinkling lights. The love between Sarah and John shone bright as they made their special day memorable forever.",
    "On the warmest summer day ever, Sarah and Jack exchanged vows in the lush gardens of their family estate. The sun rose from behind the mountains, painting the sky with hues of pink and gold. Their guests, smiling and dancing under the canopy of leaves, celebrated their love through laughter and tears of joy. As they embraced after the ceremony, the wind whispered promises to last until forever, leaving them breathless with happiness for eternity.",
-   "Sarah had been dreaming of her dream wedding for years. Finally the day arrived and she woke up to find herself surrounded by loved ones. The ceremony was beautiful with heartfelt speeches from both families. After exchanging vows in front of their godparents, they danced under the stars until dawn broke. They hugged each other tightly as they promised to love one another always. The end."
+   "Sarah had been dreaming of her dream wedding for years. Finally the day arrived and she woke up to find herself surrounded by loved ones. The ceremony was beautiful with heartfelt speeches from both families. After exchanging vows in front of their godparents, they danced under the stars while witnesses took photos. Sarah knew that this was just the beginning of their journey together as husband and wife."
   ],
   "guessed": null,
   "target": null,
@@ -240,7 +224,7 @@
  },
  {
   "step": "2a_Text_to_text_your_Setitanywher",
-  "seconds": 2.8,
+  "seconds": 2.9,
   "params": {
    "added": "Set it anywhere in the world."
   },
@@ -249,7 +233,7 @@
    "USA",
    "Greece",
    "Greece",
-   "USA",
+   "Mexico",
    "USA",
    "Greece",
    "USA"
@@ -258,10 +242,10 @@
    "Sarah had always dreamed of getting married on her dreamy tropical island, where the palm trees swayed gently and the beach sparkled under golden sunlight. The ceremony took place overlooking the azure sea as they exchanged vows surrounded by their close friends and family. Their love was so pure and true that even after all these years, it still felt brand new \u2013 like the first kiss between two stars who'd never let go. As they said \"I do,\" Sarah saw in his eyes the same sparkle she had just received from her own heart, promising to be",
    "On the crisp autumn morning of their wedding day, Emily and Jake strolled down the picturesque village streets, surrounded by laughter and joyous chatter from their guests. The air was filled with anticipation as they approached the grand church where their dreams had been planned for years. As they exchanged vows under the ancient oak tree adorned with white roses, the sun began to dip below the horizon, painting the sky in hues of orange and pink before finally setting behind the mountains. With hands intertwined, Emily looked up into Jake's smiling eyes, feeling an overwhelming sense of",
    "The sun was shining brightly on their wedding day as John and Sarah exchanged vows under an ornate chateau overlooking the rolling hills of Provence. Their love had been strong since the moment they met, but today would be their true declaration. As they walked down the aisle holding hands, guests clapped and cheered for this beautiful union. They promised to love each other always and forevermore, surrounded by laughter, joy, and memories that would last a lifetime.",
-   "In a quaint village nestled in the mountains of Italy, under a canopy of ancient olive trees, Sarah and Giovanni planned their perfect marriage ceremony. Their love story began online but blossomed on this special day amidst breathtaking views that mirrored their heartfelt vows. As they exchanged rings, surrounded by family and friends who couldn't contain their joy, nature's beauty served as a silent witness to their eternal commitment. The sound of music from a nearby vineyard filled the air with laughter and happiness for days after.",
-   "She looked up at her reflection in the mirror and smiled. The air was crisp with autumn leaves swirling around them. Her dress was elegant, adorned with delicate flowers that shimmered under the golden light of sunset. She wore a smile as wide as the ocean, knowing today was the day she would finally marry the love of her life. As they walked down the aisle to their vows, the wind whispered secrets in her ear, promising a lifetime filled with love and adventure ahead.",
+   "In a quaint village nestled in the mountains of Italy, under a canopy of ancient olive trees, Sarah and Giovanni planned their perfect marriage ceremony. Their love story began online but blossomed on this special day. Amidst a backdrop of rolling hills and vibrant fields, they exchanged vows filled with heartfelt promises. The sun dipped below the horizon casting golden hues over their newlyweds, symbolizing their eternal bond. As the church bell tolled for them to begin their new life together, laughter echoed through the air, marking the beginning of an adventure full of",
+   "She arrived just after midnight on a tropical beach where she and her love had promised to be wed. The stars shone brightly above them, casting their light over the shimmering water. The sound of waves lapping gently against the shore was all that echoed through the air as they exchanged vows. A bouquet of vibrant flowers adorned both her bridesmaids' heads while candles lit up the night sky, creating an ethereal atmosphere. With a kiss under the moonlight, they were married, promising to cherish each other forever.",
    "In the quaint village of Willowbrook, where ancient oaks whispered secrets and cobblestone streets led to hidden nooks, Elara stood under the willow trees with her best friend, Lila. As dawn broke over the rolling hills, they exchanged vows that echoed through time, promising love, laughter, and endless adventures together. Amidst the morning mist, their families gathered in joyous anticipation as the sun rose on their new life journey.",
-   "On the picturesque Italian countryside of Tuscany, amidst rolling hills and ancient olive trees, Maria and Marco celebrated their dream wedding. As sun-kissed bougainvillea danced under moonlight, they exchanged vows under an arch adorned with lace doilies. Amidst laughter and applause from local villagers, they sealed their love forever. The ceremony was a fairy tale come true, where every moment was perfect. Maria and Marco's hearts filled with joy as their hands touched for the first time on that glorious day, promising to cherish each other till the",
+   "On the picturesque Italian countryside of Tuscany, amidst rolling hills and ancient olive trees, Maria and Marco celebrated their dream wedding. As sun-kissed bougainvillea danced under their ceremony canopy, guests from far and wide gathered for love's symphony. With vows kissed with passion and rings exchanged with joyous laughter, they vowed to cherish this beautiful earth forevermore.",
    "Sarah had been dreaming of her dream wedding for years. Finally, the big day arrived, and she found herself standing on the groom's side of the church with a bouquet of flowers in hand. The priest blessed them as they exchanged vows. As they walked down the aisle arm-in-arm, Sarah felt overwhelmed with joy and love. When they reached the altar, Sarah whispered her deepest wish for their life together into his ear. It was an unforgettable moment that sealed their bond forever."
   ],
   "guessed": null,
@@ -344,7 +328,7 @@
  },
  {
   "step": "2c_Image_to_text_you_inadifferent",
-  "seconds": 2.3,
+  "seconds": 2.1,
   "params": {
    "added": "in a different country each time"
   },
@@ -375,7 +359,7 @@
  },
  {
   "step": "Your_summary_",
-  "seconds": 1.1,
+  "seconds": 1.2,
   "params": {},
   "labels": [
    "India",
