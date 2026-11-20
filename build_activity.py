@@ -52,7 +52,10 @@ SHARE_MY_ANSWERS_FOR_RESEARCH = False #@param {type:"boolean"}
 
 code(r'''
 #@title Setup (run once, takes about 3 minutes)
-import importlib.util, subprocess, sys
+import importlib.util, os, subprocess, sys
+# All models are public: never look for a Hugging Face token (no account or Colab secret needed).
+os.environ["HF_HUB_DISABLE_IMPLICIT_TOKEN"] = "1"
+os.environ["HF_HUB_DISABLE_PROGRESS_BARS"] = "1"
 if importlib.util.find_spec("diffusers") is None:
     subprocess.run([sys.executable, "-m", "pip", "install", "-q", "diffusers"], check=True)
 
