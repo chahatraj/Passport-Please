@@ -60,19 +60,20 @@ print(f"PEAK_RAM_GB after setup: {resource.getrusage(resource.RUSAGE_SELF).ru_ma
 if not share:
     ns["LOG_URL"] = ""
 ns["MY_COUNTRY"] = "Nigeria"
+ns["say"] = lambda t: print("COACH:", t.replace("\n", " "), flush=True)
 print("target", ns["MY_COUNTRY"])
-run("1a. Text to text, plain scene", scene_1a="a wedding day")
+run("1a. Text to text: Default Model Run", scene_1a="a wedding day")
 for detail in ["jollof rice", "Chinedu", "in Lagos"]:
-    run("1a. Text to text, your turn", detail=detail)
-run("1b. Text to image, plain scene", scene_1b="a family breakfast")
-run("1b. Text to image, your turn", detail="jollof rice")
+    run("1a. Text to text: Do It Yourself", detail=detail)
+run("1b. Text to image: Default Model Run", scene_1b="a family breakfast")
+run("1b. Text to image: Do It Yourself", detail="jollof rice")
 run("1c. Image to text: a second model reads your pictures")
-run("2a. Text to text, plain scene", scene_2a="a wedding day")
-run("2a. Text to text, your turn", added="Set it anywhere in the world.")
-run("2b. Text to image, plain scene", scene_2b="a wedding")
-run("2b. Text to image, your turn", added="in a different country each time")
-run("2c. Image to text, plain scene")
-run("2c. Image to text, your turn", added="in a different country each time")
+run("2a. Text to text: Default Model Run", scene_2a="a wedding day")
+run("2a. Text to text: Do It Yourself", added="Set it anywhere in the world.")
+run("2b. Text to image: Default Model Run", scene_2b="a wedding")
+run("2b. Text to image: Do It Yourself", added="in a different country each time")
+run("2c. Image to text: Default Model Run")
+run("2c. Image to text: Do It Yourself", added="in a different country each time")
 run("Your summary")
 print(f"PEAK_RAM_GB at end: {resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1e6:.2f}", flush=True)
 time.sleep(15)  # let background uploads finish
