@@ -92,8 +92,8 @@ PLACE_WORDS = {
     "africa", "african", "asia", "asian", "europe", "european", "latin", "latino", "hispanic",
     "middle east", "middle eastern",
 }
-SESSION = uuid.uuid4().hex[:10]
-RECORDS = []
+SESSION = globals().get("SESSION") or uuid.uuid4().hex[:10]
+RECORDS = globals().get("RECORDS", [])
 rng = random.Random(SESSION)
 def _assign_country():
     # Countries are handed out in rotation by the class server so each gets an equal share.
@@ -105,33 +105,40 @@ def _assign_country():
     except Exception:
         pass
     return rng.choice(COUNTRIES)
-MY_COUNTRY = _assign_country()
+MY_COUNTRY = globals().get("MY_COUNTRY") or _assign_country()
 
 import gc
 def free_ram():
     # Free Colab has about 12 GB of RAM: load each model straight to the GPU and clean up after it.
     gc.collect(); torch.cuda.empty_cache()
 
-print("Loading models (first time downloads about 11 GB)...")
-tok = AutoTokenizer.from_pretrained("Qwen/Qwen2.5-1.5B-Instruct", padding_side="left")
-# Load in the stored format straight onto the GPU, then convert there (converting in RAM crashes free Colab).
-lm = AutoModelForCausalLM.from_pretrained("Qwen/Qwen2.5-1.5B-Instruct", torch_dtype="auto", device_map=DEV).half().eval()
-free_ram()
-try:
-    sd = AutoPipelineForText2Image.from_pretrained("stabilityai/sd-turbo", torch_dtype=DT, variant="fp16", device_map=DEV)
-except Exception:  # older diffusers without device_map for pipelines
-    sd = AutoPipelineForText2Image.from_pretrained("stabilityai/sd-turbo", torch_dtype=DT, variant="fp16").to(DEV)
-free_ram()
-sd.set_progress_bar_config(disable=True)
-sd.vae.enable_slicing()
-clip = CLIPModel.from_pretrained("openai/clip-vit-large-patch14", torch_dtype=DT, device_map=DEV).eval()
-free_ram()
-clip_proc = CLIPProcessor.from_pretrained("openai/clip-vit-large-patch14")
-vlm_proc = AutoProcessor.from_pretrained("Qwen/Qwen2-VL-2B-Instruct", min_pixels=256 * 28 * 28,
-                                         max_pixels=400 * 28 * 28)
-vlm_proc.tokenizer.padding_side = "left"
-vlm = AutoModelForImageTextToText.from_pretrained("Qwen/Qwen2-VL-2B-Instruct", torch_dtype="auto", device_map=DEV).half().eval()
-free_ram()
+# Running setup again must not load a second copy of every model (the T4 would run out of memory).
+if "vlm" in globals():
+    print("Models already loaded.")
+else:
+    for _name in ("lm", "sd", "clip"):  # drop anything left over from an earlier, interrupted setup
+        globals().pop(_name, None)
+    free_ram()
+    print("Loading models (first time downloads about 11 GB)...")
+    tok = AutoTokenizer.from_pretrained("Qwen/Qwen2.5-1.5B-Instruct", padding_side="left")
+    # Load in the stored format straight onto the GPU, then convert there (converting in RAM crashes free Colab).
+    lm = AutoModelForCausalLM.from_pretrained("Qwen/Qwen2.5-1.5B-Instruct", torch_dtype="auto", device_map=DEV).half().eval()
+    free_ram()
+    try:
+        sd = AutoPipelineForText2Image.from_pretrained("stabilityai/sd-turbo", torch_dtype=DT, variant="fp16", device_map=DEV)
+    except Exception:  # older diffusers without device_map for pipelines
+        sd = AutoPipelineForText2Image.from_pretrained("stabilityai/sd-turbo", torch_dtype=DT, variant="fp16").to(DEV)
+    free_ram()
+    sd.set_progress_bar_config(disable=True)
+    sd.vae.enable_slicing()
+    clip = CLIPModel.from_pretrained("openai/clip-vit-large-patch14", torch_dtype=DT, device_map=DEV).eval()
+    free_ram()
+    clip_proc = CLIPProcessor.from_pretrained("openai/clip-vit-large-patch14")
+    vlm_proc = AutoProcessor.from_pretrained("Qwen/Qwen2-VL-2B-Instruct", min_pixels=256 * 28 * 28,
+                                             max_pixels=400 * 28 * 28)
+    vlm_proc.tokenizer.padding_side = "left"
+    vlm = AutoModelForImageTextToText.from_pretrained("Qwen/Qwen2-VL-2B-Instruct", torch_dtype="auto", device_map=DEV).half().eval()
+    free_ram()
 
 # ---------- helpers ----------
 def words(s):

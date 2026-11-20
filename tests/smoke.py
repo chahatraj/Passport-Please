@@ -61,6 +61,7 @@ import torch
 T4_GB = 14.7  # usable memory on a Colab T4
 torch.cuda.set_per_process_memory_fraction(T4_GB * 1e9 / torch.cuda.get_device_properties(0).total_memory)
 run("Setup (run once, takes about 4 minutes)")
+run("Setup (run once, takes about 4 minutes)")  # students often rerun setup: must not load a second copy
 import resource
 print(f"PEAK_RAM_GB after setup: {resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1e6:.2f}", flush=True)
 if not share:
