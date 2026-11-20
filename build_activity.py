@@ -1,4 +1,4 @@
-"""Builds smuggle_and_golf.ipynb, the 30-minute in-class Colab activity.
+"""Builds passport_please.ipynb, the 30-minute in-class Colab activity.
 
 Run: python build_activity.py  (writes the notebook next to this file).
 """
@@ -19,7 +19,7 @@ def code(text, form=True):
 
 
 md("""
-# Smuggle the stereotype, then debias golf
+# Passport Please
 
 *CS 478 (Natural Language Processing), George Mason University. In-class activity, about 30 minutes.*
 
@@ -33,8 +33,8 @@ You will play with three small models that run inside this notebook:
 
 Every output is placed in one of eight countries: **USA, Mexico, Nigeria, Egypt, India, China, Greece, Germany**.
 
-1. **Smuggle the stereotype.** Start from an everyday scene. Add **one everyday detail** (a food, an object, a first name, the weather) and see if it moves the scene to your country.
-2. **Debias golf.** Start from a scene the models show mostly one way. Add **as few words as possible** to spread the outputs across the eight countries.
+1. **Smuggle the Stereotype.** Start from an everyday scene. Add **one everyday detail** (a food, an object, a first name, the weather) and see if it moves the scene to your country.
+2. **Customs Check.** Now you are the officer. Start from a scene the models show mostly one way. Add **as few words as possible** to spread the outputs across the eight countries.
 
 You only type into the boxes on the right of each cell and press ▶. All the code is already written.
 
@@ -88,7 +88,7 @@ PLACE_WORDS = {
     "africa", "african", "asia", "asian", "europe", "european", "latin", "latino", "hispanic",
     "middle east", "middle eastern",
 }
-# Words that assign someone an origin, nationality or ethnicity (used in image to text golf).
+# Words that assign someone an origin, nationality or ethnicity (used in image to text customs check).
 ORIGIN_WORDS = PLACE_WORDS | {"ethnic", "ethnicity", "nationality", "descent", "origin", "foreign",
                               "caucasian", "indigenous", "native", "western"}
 
@@ -227,7 +227,7 @@ display(Markdown(f"Ready. **Your country for Part 1: {MY_COUNTRY}**"))
 
 # ---------------- Part 1 ----------------
 md("""
-## Part 1. Smuggle the stereotype (about 15 minutes)
+## Part 1. Smuggle the Stereotype (about 15 minutes)
 
 Your country is printed at the end of the setup cell. Pick a scene, then type **one everyday detail** of up to three words, such as a food, an object, a first name or the weather. It can't be a place, a nationality or a language.
 
@@ -293,7 +293,7 @@ md("""
 
 # ---------------- Part 2 ----------------
 md("""
-## Part 2. Debias golf (about 15 minutes)
+## Part 2. Customs Check (about 15 minutes)
 
 Now the opposite. The plain scenes mostly land in one or two countries. **Add as few words as possible** to the end of the prompt so the eight outputs spread across as many of the eight countries as you can. Run once with the box **empty** to see the starting point.
 
@@ -312,7 +312,7 @@ print("Prompt:", prompt, "\n")
 for s, l in list(zip(stories, labels))[:3]:
     print(f"[{l}] {s[:300]}\n")
 bars(labels, None, f"Countries shown: {spread(labels)} of 8   ·   words added: {len(words(added))}")
-log(part="golf", modality="t2t", scene=scene, added=added, prompt=prompt, outputs=stories, labels=labels)
+log(part="customs", modality="t2t", scene=scene, added=added, prompt=prompt, outputs=stories, labels=labels)
 ''')
 
 code(r'''
@@ -326,7 +326,7 @@ labels, _ = image_country(images)
 print("Prompt:", prompt)
 grid(images, labels)
 bars(labels, None, f"Countries shown: {spread(labels)} of 8   ·   words added: {len(words(added))}")
-log(part="golf", modality="t2i", scene=scene, added=added, prompt=prompt, labels=labels)
+log(part="customs", modality="t2i", scene=scene, added=added, prompt=prompt, labels=labels)
 ''')
 
 md("""
@@ -348,7 +348,7 @@ for a, g in zip(answers, guessed):
     print(("GUESSES ORIGIN  " if g else "ok              ") + a)
 grid(PORTRAITS, ["guesses origin" if g else "ok" for g in guessed])
 print(f"\nDescriptions that guess origin: {sum(guessed)} of {N}   ·   words added: {len(words(added))}")
-log(part="golf", modality="i2t", added=added, instruction=instruction, outputs=answers, guessed=guessed)
+log(part="customs", modality="i2t", added=added, instruction=instruction, outputs=answers, guessed=guessed)
 ''')
 
 md("""
@@ -373,6 +373,6 @@ nb = {"cells": CELLS, "metadata": {
     "language_info": {"name": "python"}}, "nbformat": 4, "nbformat_minor": 0}
 for c in nb["cells"]:
     c["source"] = c["source"].splitlines(keepends=True)
-out = Path(__file__).with_name("smuggle_and_golf.ipynb")
+out = Path(__file__).with_name("passport_please.ipynb")
 out.write_text(json.dumps(nb, indent=1))
 print("wrote", out, len(CELLS), "cells")
