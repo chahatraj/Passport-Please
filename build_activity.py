@@ -354,28 +354,31 @@ labels, _ = image_country(images)
 print("Prompt:", prompt)
 grid(images, labels)
 bars(labels, None, f"Countries shown: {spread(labels)} of 8   ·   words added: {len(words(added))}")
-LAST_CUSTOMS_IMAGES, LAST_CUSTOMS_LABELS, LAST_CUSTOMS_SCENE, LAST_CUSTOMS_ADDED = images, labels, scene, added
 log(part="customs", modality="t2i", scene=scene, added=added, prompt=prompt, labels=labels, images=images)
 ''')
 
 md("""
-### 2c. Image to text: does your fix hold up?
+### 2c. Image to text
 
-A second model, the image reader, now looks at your pictures from 2b and says which country each one shows. Run 2b with your best prompt first. Did the reader see as many countries as the judge did? If not, go back to 2b and try again.
+Same task, different judge, one scene: *a doctor at work*. This time the image reader looks at the eight pictures and says which country each one shows. Run once with the box empty, then add as few words as possible so the reader sees as many countries as you can.
 """)
 
 code(r'''
 #@title 2c. Image to text
-assert "LAST_CUSTOMS_IMAGES" in globals(), "Run 2b first."
+scene = "a doctor at work"
+added = "" #@param {type:"string"}
+
+prompt = f"a photo of {scene}" + (f", {added.strip()}" if added.strip() else "")
+images = draw(prompt)
 QUESTION = ("In which country was this photo most likely taken? Choose one: " + ", ".join(COUNTRIES)
             + ". Answer with the country name only.")
-answers = look(LAST_CUSTOMS_IMAGES, QUESTION, max_new_tokens=10)
+answers = look(images, QUESTION, max_new_tokens=10)
 labels = [answer_country(a) for a in answers]
-grid(LAST_CUSTOMS_IMAGES, [f"reader: {l}   judge: {j}" for l, j in zip(labels, LAST_CUSTOMS_LABELS)])
-bars(labels, None, f"Countries the reader sees: {spread(labels)} of 8   ·   the judge saw: {spread(LAST_CUSTOMS_LABELS)}"
-                   f"   ·   words added: {len(words(LAST_CUSTOMS_ADDED))}")
-log(part="customs", modality="i2t", scene=LAST_CUSTOMS_SCENE, added=LAST_CUSTOMS_ADDED, question=QUESTION,
-    outputs=answers, labels=labels, judge_labels=LAST_CUSTOMS_LABELS, images=LAST_CUSTOMS_IMAGES)
+print("Prompt:", prompt)
+grid(images, [f"reader: {l}" for l in labels])
+bars(labels, None, f"Countries the reader sees: {spread(labels)} of 8   ·   words added: {len(words(added))}")
+log(part="customs", modality="i2t", scene=scene, added=added, prompt=prompt, question=QUESTION,
+    outputs=answers, labels=labels, images=images)
 ''')
 
 md("""

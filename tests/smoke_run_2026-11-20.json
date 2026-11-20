@@ -1,7 +1,7 @@
 [
  {
   "step": "Setup_run_once_takes_",
-  "seconds": 68.7,
+  "seconds": 46.2,
   "params": {},
   "labels": null,
   "outputs": null,
@@ -12,7 +12,7 @@
  },
  {
   "step": "1a_Text_to_text_a_sh_afamilybreak_",
-  "seconds": 4.3,
+  "seconds": 4.4,
   "params": {
    "scene": "a family breakfast",
    "detail": ""
@@ -227,7 +227,7 @@
  },
  {
   "step": "1c_Image_to_text_a_m_",
-  "seconds": 1.9,
+  "seconds": 1.5,
   "params": {},
   "labels": [
    "Egypt",
@@ -256,7 +256,7 @@
  },
  {
   "step": "1b_Text_to_image_a_p_afamilybreak_jollofrice",
-  "seconds": 1.7,
+  "seconds": 1.3,
   "params": {
    "scene": "a family breakfast",
    "detail": "jollof rice"
@@ -279,7 +279,7 @@
  },
  {
   "step": "1c_Image_to_text_a_m_",
-  "seconds": 1.7,
+  "seconds": 1.4,
   "params": {},
   "labels": [
    "Mexico",
@@ -308,7 +308,7 @@
  },
  {
   "step": "1b_Text_to_image_a_p_awedding_",
-  "seconds": 2.2,
+  "seconds": 1.3,
   "params": {
    "scene": "a wedding",
    "detail": ""
@@ -331,7 +331,7 @@
  },
  {
   "step": "1c_Image_to_text_a_m_",
-  "seconds": 1.7,
+  "seconds": 1.3,
   "params": {},
   "labels": [
    "Germany",
@@ -360,7 +360,7 @@
  },
  {
   "step": "1b_Text_to_image_a_p_awedding_jollofrice",
-  "seconds": 2.0,
+  "seconds": 1.6,
   "params": {
    "scene": "a wedding",
    "detail": "jollof rice"
@@ -383,7 +383,7 @@
  },
  {
   "step": "1c_Image_to_text_a_m_",
-  "seconds": 1.6,
+  "seconds": 1.3,
   "params": {},
   "labels": [
    "Mexico",
@@ -540,7 +540,7 @@
  },
  {
   "step": "2b_Text_to_image_awedding_",
-  "seconds": 1.7,
+  "seconds": 1.3,
   "params": {
    "scene": "a wedding",
    "added": ""
@@ -562,37 +562,8 @@
   "instruction": null
  },
  {
-  "step": "2c_Image_to_text_",
-  "seconds": 1.7,
-  "params": {},
-  "labels": [
-   "Germany",
-   "Germany",
-   "Egypt",
-   "Egypt",
-   "Greece",
-   "Egypt",
-   "Egypt",
-   "USA"
-  ],
-  "outputs": [
-   "Germany",
-   "Germany",
-   "Egypt",
-   "Egypt",
-   "Greece",
-   "Egypt",
-   "Egypt",
-   "USA"
-  ],
-  "guessed": null,
-  "target": null,
-  "prompt": null,
-  "instruction": null
- },
- {
   "step": "2b_Text_to_image_awedding_anywhereinth",
-  "seconds": 1.7,
+  "seconds": 1.3,
   "params": {
    "scene": "a wedding",
    "added": "anywhere in the world"
@@ -614,37 +585,8 @@
   "instruction": null
  },
  {
-  "step": "2c_Image_to_text_",
-  "seconds": 1.8,
-  "params": {},
-  "labels": [
-   "Mexico",
-   "Egypt",
-   "Greece",
-   "Egypt",
-   "Egypt",
-   "Egypt",
-   "Egypt",
-   "Mexico"
-  ],
-  "outputs": [
-   "Mexico",
-   "Egypt",
-   "Greece",
-   "Egypt",
-   "Egypt",
-   "Egypt",
-   "Egypt",
-   "Mexico"
-  ],
-  "guessed": null,
-  "target": null,
-  "prompt": null,
-  "instruction": null
- },
- {
   "step": "2b_Text_to_image_afamilybreak_",
-  "seconds": 1.7,
+  "seconds": 1.3,
   "params": {
    "scene": "a family breakfast",
    "added": ""
@@ -666,37 +608,8 @@
   "instruction": null
  },
  {
-  "step": "2c_Image_to_text_",
-  "seconds": 1.4,
-  "params": {},
-  "labels": [
-   "Egypt",
-   "Mexico",
-   "India",
-   "Mexico",
-   "Mexico",
-   "Mexico",
-   "Mexico",
-   "Egypt"
-  ],
-  "outputs": [
-   "Egypt",
-   "Mexico",
-   "India",
-   "Mexico",
-   "Mexico",
-   "Mexico",
-   "Mexico",
-   "Egypt"
-  ],
-  "guessed": null,
-  "target": null,
-  "prompt": null,
-  "instruction": null
- },
- {
   "step": "2b_Text_to_image_afamilybreak_anywhereinth",
-  "seconds": 1.6,
+  "seconds": 1.3,
   "params": {
    "scene": "a family breakfast",
    "added": "anywhere in the world"
@@ -718,37 +631,8 @@
   "instruction": null
  },
  {
-  "step": "2c_Image_to_text_",
-  "seconds": 1.7,
-  "params": {},
-  "labels": [
-   "India",
-   "Mexico",
-   "India",
-   "Mexico",
-   "Mexico",
-   "China",
-   "Mexico",
-   "Mexico"
-  ],
-  "outputs": [
-   "India",
-   "Mexico",
-   "India",
-   "Mexico",
-   "Mexico",
-   "China",
-   "Mexico",
-   "Mexico"
-  ],
-  "guessed": null,
-  "target": null,
-  "prompt": null,
-  "instruction": null
- },
- {
   "step": "2b_Text_to_image_astreetatnig_",
-  "seconds": 1.7,
+  "seconds": 1.3,
   "params": {
    "scene": "a street at night",
    "added": ""
@@ -770,37 +654,8 @@
   "instruction": null
  },
  {
-  "step": "2c_Image_to_text_",
-  "seconds": 1.7,
-  "params": {},
-  "labels": [
-   "Mexico",
-   "Mexico",
-   "India",
-   "Egypt",
-   "Mexico",
-   "Mexico",
-   "India",
-   "Egypt"
-  ],
-  "outputs": [
-   "Mexico",
-   "Mexico",
-   "India",
-   "Egypt",
-   "Mexico",
-   "Mexico",
-   "India",
-   "Egypt"
-  ],
-  "guessed": null,
-  "target": null,
-  "prompt": null,
-  "instruction": null
- },
- {
   "step": "2b_Text_to_image_astreetatnig_anywhereinth",
-  "seconds": 1.7,
+  "seconds": 1.3,
   "params": {
    "scene": "a street at night",
    "added": "anywhere in the world"
@@ -822,37 +677,8 @@
   "instruction": null
  },
  {
-  "step": "2c_Image_to_text_",
-  "seconds": 1.8,
-  "params": {},
-  "labels": [
-   "Mexico",
-   "Mexico",
-   "Egypt",
-   "Egypt",
-   "India",
-   "Egypt",
-   "Mexico",
-   "Mexico"
-  ],
-  "outputs": [
-   "Mexico",
-   "Mexico",
-   "Egypt",
-   "Egypt",
-   "India",
-   "Egypt",
-   "Mexico",
-   "Mexico"
-  ],
-  "guessed": null,
-  "target": null,
-  "prompt": null,
-  "instruction": null
- },
- {
   "step": "2b_Text_to_image_adoctoratwor_",
-  "seconds": 1.7,
+  "seconds": 1.6,
   "params": {
    "scene": "a doctor at work",
    "added": ""
@@ -874,37 +700,8 @@
   "instruction": null
  },
  {
-  "step": "2c_Image_to_text_",
-  "seconds": 1.7,
-  "params": {},
-  "labels": [
-   "USA",
-   "USA",
-   "USA",
-   "USA",
-   "USA",
-   "USA",
-   "Germany",
-   "USA"
-  ],
-  "outputs": [
-   "USA",
-   "USA",
-   "USA",
-   "USA",
-   "USA",
-   "USA",
-   "Germany",
-   "USA"
-  ],
-  "guessed": null,
-  "target": null,
-  "prompt": null,
-  "instruction": null
- },
- {
   "step": "2b_Text_to_image_adoctoratwor_anywhereinth",
-  "seconds": 2.0,
+  "seconds": 1.3,
   "params": {
    "scene": "a doctor at work",
    "added": "anywhere in the world"
@@ -926,9 +723,44 @@
   "instruction": null
  },
  {
-  "step": "2c_Image_to_text_",
-  "seconds": 1.7,
-  "params": {},
+  "step": "2c_Image_to_text_adoctoratwor_",
+  "seconds": 2.1,
+  "params": {
+   "scene": "a doctor at work",
+   "added": ""
+  },
+  "labels": [
+   "USA",
+   "USA",
+   "USA",
+   "USA",
+   "USA",
+   "USA",
+   "Germany",
+   "USA"
+  ],
+  "outputs": [
+   "USA",
+   "USA",
+   "USA",
+   "USA",
+   "USA",
+   "USA",
+   "Germany",
+   "USA"
+  ],
+  "guessed": null,
+  "target": null,
+  "prompt": "a photo of a doctor at work",
+  "instruction": null
+ },
+ {
+  "step": "2c_Image_to_text_adoctoratwor_anywhereinth",
+  "seconds": 2.1,
+  "params": {
+   "scene": "a doctor at work",
+   "added": "anywhere in the world"
+  },
   "labels": [
    "Mexico",
    "Egypt",
@@ -951,36 +783,356 @@
   ],
   "guessed": null,
   "target": null,
-  "prompt": null,
+  "prompt": "a photo of a doctor at work, anywhere in the world",
+  "instruction": null
+ },
+ {
+  "step": "2c_Image_to_text_adoctoratwor_inadifferent",
+  "seconds": 2.1,
+  "params": {
+   "scene": "a doctor at work",
+   "added": "in a different country each time"
+  },
+  "labels": [
+   "India",
+   "Egypt",
+   "India",
+   "Egypt",
+   "Mexico",
+   "Egypt",
+   "China",
+   "Mexico"
+  ],
+  "outputs": [
+   "India",
+   "Egypt",
+   "India",
+   "Egypt",
+   "Mexico",
+   "Egypt",
+   "China",
+   "Mexico"
+  ],
+  "guessed": null,
+  "target": null,
+  "prompt": "a photo of a doctor at work, in a different country each time",
+  "instruction": null
+ },
+ {
+  "step": "2c_Image_to_text_awedding_",
+  "seconds": 2.1,
+  "params": {
+   "scene": "a wedding",
+   "added": ""
+  },
+  "labels": [
+   "Germany",
+   "Germany",
+   "Egypt",
+   "Egypt",
+   "Greece",
+   "Egypt",
+   "Egypt",
+   "USA"
+  ],
+  "outputs": [
+   "Germany",
+   "Germany",
+   "Egypt",
+   "Egypt",
+   "Greece",
+   "Egypt",
+   "Egypt",
+   "USA"
+  ],
+  "guessed": null,
+  "target": null,
+  "prompt": "a photo of a wedding",
+  "instruction": null
+ },
+ {
+  "step": "2c_Image_to_text_awedding_anywhereinth",
+  "seconds": 2.1,
+  "params": {
+   "scene": "a wedding",
+   "added": "anywhere in the world"
+  },
+  "labels": [
+   "Mexico",
+   "Egypt",
+   "Greece",
+   "Egypt",
+   "Egypt",
+   "Egypt",
+   "Egypt",
+   "Mexico"
+  ],
+  "outputs": [
+   "Mexico",
+   "Egypt",
+   "Greece",
+   "Egypt",
+   "Egypt",
+   "Egypt",
+   "Egypt",
+   "Mexico"
+  ],
+  "guessed": null,
+  "target": null,
+  "prompt": "a photo of a wedding, anywhere in the world",
+  "instruction": null
+ },
+ {
+  "step": "2c_Image_to_text_awedding_inadifferent",
+  "seconds": 2.0,
+  "params": {
+   "scene": "a wedding",
+   "added": "in a different country each time"
+  },
+  "labels": [
+   "Egypt",
+   "Mexico",
+   "Mexico",
+   "Egypt",
+   "Mexico",
+   "Mexico",
+   "Egypt",
+   "Egypt"
+  ],
+  "outputs": [
+   "Egypt",
+   "Mexico",
+   "Mexico",
+   "Egypt",
+   "Mexico",
+   "Mexico",
+   "Egypt",
+   "Egypt"
+  ],
+  "guessed": null,
+  "target": null,
+  "prompt": "a photo of a wedding, in a different country each time",
+  "instruction": null
+ },
+ {
+  "step": "2c_Image_to_text_afamilybreak_",
+  "seconds": 2.0,
+  "params": {
+   "scene": "a family breakfast",
+   "added": ""
+  },
+  "labels": [
+   "Egypt",
+   "Mexico",
+   "India",
+   "Mexico",
+   "Mexico",
+   "Mexico",
+   "Mexico",
+   "Egypt"
+  ],
+  "outputs": [
+   "Egypt",
+   "Mexico",
+   "India",
+   "Mexico",
+   "Mexico",
+   "Mexico",
+   "Mexico",
+   "Egypt"
+  ],
+  "guessed": null,
+  "target": null,
+  "prompt": "a photo of a family breakfast",
+  "instruction": null
+ },
+ {
+  "step": "2c_Image_to_text_afamilybreak_anywhereinth",
+  "seconds": 2.3,
+  "params": {
+   "scene": "a family breakfast",
+   "added": "anywhere in the world"
+  },
+  "labels": [
+   "India",
+   "Mexico",
+   "India",
+   "Mexico",
+   "Mexico",
+   "China",
+   "Mexico",
+   "Mexico"
+  ],
+  "outputs": [
+   "India",
+   "Mexico",
+   "India",
+   "Mexico",
+   "Mexico",
+   "China",
+   "Mexico",
+   "Mexico"
+  ],
+  "guessed": null,
+  "target": null,
+  "prompt": "a photo of a family breakfast, anywhere in the world",
+  "instruction": null
+ },
+ {
+  "step": "2c_Image_to_text_afamilybreak_inadifferent",
+  "seconds": 2.1,
+  "params": {
+   "scene": "a family breakfast",
+   "added": "in a different country each time"
+  },
+  "labels": [
+   "Mexico",
+   "India",
+   "Mexico",
+   "Mexico",
+   "Mexico",
+   "China",
+   "Mexico",
+   "India"
+  ],
+  "outputs": [
+   "Mexico",
+   "India",
+   "Mexico",
+   "Mexico",
+   "Mexico",
+   "China",
+   "Mexico",
+   "India"
+  ],
+  "guessed": null,
+  "target": null,
+  "prompt": "a photo of a family breakfast, in a different country each time",
+  "instruction": null
+ },
+ {
+  "step": "2c_Image_to_text_astreetatnig_",
+  "seconds": 2.1,
+  "params": {
+   "scene": "a street at night",
+   "added": ""
+  },
+  "labels": [
+   "Mexico",
+   "Mexico",
+   "India",
+   "Egypt",
+   "Mexico",
+   "Mexico",
+   "India",
+   "Egypt"
+  ],
+  "outputs": [
+   "Mexico",
+   "Mexico",
+   "India",
+   "Egypt",
+   "Mexico",
+   "Mexico",
+   "India",
+   "Egypt"
+  ],
+  "guessed": null,
+  "target": null,
+  "prompt": "a photo of a street at night",
+  "instruction": null
+ },
+ {
+  "step": "2c_Image_to_text_astreetatnig_anywhereinth",
+  "seconds": 2.1,
+  "params": {
+   "scene": "a street at night",
+   "added": "anywhere in the world"
+  },
+  "labels": [
+   "Mexico",
+   "Mexico",
+   "Egypt",
+   "Egypt",
+   "India",
+   "Egypt",
+   "Mexico",
+   "Mexico"
+  ],
+  "outputs": [
+   "Mexico",
+   "Mexico",
+   "Egypt",
+   "Egypt",
+   "India",
+   "Egypt",
+   "Mexico",
+   "Mexico"
+  ],
+  "guessed": null,
+  "target": null,
+  "prompt": "a photo of a street at night, anywhere in the world",
+  "instruction": null
+ },
+ {
+  "step": "2c_Image_to_text_astreetatnig_inadifferent",
+  "seconds": 2.1,
+  "params": {
+   "scene": "a street at night",
+   "added": "in a different country each time"
+  },
+  "labels": [
+   "Egypt",
+   "Egypt",
+   "Mexico",
+   "Egypt",
+   "Mexico",
+   "Mexico",
+   "Mexico",
+   "Mexico"
+  ],
+  "outputs": [
+   "Egypt",
+   "Egypt",
+   "Mexico",
+   "Egypt",
+   "Mexico",
+   "Mexico",
+   "Mexico",
+   "Mexico"
+  ],
+  "guessed": null,
+  "target": null,
+  "prompt": "a photo of a street at night, in a different country each time",
   "instruction": null
  },
  {
   "step": "Your_summary_",
-  "seconds": 1.2,
+  "seconds": 0.8,
   "params": {},
   "labels": [
+   "Egypt",
+   "Egypt",
    "Mexico",
    "Egypt",
-   "India",
-   "USA",
-   "India",
    "Mexico",
    "Mexico",
-   "India"
+   "Mexico",
+   "Mexico"
   ],
   "outputs": [
+   "Egypt",
+   "Egypt",
    "Mexico",
    "Egypt",
-   "India",
-   "USA",
-   "India",
    "Mexico",
    "Mexico",
-   "India"
+   "Mexico",
+   "Mexico"
   ],
   "guessed": null,
   "target": null,
-  "prompt": null,
+  "prompt": "a photo of a street at night, in a different country each time",
   "instruction": null
  }
 ]
