@@ -1,7 +1,7 @@
 [
  {
   "step": "Setup_run_once_takes_",
-  "seconds": 62.8,
+  "seconds": 56.8,
   "params": {},
   "labels": null,
   "outputs": null,
@@ -12,7 +12,7 @@
  },
  {
   "step": "1a_Text_to_text_Defa_aweddingday",
-  "seconds": 4.4,
+  "seconds": 4.8,
   "params": {
    "scene_1a": "a wedding day"
   },
@@ -43,7 +43,7 @@
  },
  {
   "step": "1a_Text_to_text_Do_I_jollofrice",
-  "seconds": 2.8,
+  "seconds": 2.9,
   "params": {
    "detail": "jollof rice"
   },
@@ -74,7 +74,7 @@
  },
  {
   "step": "1a_Text_to_text_Do_I_Chinedu",
-  "seconds": 2.8,
+  "seconds": 2.9,
   "params": {
    "detail": "Chinedu"
   },
@@ -120,7 +120,7 @@
  },
  {
   "step": "1b_Text_to_image_Def_afamilybreak",
-  "seconds": 3.1,
+  "seconds": 2.9,
   "params": {
    "scene_1b": "a family breakfast"
   },
@@ -164,13 +164,13 @@
  },
  {
   "step": "1c_Image_to_text_a_s_",
-  "seconds": 2.9,
+  "seconds": 2.7,
   "params": {},
   "labels": [
    "Mexico",
    "Mexico",
    "Mexico",
-   "Nigeria",
+   "Mexico",
    "Mexico",
    "Mexico",
    "Mexico",
@@ -180,7 +180,7 @@
    "Mexico",
    "Mexico",
    "Mexico",
-   "Nigeria",
+   "Mexico",
    "Mexico",
    "Mexico",
    "Mexico",
@@ -193,7 +193,7 @@
  },
  {
   "step": "2a_Text_to_text_Defa_aweddingday",
-  "seconds": 2.8,
+  "seconds": 2.9,
   "params": {
    "scene_2a": "a wedding day"
   },
@@ -224,7 +224,7 @@
  },
  {
   "step": "2a_Text_to_text_Do_I_Setitanywher",
-  "seconds": 2.8,
+  "seconds": 2.9,
   "params": {
    "added": "Set it anywhere in the world."
   },
@@ -299,7 +299,7 @@
  },
  {
   "step": "2c_Image_to_text_Def_",
-  "seconds": 2.5,
+  "seconds": 2.8,
   "params": {},
   "labels": [
    "USA",
@@ -328,7 +328,7 @@
  },
  {
   "step": "2c_Image_to_text_Do__inadifferent",
-  "seconds": 2.4,
+  "seconds": 2.5,
   "params": {
    "added": "in a different country each time"
   },
@@ -336,7 +336,7 @@
    "India",
    "Egypt",
    "India",
-   "Egypt",
+   "Mexico",
    "Mexico",
    "Egypt",
    "China",
@@ -346,7 +346,7 @@
    "India",
    "Egypt",
    "India",
-   "Egypt",
+   "Mexico",
    "Mexico",
    "Egypt",
    "China",
@@ -359,13 +359,13 @@
  },
  {
   "step": "Your_summary_",
-  "seconds": 1.3,
+  "seconds": 1.7,
   "params": {},
   "labels": [
    "India",
    "Egypt",
    "India",
-   "Egypt",
+   "Mexico",
    "Mexico",
    "Egypt",
    "China",
@@ -375,7 +375,7 @@
    "India",
    "Egypt",
    "India",
-   "Egypt",
+   "Mexico",
    "Mexico",
    "Egypt",
    "China",

@@ -45,7 +45,10 @@ def run(title, **params):
         assert n == 1, (title, k)
     STEP = re.sub(r"\W+", "_", title)[:20] + "_" + "_".join(re.sub(r"\W+", "", str(v))[:12] for v in params.values())
     t = time.time()
+    import torch
+    torch.cuda.reset_peak_memory_stats()
     exec(compile(src, title, "exec"), ns)
+    print(f"GPU_PEAK_GB {STEP}: {torch.cuda.max_memory_allocated() / 1e9:.2f}", flush=True)
     dt = time.time() - t
     rec = ns["RECORDS"][-1] if ns.get("RECORDS") and title not in ("Setup (run once, takes about 4 minutes)",) else {}
     entry = {"step": STEP, "seconds": round(dt, 1), "params": params,
@@ -54,6 +57,9 @@ def run(title, **params):
     print(f"[{dt:6.1f}s] {STEP}: {entry.get('labels') or entry.get('guessed')}", flush=True)
     json.dump(log, open(out / "log.json", "w"), indent=1)
 
+import torch
+T4_GB = 14.7  # usable memory on a Colab T4
+torch.cuda.set_per_process_memory_fraction(T4_GB * 1e9 / torch.cuda.get_device_properties(0).total_memory)
 run("Setup (run once, takes about 4 minutes)")
 import resource
 print(f"PEAK_RAM_GB after setup: {resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1e6:.2f}", flush=True)

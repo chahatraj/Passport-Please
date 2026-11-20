@@ -123,6 +123,7 @@ except Exception:  # older diffusers without device_map for pipelines
     sd = AutoPipelineForText2Image.from_pretrained("stabilityai/sd-turbo", torch_dtype=DT, variant="fp16").to(DEV)
 free_ram()
 sd.set_progress_bar_config(disable=True)
+sd.vae.enable_slicing()
 clip = CLIPModel.from_pretrained("openai/clip-vit-large-patch14", torch_dtype=DT, device_map=DEV).eval()
 free_ram()
 clip_proc = CLIPProcessor.from_pretrained("openai/clip-vit-large-patch14")
@@ -169,9 +170,15 @@ def text_country(texts):
     return [(JUDGE_OPTIONS[i] if i < len(COUNTRIES) else NO_COUNTRY) for i in probs.argmax(1)], probs
 
 @torch.no_grad()
-def draw(prompt, n=N):
-    gens = [torch.Generator(DEV).manual_seed(i) for i in range(n)]
-    return sd(prompt=[prompt] * n, num_inference_steps=1, guidance_scale=0.0, generator=gens).images
+def draw(prompt, n=N, batch=2):
+    # Small batches keep the T4 under its 15 GB (all four models already use about 11 GB).
+    images = []
+    for i in range(0, n, batch):
+        seeds = range(i, min(i + batch, n))
+        gens = [torch.Generator(DEV).manual_seed(k) for k in seeds]
+        images += sd(prompt=[prompt] * len(gens), num_inference_steps=1, guidance_scale=0.0, generator=gens).images
+    torch.cuda.empty_cache()
+    return images
 
 # The judge for images: CLIP picks the country whose caption fits the picture best.
 _clip_text = [f"a photo taken in {c}" for c in COUNTRIES]
