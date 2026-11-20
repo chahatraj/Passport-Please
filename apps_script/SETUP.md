@@ -16,5 +16,9 @@ What arrives: one row per run (session id, part, modality,
 scene, detail or added words, prompt, labels, generated text), plus that run's images as 320 px JPEGs
 in `Passport Please images/<session>/<run>/`, linked from the row.
 
+The same web app also hands out the Part 1 country to each student in rotation (`doGet`), so
+countries are balanced. To restart the rotation, delete the `ASSIGN_COUNT` script property
+(Project Settings → Script Properties).
+
 If you change `Code.gs` later: **Deploy → Manage deployments → Edit → Version: New version**, so the
 URL stays the same.

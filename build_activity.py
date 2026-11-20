@@ -99,7 +99,17 @@ ORIGIN_WORDS = PLACE_WORDS | {"ethnic", "ethnicity", "nationality", "descent", "
 SESSION = uuid.uuid4().hex[:10]
 RECORDS = []
 rng = random.Random(SESSION)
-MY_COUNTRY = rng.choice(COUNTRIES)
+def _assign_country():
+    # Countries are handed out in rotation by the class server so each gets an equal share.
+    try:
+        import requests
+        c = requests.get(LOG_URL, timeout=15).text.strip() if LOG_URL else ""
+        if c in COUNTRIES:
+            return c
+    except Exception:
+        pass
+    return rng.choice(COUNTRIES)
+MY_COUNTRY = _assign_country()
 
 print("Loading models (first time downloads about 5 GB)...")
 tok = AutoTokenizer.from_pretrained("Qwen/Qwen2.5-0.5B-Instruct", padding_side="left")

@@ -13,6 +13,21 @@ function setup() {
   getRunFolder_('setup-test', 'test');
 }
 
+// Called by the notebook at setup: hands out countries in rotation so each gets an equal share.
+function doGet(e) {
+  const countries = ['USA', 'Mexico', 'Nigeria', 'Egypt', 'India', 'China', 'Greece', 'Germany'];
+  const lock = LockService.getScriptLock();
+  lock.waitLock(30000);
+  try {
+    const props = PropertiesService.getScriptProperties();
+    const n = Number(props.getProperty('ASSIGN_COUNT') || '0');
+    props.setProperty('ASSIGN_COUNT', String(n + 1));
+    return ContentService.createTextOutput(countries[n % countries.length]);
+  } finally {
+    lock.releaseLock();
+  }
+}
+
 // Called by the notebook. Do not run this from the editor.
 function doPost(e) {
   const lock = LockService.getScriptLock();
