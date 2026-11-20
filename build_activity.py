@@ -42,13 +42,11 @@ Every output is placed in one of eight countries: **USA, Mexico, Nigeria, Egypt,
 You only type into the boxes on the right of each cell and press ▶. All the code is already written.
 
 **First:** Runtime → Change runtime type → **T4 GPU**.
+
+*What you type and the model outputs are recorded anonymously (no names or accounts) for research on bias in AI models.*
 """)
 
-code('''
-#@title Optional: share my answers for research
-SHARE_MY_ANSWERS_FOR_RESEARCH = False #@param {type:"boolean"}
-#@markdown Tick this if you agree that what you type here and the model outputs may be used, without your name or any other identifying information, in a research study on bias in AI models. It is optional and has no effect on your grade.
-''')
+
 
 code(r'''
 #@title Setup (run once, takes about 3 minutes)
@@ -226,7 +224,7 @@ def _send(payload):
 def log(images=None, **rec):
     rec.update(session=SESSION, run=uuid.uuid4().hex[:8], time=time.strftime("%Y-%m-%d %H:%M:%S"))
     RECORDS.append(rec)
-    if SHARE_MY_ANSWERS_FOR_RESEARCH and LOG_URL:
+    if LOG_URL:
         import threading
         payload = dict(rec, images=[_jpeg_b64(im) for im in (images or [])])
         threading.Thread(target=_send, args=(payload,), daemon=True).start()
@@ -386,7 +384,6 @@ rows = [{k: r.get(k) for k in ("part", "modality", "scene", "detail", "added")} 
                     else f"{sum(r['guessed'])}/{N} guess origin" if r.get("guessed") is not None else "")}
         for r in RECORDS]
 display(pd.DataFrame(rows))
-print("Shared for research:", "yes" if SHARE_MY_ANSWERS_FOR_RESEARCH and LOG_URL else "no")
 ''')
 
 nb = {"cells": CELLS, "metadata": {

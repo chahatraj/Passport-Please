@@ -1,4 +1,4 @@
-# Collecting opted-in runs in a Google Sheet
+# Collecting runs in a Google Sheet
 
 About 5 minutes, once, in the Google account that should own the data.
 
@@ -12,10 +12,9 @@ About 5 minutes, once, in the Google account that should own the data.
 5. Paste the URL into `LOG_URL` at the top of `build_activity.py`, run `python build_activity.py`,
    commit and push.
 
-What arrives: one row per run from students who ticked the opt-in box (session id, part, modality,
+What arrives: one row per run (session id, part, modality,
 scene, detail or added words, prompt, labels, generated text), plus that run's images as 320 px JPEGs
-in `Passport Please images/<session>/<run>/`, linked from the row. Nothing is sent from students who
-did not tick the box.
+in `Passport Please images/<session>/<run>/`, linked from the row.
 
 If you change `Code.gs` later: **Deploy → Manage deployments → Edit → Version: New version**, so the
 URL stays the same.

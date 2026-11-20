@@ -14,4 +14,4 @@ In Colab, choose Runtime → Change runtime type → T4 GPU.
 
 `build_activity.py` writes the notebook; edit it, not the .ipynb.
 
-Sharing answers for research is opt-in (one checkbox at the top). Opted-in runs, with their images, go to a Google Sheet and Drive folder through a small Apps Script web app: see `apps_script/SETUP.md`. Nothing is sent until `LOG_URL` is set in `build_activity.py`.
+Every run is recorded anonymously (a one-line notice at the top says so). Runs, with their images, go to a Google Sheet and Drive folder through a small Apps Script web app: see `apps_script/SETUP.md`. Nothing is sent until `LOG_URL` is set in `build_activity.py`.
