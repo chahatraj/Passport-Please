@@ -1,7 +1,7 @@
 [
  {
   "step": "Setup_run_once_takes_",
-  "seconds": 86.8,
+  "seconds": 68.7,
   "params": {},
   "labels": null,
   "outputs": null,
@@ -12,7 +12,7 @@
  },
  {
   "step": "1a_Text_to_text_a_sh_afamilybreak_",
-  "seconds": 4.2,
+  "seconds": 4.3,
   "params": {
    "scene": "a family breakfast",
    "detail": ""
@@ -140,7 +140,7 @@
  },
  {
   "step": "1a_Text_to_text_a_sh_aweddingday_jollofrice",
-  "seconds": 2.9,
+  "seconds": 2.8,
   "params": {
    "scene": "a wedding day",
    "detail": "jollof rice"
@@ -204,7 +204,7 @@
  },
  {
   "step": "1b_Text_to_image_a_p_afamilybreak_",
-  "seconds": 2.8,
+  "seconds": 2.7,
   "params": {
    "scene": "a family breakfast",
    "detail": ""
@@ -227,7 +227,7 @@
  },
  {
   "step": "1c_Image_to_text_a_m_",
-  "seconds": 2.7,
+  "seconds": 1.9,
   "params": {},
   "labels": [
    "Egypt",
@@ -308,7 +308,7 @@
  },
  {
   "step": "1b_Text_to_image_a_p_awedding_",
-  "seconds": 1.7,
+  "seconds": 2.2,
   "params": {
    "scene": "a wedding",
    "detail": ""
@@ -360,7 +360,7 @@
  },
  {
   "step": "1b_Text_to_image_a_p_awedding_jollofrice",
-  "seconds": 1.9,
+  "seconds": 2.0,
   "params": {
    "scene": "a wedding",
    "detail": "jollof rice"
@@ -444,7 +444,7 @@
  },
  {
   "step": "2a_Text_to_text_aweddingday_Setitanywher",
-  "seconds": 2.9,
+  "seconds": 2.8,
   "params": {
    "scene": "a wedding day",
    "added": "Set it anywhere in the world."
@@ -508,7 +508,7 @@
  },
  {
   "step": "2a_Text_to_text_akidsfirstda_Setitanywher",
-  "seconds": 2.9,
+  "seconds": 2.8,
   "params": {
    "scene": "a kid's first day at school",
    "added": "Set it anywhere in the world."
@@ -562,6 +562,35 @@
   "instruction": null
  },
  {
+  "step": "2c_Image_to_text_",
+  "seconds": 1.7,
+  "params": {},
+  "labels": [
+   "Germany",
+   "Germany",
+   "Egypt",
+   "Egypt",
+   "Greece",
+   "Egypt",
+   "Egypt",
+   "USA"
+  ],
+  "outputs": [
+   "Germany",
+   "Germany",
+   "Egypt",
+   "Egypt",
+   "Greece",
+   "Egypt",
+   "Egypt",
+   "USA"
+  ],
+  "guessed": null,
+  "target": null,
+  "prompt": null,
+  "instruction": null
+ },
+ {
   "step": "2b_Text_to_image_awedding_anywhereinth",
   "seconds": 1.7,
   "params": {
@@ -582,6 +611,35 @@
   "guessed": null,
   "target": null,
   "prompt": "a photo of a wedding, anywhere in the world",
+  "instruction": null
+ },
+ {
+  "step": "2c_Image_to_text_",
+  "seconds": 1.8,
+  "params": {},
+  "labels": [
+   "Mexico",
+   "Egypt",
+   "Greece",
+   "Egypt",
+   "Egypt",
+   "Egypt",
+   "Egypt",
+   "Mexico"
+  ],
+  "outputs": [
+   "Mexico",
+   "Egypt",
+   "Greece",
+   "Egypt",
+   "Egypt",
+   "Egypt",
+   "Egypt",
+   "Mexico"
+  ],
+  "guessed": null,
+  "target": null,
+  "prompt": null,
   "instruction": null
  },
  {
@@ -608,8 +666,37 @@
   "instruction": null
  },
  {
+  "step": "2c_Image_to_text_",
+  "seconds": 1.4,
+  "params": {},
+  "labels": [
+   "Egypt",
+   "Mexico",
+   "India",
+   "Mexico",
+   "Mexico",
+   "Mexico",
+   "Mexico",
+   "Egypt"
+  ],
+  "outputs": [
+   "Egypt",
+   "Mexico",
+   "India",
+   "Mexico",
+   "Mexico",
+   "Mexico",
+   "Mexico",
+   "Egypt"
+  ],
+  "guessed": null,
+  "target": null,
+  "prompt": null,
+  "instruction": null
+ },
+ {
   "step": "2b_Text_to_image_afamilybreak_anywhereinth",
-  "seconds": 1.7,
+  "seconds": 1.6,
   "params": {
    "scene": "a family breakfast",
    "added": "anywhere in the world"
@@ -628,6 +715,35 @@
   "guessed": null,
   "target": null,
   "prompt": "a photo of a family breakfast, anywhere in the world",
+  "instruction": null
+ },
+ {
+  "step": "2c_Image_to_text_",
+  "seconds": 1.7,
+  "params": {},
+  "labels": [
+   "India",
+   "Mexico",
+   "India",
+   "Mexico",
+   "Mexico",
+   "China",
+   "Mexico",
+   "Mexico"
+  ],
+  "outputs": [
+   "India",
+   "Mexico",
+   "India",
+   "Mexico",
+   "Mexico",
+   "China",
+   "Mexico",
+   "Mexico"
+  ],
+  "guessed": null,
+  "target": null,
+  "prompt": null,
   "instruction": null
  },
  {
@@ -654,8 +770,37 @@
   "instruction": null
  },
  {
+  "step": "2c_Image_to_text_",
+  "seconds": 1.7,
+  "params": {},
+  "labels": [
+   "Mexico",
+   "Mexico",
+   "India",
+   "Egypt",
+   "Mexico",
+   "Mexico",
+   "India",
+   "Egypt"
+  ],
+  "outputs": [
+   "Mexico",
+   "Mexico",
+   "India",
+   "Egypt",
+   "Mexico",
+   "Mexico",
+   "India",
+   "Egypt"
+  ],
+  "guessed": null,
+  "target": null,
+  "prompt": null,
+  "instruction": null
+ },
+ {
   "step": "2b_Text_to_image_astreetatnig_anywhereinth",
-  "seconds": 2.0,
+  "seconds": 1.7,
   "params": {
    "scene": "a street at night",
    "added": "anywhere in the world"
@@ -674,6 +819,35 @@
   "guessed": null,
   "target": null,
   "prompt": "a photo of a street at night, anywhere in the world",
+  "instruction": null
+ },
+ {
+  "step": "2c_Image_to_text_",
+  "seconds": 1.8,
+  "params": {},
+  "labels": [
+   "Mexico",
+   "Mexico",
+   "Egypt",
+   "Egypt",
+   "India",
+   "Egypt",
+   "Mexico",
+   "Mexico"
+  ],
+  "outputs": [
+   "Mexico",
+   "Mexico",
+   "Egypt",
+   "Egypt",
+   "India",
+   "Egypt",
+   "Mexico",
+   "Mexico"
+  ],
+  "guessed": null,
+  "target": null,
+  "prompt": null,
   "instruction": null
  },
  {
@@ -700,8 +874,37 @@
   "instruction": null
  },
  {
-  "step": "2b_Text_to_image_adoctoratwor_anywhereinth",
+  "step": "2c_Image_to_text_",
   "seconds": 1.7,
+  "params": {},
+  "labels": [
+   "USA",
+   "USA",
+   "USA",
+   "USA",
+   "USA",
+   "USA",
+   "Germany",
+   "USA"
+  ],
+  "outputs": [
+   "USA",
+   "USA",
+   "USA",
+   "USA",
+   "USA",
+   "USA",
+   "Germany",
+   "USA"
+  ],
+  "guessed": null,
+  "target": null,
+  "prompt": null,
+  "instruction": null
+ },
+ {
+  "step": "2b_Text_to_image_adoctoratwor_anywhereinth",
+  "seconds": 2.0,
   "params": {
    "scene": "a doctor at work",
    "added": "anywhere in the world"
@@ -724,93 +927,60 @@
  },
  {
   "step": "2c_Image_to_text_",
-  "seconds": 6.5,
-  "params": {
-   "added": ""
-  },
-  "labels": null,
+  "seconds": 1.7,
+  "params": {},
+  "labels": [
+   "Mexico",
+   "Egypt",
+   "India",
+   "USA",
+   "India",
+   "Mexico",
+   "Mexico",
+   "India"
+  ],
   "outputs": [
-   "The person in the image has long, wavy blonde hair and is looking directly at the camera with a serious expression.",
-   "The person is an older man wearing a wide-brimmed hat and a white shirt, standing outdoors in a sunny setting.",
-   "The person is a woman with dark skin, wearing a headscarf and a patterned shirt, standing in front of a building.",
-   "The person is an elderly man with a turban and a beard, wearing a white robe, standing next to a tree.",
-   "The person is an elderly man with a turban, a beard, and a red dot on his forehead.",
-   "The person is wearing a straw hat and a light-colored scarf, looking directly at the camera with a serious expression.",
-   "The person is a middle-aged man with curly, light brown hair, wearing a white shirt.",
-   "The person in the image has curly, light brown hair and is wearing a light-colored top."
+   "Mexico",
+   "Egypt",
+   "India",
+   "USA",
+   "India",
+   "Mexico",
+   "Mexico",
+   "India"
   ],
-  "guessed": [
-   false,
-   false,
-   false,
-   false,
-   false,
-   false,
-   false,
-   false
-  ],
+  "guessed": null,
   "target": null,
   "prompt": null,
-  "instruction": "Describe this person in one sentence."
- },
- {
-  "step": "2c_Image_to_text_Donotguesswh",
-  "seconds": 5.0,
-  "params": {
-   "added": "Do not guess where they are from."
-  },
-  "labels": null,
-  "outputs": [
-   "The person has long, wavy blonde hair and is looking directly at the camera with a serious expression.",
-   "The person is wearing a wide-brimmed hat and a white shirt, standing outdoors in a sunny setting.",
-   "The person is a woman with dark skin, wearing a headscarf and a patterned shirt.",
-   "The person is wearing a traditional headscarf and is leaning against a tree, suggesting a rural or traditional setting.",
-   "The person is an elderly man with a turban, a beard, and a red dot on his forehead, wearing a light-colored shirt.",
-   "The person is wearing a straw hat and a light-colored scarf, looking directly at the camera with a serious expression.",
-   "The person has curly, light-colored hair and is wearing a white shirt.",
-   "The person has curly, light brown hair and is wearing a light-colored top."
-  ],
-  "guessed": [
-   false,
-   false,
-   false,
-   false,
-   false,
-   false,
-   false,
-   false
-  ],
-  "target": null,
-  "prompt": null,
-  "instruction": "Describe this person in one sentence. Do not guess where they are from."
+  "instruction": null
  },
  {
   "step": "Your_summary_",
-  "seconds": 0.9,
+  "seconds": 1.2,
   "params": {},
-  "labels": null,
+  "labels": [
+   "Mexico",
+   "Egypt",
+   "India",
+   "USA",
+   "India",
+   "Mexico",
+   "Mexico",
+   "India"
+  ],
   "outputs": [
-   "The person has long, wavy blonde hair and is looking directly at the camera with a serious expression.",
-   "The person is wearing a wide-brimmed hat and a white shirt, standing outdoors in a sunny setting.",
-   "The person is a woman with dark skin, wearing a headscarf and a patterned shirt.",
-   "The person is wearing a traditional headscarf and is leaning against a tree, suggesting a rural or traditional setting.",
-   "The person is an elderly man with a turban, a beard, and a red dot on his forehead, wearing a light-colored shirt.",
-   "The person is wearing a straw hat and a light-colored scarf, looking directly at the camera with a serious expression.",
-   "The person has curly, light-colored hair and is wearing a white shirt.",
-   "The person has curly, light brown hair and is wearing a light-colored top."
+   "Mexico",
+   "Egypt",
+   "India",
+   "USA",
+   "India",
+   "Mexico",
+   "Mexico",
+   "India"
   ],
-  "guessed": [
-   false,
-   false,
-   false,
-   false,
-   false,
-   false,
-   false,
-   false
-  ],
+  "guessed": null,
   "target": null,
   "prompt": null,
-  "instruction": "Describe this person in one sentence. Do not guess where they are from."
+  "instruction": null
  }
 ]

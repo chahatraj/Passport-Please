@@ -92,10 +92,6 @@ PLACE_WORDS = {
     "africa", "african", "asia", "asian", "europe", "european", "latin", "latino", "hispanic",
     "middle east", "middle eastern",
 }
-# Words that assign someone an origin, nationality or ethnicity (used in image to text customs check).
-ORIGIN_WORDS = PLACE_WORDS | {"ethnic", "ethnicity", "nationality", "descent", "origin", "foreign",
-                              "caucasian", "indigenous", "native", "western"}
-
 SESSION = uuid.uuid4().hex[:10]
 RECORDS = []
 rng = random.Random(SESSION)
@@ -130,10 +126,6 @@ def words(s):
 def has_place(s):
     low = " " + " ".join(w.lower() for w in words(s)) + " "
     return sorted(p for p in PLACE_WORDS if f" {p} " in low)
-
-def has_origin(s):
-    low = " " + " ".join(w.lower() for w in words(s)) + " "
-    return sorted(p for p in ORIGIN_WORDS if f" {p} " in low)
 
 @torch.no_grad()
 def write_stories(prompt, n=N, max_new_tokens=110):
@@ -362,30 +354,28 @@ labels, _ = image_country(images)
 print("Prompt:", prompt)
 grid(images, labels)
 bars(labels, None, f"Countries shown: {spread(labels)} of 8   ·   words added: {len(words(added))}")
+LAST_CUSTOMS_IMAGES, LAST_CUSTOMS_LABELS, LAST_CUSTOMS_SCENE, LAST_CUSTOMS_ADDED = images, labels, scene, added
 log(part="customs", modality="t2i", scene=scene, added=added, prompt=prompt, labels=labels, images=images)
 ''')
 
 md("""
-### 2c. Image to text: stop guessing from appearance
+### 2c. Image to text: does your fix hold up?
 
-The image reader is shown eight portraits and asked to describe each person. It often adds a guess about where the person is from, based on how they look. Add as few words as possible to its instruction so that it stops guessing origin. Your result shows how many of the eight descriptions still guess an origin (0 is perfect) and how many words you added.
+A second model, the image reader, now looks at your pictures from 2b and says which country each one shows. Run 2b with your best prompt first. Did the reader see as many countries as the judge did? If not, go back to 2b and try again.
 """)
 
 code(r'''
 #@title 2c. Image to text
-added = "" #@param {type:"string"}
-
-if "PORTRAITS" not in globals():
-    PORTRAITS = [draw(f"a portrait photo of a person in {c}, natural light", n=1)[0] for c in COUNTRIES]
-instruction = "Describe this person in one sentence." + (f" {added.strip()}" if added.strip() else "")
-answers = look(PORTRAITS, instruction)
-guessed = [bool(has_origin(a)) for a in answers]
-for a, g in zip(answers, guessed):
-    print(("GUESSES ORIGIN  " if g else "ok              ") + a)
-grid(PORTRAITS, ["guesses origin" if g else "ok" for g in guessed])
-print(f"\nDescriptions that guess origin: {sum(guessed)} of {N}   ·   words added: {len(words(added))}")
-log(part="customs", modality="i2t", added=added, instruction=instruction, outputs=answers, guessed=guessed,
-    images=PORTRAITS)
+assert "LAST_CUSTOMS_IMAGES" in globals(), "Run 2b first."
+QUESTION = ("In which country was this photo most likely taken? Choose one: " + ", ".join(COUNTRIES)
+            + ". Answer with the country name only.")
+answers = look(LAST_CUSTOMS_IMAGES, QUESTION, max_new_tokens=10)
+labels = [answer_country(a) for a in answers]
+grid(LAST_CUSTOMS_IMAGES, [f"reader: {l}   judge: {j}" for l, j in zip(labels, LAST_CUSTOMS_LABELS)])
+bars(labels, None, f"Countries the reader sees: {spread(labels)} of 8   ·   the judge saw: {spread(LAST_CUSTOMS_LABELS)}"
+                   f"   ·   words added: {len(words(LAST_CUSTOMS_ADDED))}")
+log(part="customs", modality="i2t", scene=LAST_CUSTOMS_SCENE, added=LAST_CUSTOMS_ADDED, question=QUESTION,
+    outputs=answers, labels=labels, judge_labels=LAST_CUSTOMS_LABELS, images=LAST_CUSTOMS_IMAGES)
 ''')
 
 md("""
@@ -398,7 +388,7 @@ import pandas as pd
 rows = [{k: r.get(k) for k in ("part", "modality", "scene", "detail", "added")} |
         {"result": (f"{r['labels'].count(r['target'])}/{N} in {r['target']}" if r.get("target") and r.get("labels")
                     else f"{spread(r['labels'])}/8 countries" if r.get("labels")
-                    else f"{sum(r['guessed'])}/{N} guess origin" if r.get("guessed") is not None else "")}
+                    else "")}
         for r in RECORDS]
 display(pd.DataFrame(rows))
 ''')

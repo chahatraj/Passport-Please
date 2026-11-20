@@ -71,8 +71,7 @@ for scene in ["a wedding day", "a kid's first day at school"]:
 for scene in ["a wedding", "a family breakfast", "a street at night", "a doctor at work"]:
     for added in ["", "anywhere in the world"]:
         run("2b. Text to image", scene=scene, added=added)
-for added in ["", "Do not guess where they are from."]:
-    run("2c. Image to text", added=added)
+        run("2c. Image to text")
 run("Your summary")
 time.sleep(15)  # let background uploads finish
 print("done")
