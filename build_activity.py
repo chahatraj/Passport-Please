@@ -220,22 +220,77 @@ def answer_country(ans):
             return c
     return "unclear"
 
-# ---------- display ----------
+# ---------- display (muted pastel theme) ----------
+import html as _html
+from IPython.display import HTML
+INK, MUTED, GRID = "#3D4552", "#8E8B84", "#E6E3DC"
+FOCUS, FOCUS_DARK, PALE = "#6A9BD8", "#2F5F99", "#D5DEEA"
+PILL_FOCUS, PILL_OTHER = ("#DCE7F5", "#2F5F99"), ("#ECEAE5", "#3D4552")
+plt.rcParams.update({"font.family": "DejaVu Sans", "text.color": INK, "axes.labelcolor": INK,
+                     "xtick.color": INK, "ytick.color": MUTED, "axes.edgecolor": "#C9C5BC"})
+
 def bars(labels, target=None, title=""):
+    # One bar per country; the target country (Part 1) is the only strong color, the rest are pale.
     cats = COUNTRIES + (["unclear"] if "unclear" in labels else [])
     cnt = Counter(labels)
-    fig, ax = plt.subplots(figsize=(8, 2.2))
-    colors = ["#E8173D" if c == target else "#9aa5b1" for c in cats]
-    ax.bar(cats, [cnt.get(c, 0) for c in cats], color=colors)
-    ax.set_ylim(0, N); ax.set_yticks(range(0, N + 1, 2)); ax.set_title(title, loc="left", fontsize=11)
-    for s in ("top", "right"): ax.spines[s].set_visible(False)
+    vals = [cnt.get(c, 0) for c in cats]
+    fig, ax = plt.subplots(figsize=(8.6, 2.5))
+    for x, (c, v) in enumerate(zip(cats, vals)):
+        if target is None:
+            color = FOCUS if v else "none"
+        else:
+            color = FOCUS if c == target else PALE
+        if c == "unclear":
+            color = "#E6E3DC"
+        ax.bar(x, v, width=0.62, color=color, edgecolor=(FOCUS if (target is None and v == 0) else "none"),
+               linestyle=(0, (2, 2)), linewidth=1.0, zorder=2)
+        if target is None and v == 0:
+            ax.bar(x, 0.25, width=0.62, color="none", edgecolor="#C9C5BC", linestyle=(0, (2, 2)), linewidth=1.0)
+        ax.text(x, v + 0.15, str(v), ha="center", va="bottom", fontsize=10,
+                color=(FOCUS_DARK if c == target else INK), fontweight=("bold" if c == target else "normal"))
+    ax.set_xticks(range(len(cats)))
+    ax.set_xticklabels(cats, fontsize=10)
+    for t, c in zip(ax.get_xticklabels(), cats):
+        if c == target:
+            t.set_fontweight("bold"); t.set_color(FOCUS_DARK)
+    ax.set_ylim(0, N + 1.2); ax.set_yticks([])
+    for sp in ("top", "right", "left"):
+        ax.spines[sp].set_visible(False)
+    ax.tick_params(axis="x", length=0)
+    ax.set_title(title, loc="left", fontsize=11.5, color=INK, pad=8)
     plt.tight_layout(); plt.show()
 
-def grid(images, captions):
-    fig, axes = plt.subplots(2, 4, figsize=(12, 6.4))
-    for ax, im, cap in zip(axes.flat, images, captions):
-        ax.imshow(im); ax.set_axis_off(); ax.set_title(cap, fontsize=9)
-    plt.tight_layout(); plt.show()
+def grid(images, labels, target=None, who=""):
+    # 2 x 4 pictures, each with a small country tag underneath.
+    fig, axes = plt.subplots(2, 4, figsize=(12, 6.6))
+    for ax, im, lab in zip(axes.flat, images, labels):
+        ax.imshow(im); ax.set_axis_off()
+        bg, fg = PILL_FOCUS if (lab == target) else PILL_OTHER
+        ax.text(0.5, -0.07, (f"{who}: " if who else "") + lab, transform=ax.transAxes, ha="center", va="top",
+                fontsize=10, color=fg, fontweight=("bold" if lab == target else "normal"),
+                bbox=dict(boxstyle="round,pad=0.35,rounding_size=0.8", fc=bg, ec="none"))
+    plt.subplots_adjust(wspace=0.05, hspace=0.22, left=0.01, right=0.99, top=0.99, bottom=0.06)
+    plt.show()
+
+def show_stories(prompt, stories, labels, target=None):
+    # Cards with the judge's country on top; first lines visible, click to read the whole story.
+    cards = []
+    for st, lab in zip(stories, labels):
+        bg, fg = PILL_FOCUS if lab == target else PILL_OTHER
+        head, rest = st[:160], st[160:]
+        cut = head.rfind(" ") if rest else len(head)
+        head, rest = st[:cut], st[cut:]
+        body = (f"<details><summary style='cursor:pointer;list-style:none'>{_html.escape(head)}"
+                f"<span style='color:{MUTED}'> … more</span></summary>{_html.escape(rest)}</details>"
+                if rest.strip() else _html.escape(head))
+        cards.append(f"<div style='border:1px solid rgba(128,128,128,.28);border-radius:12px;padding:10px 12px;"
+                     f"font-size:13px;line-height:1.45'>"
+                     f"<span style='background:{bg};color:{fg};border-radius:999px;padding:2px 10px;font-size:12px;"
+                     f"font-weight:{700 if lab == target else 500}'>{_html.escape(lab)}</span>"
+                     f"<div style='margin-top:6px'>{body}</div></div>")
+    display(HTML(f"<div style='font-size:13px;margin:4px 0 8px'><b>Prompt:</b> {_html.escape(prompt)}</div>"
+                 f"<div style='display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px'>"
+                 + "".join(cards) + "</div>"))
 
 def spread(labels):
     return len({l for l in labels if l in COUNTRIES})
@@ -350,9 +405,7 @@ def smuggle_story(scene, detail=""):
     prompt = f"Write a short story about {scene}" + (f" with {detail.strip()}." if detail.strip() else ".")
     stories = write_stories(prompt)
     labels, _ = text_country(stories)
-    print("Prompt:", prompt, "\n")
-    for s, l in list(zip(stories, labels))[:3]:
-        print(f"[{l}] {s[:300]}\n")
+    show_stories(prompt, stories, labels, MY_COUNTRY)
     hit = labels.count(MY_COUNTRY)
     bars(labels, MY_COUNTRY, f"Where the judge places the {N} stories ({hit} of {N} in {MY_COUNTRY})")
     log(part="smuggle", modality="t2t", scene=scene, detail=detail, target=MY_COUNTRY,
@@ -367,7 +420,7 @@ def smuggle_picture(scene, detail=""):
     images = draw(prompt)
     labels, _ = image_country(images)
     print("Prompt:", prompt)
-    grid(images, labels)
+    grid(images, labels, MY_COUNTRY)
     hit = labels.count(MY_COUNTRY)
     bars(labels, MY_COUNTRY, f"Where the judge places the {N} pictures ({hit} of {N} in {MY_COUNTRY})")
     PICS["with detail" if detail.strip() else "plain"] = (prompt, images)
@@ -401,9 +454,7 @@ def customs_story(scene, added=""):
     prompt = f"Write a short story about {scene}." + (f" {added.strip()}" if added.strip() else "")
     stories = write_stories(prompt)
     labels, _ = text_country(stories)
-    print("Prompt:", prompt, "\n")
-    for s, l in list(zip(stories, labels))[:3]:
-        print(f"[{l}] {s[:300]}\n")
+    show_stories(prompt, stories, labels)
     bars(labels, None, f"Countries shown: {spread(labels)} of 8   ·   words added: {len(words(added))}")
     log(part="customs", modality="t2t", scene=scene, added=added, prompt=prompt, outputs=stories, labels=labels)
     coach_customs("2a", "stories", labels, added)
@@ -425,7 +476,7 @@ def customs_reader(added=""):
     answers = look(images, QUESTION, max_new_tokens=10)
     labels = [answer_country(a) for a in answers]
     print("Prompt:", prompt)
-    grid(images, [f"reader: {l}" for l in labels])
+    grid(images, labels, who="reader")
     bars(labels, None, f"Countries the reader sees: {spread(labels)} of 8   ·   words added: {len(words(added))}")
     log(part="customs", modality="i2t", scene=scene, added=added, prompt=prompt, question=QUESTION,
         outputs=answers, labels=labels, images=images)

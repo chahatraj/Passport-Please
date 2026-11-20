@@ -1,7 +1,7 @@
 [
  {
   "step": "Setup_run_once_takes_",
-  "seconds": 68.8,
+  "seconds": 56.7,
   "params": {},
   "labels": null,
   "outputs": null,
@@ -23,7 +23,7 @@
  },
  {
   "step": "1a_Text_to_text_Defa_aweddingday",
-  "seconds": 4.4,
+  "seconds": 4.5,
   "params": {
    "scene_1a": "a wedding day"
   },
@@ -131,7 +131,7 @@
  },
  {
   "step": "1b_Text_to_image_Def_afamilybreak",
-  "seconds": 4.1,
+  "seconds": 2.4,
   "params": {
    "scene_1b": "a family breakfast"
   },
@@ -153,7 +153,7 @@
  },
  {
   "step": "1b_Text_to_image_Do__jollofrice",
-  "seconds": 1.7,
+  "seconds": 1.1,
   "params": {
    "detail": "jollof rice"
   },
@@ -175,7 +175,7 @@
  },
  {
   "step": "1c_Image_to_text_a_s_",
-  "seconds": 2.8,
+  "seconds": 2.0,
   "params": {},
   "labels": [
    "Mexico",
@@ -204,7 +204,7 @@
  },
  {
   "step": "2a_Text_to_text_Defa_aweddingday",
-  "seconds": 2.9,
+  "seconds": 3.0,
   "params": {
    "scene_2a": "a wedding day"
   },
@@ -235,7 +235,7 @@
  },
  {
   "step": "2a_Text_to_text_Do_I_Setitanywher",
-  "seconds": 2.9,
+  "seconds": 3.0,
   "params": {
    "added": "Set it anywhere in the world."
   },
@@ -266,7 +266,7 @@
  },
  {
   "step": "2b_Text_to_image_Def_awedding",
-  "seconds": 1.7,
+  "seconds": 1.1,
   "params": {
    "scene_2b": "a wedding"
   },
@@ -288,7 +288,7 @@
  },
  {
   "step": "2b_Text_to_image_Do__inadifferent",
-  "seconds": 1.8,
+  "seconds": 1.1,
   "params": {
    "added": "in a different country each time"
   },
@@ -310,7 +310,7 @@
  },
  {
   "step": "2c_Image_to_text_Def_",
-  "seconds": 2.4,
+  "seconds": 1.9,
   "params": {},
   "labels": [
    "USA",
@@ -339,7 +339,7 @@
  },
  {
   "step": "2c_Image_to_text_Do__inadifferent",
-  "seconds": 2.4,
+  "seconds": 1.9,
   "params": {
    "added": "in a different country each time"
   },
@@ -370,7 +370,7 @@
  },
  {
   "step": "Your_summary_",
-  "seconds": 1.3,
+  "seconds": 1.1,
   "params": {},
   "labels": [
    "India",
