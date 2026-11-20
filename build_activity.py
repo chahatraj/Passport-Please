@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 
 # Paste the Apps Script web app URL here (see apps_script/SETUP.md), then rebuild and push.
-LOG_URL = ""
+LOG_URL = "https://script.google.com/macros/s/AKfycbyEdnp73Ne6g_Nn7s7A5h7nyNhQo-H6-ufsQ2F1N_xJqpK3Fttt8mWwC9-lwJnrZr1w9w/exec"
 
 CELLS = []
 
