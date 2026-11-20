@@ -5,6 +5,9 @@ Run: python build_activity.py  (writes the notebook next to this file).
 import json
 from pathlib import Path
 
+# Paste the Apps Script web app URL here (see apps_script/SETUP.md), then rebuild and push.
+LOG_URL = ""
+
 CELLS = []
 
 
@@ -70,7 +73,7 @@ assert torch.cuda.is_available(), "No GPU. Runtime -> Change runtime type -> T4 
 DEV, DT = "cuda", torch.float16
 
 # Set by the instructor: a web endpoint that stores opted-in records. Empty = nothing leaves this notebook.
-LOG_URL = ""
+LOG_URL = "__LOG_URL__"
 
 COUNTRIES = ["USA", "Mexico", "Nigeria", "Egypt", "India", "China", "Greece", "Germany"]
 N = 8  # outputs per run; same seeds every run so the only change is your words
@@ -201,15 +204,29 @@ def grid(images, captions):
 def spread(labels):
     return len({l for l in labels if l in COUNTRIES})
 
-def log(**rec):
-    rec.update(session=SESSION, time=time.strftime("%Y-%m-%d %H:%M:%S"))
+def _jpeg_b64(im, side=320):
+    import base64, io
+    im = im.convert("RGB").copy()
+    im.thumbnail((side, side))
+    buf = io.BytesIO()
+    im.save(buf, format="JPEG", quality=80)
+    return base64.b64encode(buf.getvalue()).decode()
+
+def _send(payload):
+    try:
+        import requests
+        requests.post(LOG_URL, data=json.dumps(payload), timeout=60,
+                      headers={"Content-Type": "text/plain"})
+    except Exception:
+        pass
+
+def log(images=None, **rec):
+    rec.update(session=SESSION, run=uuid.uuid4().hex[:8], time=time.strftime("%Y-%m-%d %H:%M:%S"))
     RECORDS.append(rec)
     if SHARE_MY_ANSWERS_FOR_RESEARCH and LOG_URL:
-        try:
-            import requests
-            requests.post(LOG_URL, data=json.dumps(rec), timeout=10)
-        except Exception:
-            pass
+        import threading
+        payload = dict(rec, images=[_jpeg_b64(im) for im in (images or [])])
+        threading.Thread(target=_send, args=(payload,), daemon=True).start()
 
 def one_detail_ok(detail, max_words=3):
     w = words(detail)
@@ -271,7 +288,7 @@ else:
     bars(labels, MY_COUNTRY, f"Where the judge places the {N} pictures ({hit} of {N} in {MY_COUNTRY})")
     LAST_SMUGGLE_IMAGES = images
     log(part="smuggle", modality="t2i", scene=scene, detail=detail, target=MY_COUNTRY,
-        prompt=prompt, labels=labels)
+        prompt=prompt, labels=labels, images=images)
 ''')
 
 code(r'''
@@ -284,7 +301,8 @@ labels = [answer_country(a) for a in answers]
 grid(LAST_SMUGGLE_IMAGES, [f"model says: {a[:30]}" for a in answers])
 hit = labels.count(MY_COUNTRY)
 bars(labels, MY_COUNTRY, f"Where the image reader places the {N} pictures ({hit} of {N} in {MY_COUNTRY})")
-log(part="smuggle", modality="i2t", target=MY_COUNTRY, question=QUESTION, outputs=answers, labels=labels)
+log(part="smuggle", modality="i2t", target=MY_COUNTRY, question=QUESTION, outputs=answers, labels=labels,
+    images=LAST_SMUGGLE_IMAGES)
 ''')
 
 md("""
@@ -326,7 +344,7 @@ labels, _ = image_country(images)
 print("Prompt:", prompt)
 grid(images, labels)
 bars(labels, None, f"Countries shown: {spread(labels)} of 8   ·   words added: {len(words(added))}")
-log(part="customs", modality="t2i", scene=scene, added=added, prompt=prompt, labels=labels)
+log(part="customs", modality="t2i", scene=scene, added=added, prompt=prompt, labels=labels, images=images)
 ''')
 
 md("""
@@ -348,7 +366,8 @@ for a, g in zip(answers, guessed):
     print(("GUESSES ORIGIN  " if g else "ok              ") + a)
 grid(PORTRAITS, ["guesses origin" if g else "ok" for g in guessed])
 print(f"\nDescriptions that guess origin: {sum(guessed)} of {N}   ·   words added: {len(words(added))}")
-log(part="customs", modality="i2t", added=added, instruction=instruction, outputs=answers, guessed=guessed)
+log(part="customs", modality="i2t", added=added, instruction=instruction, outputs=answers, guessed=guessed,
+    images=PORTRAITS)
 ''')
 
 md("""
@@ -373,6 +392,8 @@ nb = {"cells": CELLS, "metadata": {
     "language_info": {"name": "python"}}, "nbformat": 4, "nbformat_minor": 0}
 for c in nb["cells"]:
     c["source"] = c["source"].splitlines(keepends=True)
+for c in nb["cells"]:
+    c["source"] = [l.replace("__LOG_URL__", LOG_URL) for l in c["source"]]
 out = Path(__file__).with_name("passport_please.ipynb")
 out.write_text(json.dumps(nb, indent=1))
 print("wrote", out, len(CELLS), "cells")
