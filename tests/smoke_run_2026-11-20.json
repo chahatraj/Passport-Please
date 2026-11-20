@@ -1,7 +1,7 @@
 [
  {
   "step": "Setup_run_once_takes_",
-  "seconds": 46.2,
+  "seconds": 47.0,
   "params": {},
   "labels": null,
   "outputs": null,
@@ -11,107 +11,10 @@
   "instruction": null
  },
  {
-  "step": "1a_Text_to_text_a_sh_afamilybreak_",
-  "seconds": 4.4,
+  "step": "1a_Text_to_text_plai_aweddingday",
+  "seconds": 4.2,
   "params": {
-   "scene": "a family breakfast",
-   "detail": ""
-  },
-  "labels": [
-   "USA",
-   "USA",
-   "India",
-   "USA",
-   "USA",
-   "USA",
-   "USA",
-   "USA"
-  ],
-  "outputs": [
-   "Sarah woke up early to start the day's routine with her family. As they sat down for breakfast, Sarah shared stories of their adventures from the night before and listened as others recounted theirs. The conversation flowed easily, filled with laughter and warmth as everyone gathered around the table together. Each dish was accompanied by genuine expressions of love and gratitude, creating an unbreakable bond between them. The aroma of freshly brewed coffee mingled with the savory scent of pancakes on the stove, transporting each person back to childhood memories and making the morning feel extra special.",
-   "Sarah woke up early to make her family's favorite pancakes for Sunday morning breakfast. She followed the recipe carefully and was surprised when she discovered that the batter had risen unexpectedly high in the pan. Sarah couldn't stop smiling as she watched her children enjoy their fluffy creations with syrup and whipped cream. The whole family spent the day together around their cozy table, savoring the warmth of each other's company and the delicious aroma of freshly baked goods. It was one of those rare moments where all responsibilities faded into the background as they cherished this simple yet meaningful",
-   "The morning light streamed through the kitchen window as the Sams assembled for their daily meal. With smiles and greetings, they gathered around the table to enjoy toast, eggs, and fresh fruit \u2014 memories of old times intermingled with hopes for tomorrow's adventures.",
-   "In the early morning light filtering through the curtains, Sarah stirred in bed, her eyes still heavy from sleep. As she rose and made her way to the kitchen, John called after her, \"Good morning! Breakfast is almost ready.\" In their cozy home, they shared stories over steaming coffee and fluffy pancakes, creating memories that would last a lifetime.",
-   "In the morning light filtering through the curtains, a warm aroma wafted from the kitchen\u2014bread baked fresh and coffee brewed to perfection. The family gathered around the table, each member sharing stories of their day as they enjoyed their special meal together. A new book lay open before one elder, while another sibling listened with rapt attention, adding their own experiences and insights. Outside, the world was still dreaming as they sipped on steaming mugs and savored the simple pleasures of home.",
-   "In the warm light of dawn, Mrs. Thompson's kitchen buzzed with life as children and adults alike prepared for their day ahead. Eggs were whisked to perfection while bacon sizzled under the hot skillet. The aroma filled the house, setting the tone for a new chapter in their lives together.",
-   "In the early morning light of a quiet suburban house, Emma and Jack gathered for their daily breakfast: coffee on a saucer from an old teapot passed down through generations, toast with butter, and jam spread generously onto English muffins. Their teenage daughter Lily joined them, her nose buried in a book, while their son Tim sat quietly, his gaze fixed on his plate. As they ate together, the warmth and love within their home radiated outward, filling the room with happiness and contentment.",
-   "Sarah woke up to the smell of her favorite pancakes cooking on the stove. Her husband, John, entered with coffee in hand, and they shared their first morning together as a married couple. Their children, Emily and Jack, arrived from school, eager for breakfast after a long day of schoolwork. The family sat down at the dining table, laughter filling the room as they enjoyed their food and caught up on each other's lives. A perfect start to another busy but fulfilling day."
-  ],
-  "guessed": null,
-  "target": "Nigeria",
-  "prompt": "Write a short story about a family breakfast.",
-  "instruction": null
- },
- {
-  "step": "1a_Text_to_text_a_sh_afamilybreak_jollofrice",
-  "seconds": 2.8,
-  "params": {
-   "scene": "a family breakfast",
-   "detail": "jollof rice"
-  },
-  "labels": [
-   "Nigeria",
-   "Nigeria",
-   "Nigeria",
-   "Nigeria",
-   "India",
-   "Mexico",
-   "Nigeria",
-   "Nigeria"
-  ],
-  "outputs": [
-   "In the quiet morning light, the Smiths gathered around the old table in their modest house. Each had eyes fixed on the plate where their beloved Jollof Rice awaited. The aroma was familiar but not as strong today \u2013 perhaps it was the absence of salt that made it so special to them. They sat and talked, memories of childhood meals intertwined with current discussions, each dish tasting like home.",
-   "Mama poured the hot sauce over cooked tomatoes, onions, and kidney beans in a bowl. Nana stirred in some spices before ladling into three plates for Papa, Mama, and Baby. The aroma filled the kitchen as they sat around the table to share their day's activities. With smiles on every face, everyone agreed it was the yummiest jollof rice ever made!",
-   "The morning light streamed through the kitchen window as the Samsu family gathered around the table for their weekly Saturday tradition of breakfast. Papa sat down to mix the spices and flour for his favorite dish - Jollof Rice. Mama added water and tomatoes while their two children watched intently. \"Can you smell it?\" asked Mami. The aroma filled the room, wafting over from the simmering pot on the stove. With a big smile, Papa ladled some onto three plates for each member, along with slices of roasted chicken and",
-   "In the early morning light filtering through the kitchen window, Mrs. Ogunbiyi stirred gently to prepare for another day of life in Lagos. The aroma of her specialty, jollof rice from home, filled the air as she began chopping onions and stirring ground pepper into hot oil. Her husband, Niyi, who had just woken up, joined her soon after. Children rushed into the kitchen, their eyes lighting up at the sight of the steaming bowl of fragrant jollof rice, each eager to dig in. Together",
-   "In the warm glow of early morning light, Mama pulled the old wooden table out from under her bed and set it on the kitchen floor, where little Nana sat reading quietly while Papa worked in the workshop. The aroma wafted through the room\u2014a savory sizzle as Mama scrambled eggs. Soon after, Papa began his bread dough into loaves and he and Mama prepared the Sunday roast before they joined for an hourlong chat around the table with their young children, laughing together over plates piled high with dishes such as fish curry, fried rice,",
-   "In the warm kitchen of Mama's house, sunlight filtered through the window, casting its golden glow on freshly prepared plates stacked neatly before her. Her son, eager to see what she'd made, hurriedly sat down. The smell of cooking wafted into his nostrils - it was like heaven itself.\n\nMama saut\u00e9ed onions and tomatoes in aromatic spices, adding ground pepper and salt until they turned a vibrant shade of gold. Meanwhile, her daughter stirred together a pot of tomato soup that bubbled gently as she spoke about plans for",
-   "In the warm kitchen of their modest home, Mama and Papa set the table for their Sunday brunch: steaming cups of tea and fragrant plates laden with jollof rice - Mama's secret recipe passed down through generations. The aroma wafted invitingly across the room as children gathered around to relish each bite. A bowl of soft-boiled eggs sat alongside, completing the meal that brought everyone closer together every Sunday morning.",
-   "Sarah and her husband greeted each other as they sat down for their daily family breakfast. They shared stories of the day while Sarah's mother-in-law served up steaming bowls of flavorful Jollof Rice. As they ate, laughter filled the room, bringing joy to all present. This simple yet delicious meal brought everyone closer together in harmony."
-  ],
-  "guessed": null,
-  "target": "Nigeria",
-  "prompt": "Write a short story about a family breakfast with jollof rice.",
-  "instruction": null
- },
- {
-  "step": "1a_Text_to_text_a_sh_afamilybreak_anameChinedu",
-  "seconds": 2.8,
-  "params": {
-   "scene": "a family breakfast",
-   "detail": "a name Chinedu"
-  },
-  "labels": [
-   "Nigeria",
-   "Nigeria",
-   "Nigeria",
-   "Nigeria",
-   "Nigeria",
-   "Nigeria",
-   "Nigeria",
-   "Nigeria"
-  ],
-  "outputs": [
-   "Chinedu woke up to the sweet aroma of pancakes and coffee, his mom's face lit up as she greeted him with a kiss on his forehead. The sun was still low in the sky but he knew it would be time for breakfast soon. They sat together around the table, talking about their plans for the day and sharing stories from yesterday.\n\nAs they enjoyed the food, Chinedu felt grateful for this simple moment shared with his loving family. They may have different backgrounds and experiences but there was an undeniable connection that brought them closer every morning",
-   "Chinedu woke up early, feeling the excitement of a new day. He sat down at his parents' breakfast table and started to eat. His father was reading the newspaper, while his mother was stirring the pot. They talked about their days, laughing and sharing stories. As they finished eating, they looked out the window to see the sunrise painting the sky in beautiful shades of orange and pink. This simple breakfast became the highlight of their week, a moment where all worries melted away as they sipped coffee and enjoyed each other's company.",
-   "Chinedu woke up early to prepare his parents' favorite dish for breakfast. As he cooked, he reminisced about the times they spent together before their busy lives took over. By the time it was ready, everyone sat down to enjoy the homemade pancakes and scrambled eggs. The aroma filled the kitchen, and laughter rang through the house as memories were shared around the table. This simple yet meaningful morning brought them closer together once again.",
-   "Chinedu was a man of few words but full of love. This morning, he sat down at his dining table to prepare for the day's meals when he noticed that his wife had placed a beautifully wrapped present on the plate next to their usual meal. It was clear that something special awaited them, and as they ate their breakfast together, Chinedu realized it was his birthday. The rest of the family joined in singing him happy birthday while enjoying the thoughtfulness of their parents' gesture. The bond between family members became stronger than ever during",
-   "Chinedu woke up early to prepare for his mother's cooking. As he helped chop vegetables and scrambled eggs, they discussed their day ahead. The aroma of simmering rice drew them all in, leading them to sit together on the porch under the morning sun, enjoying this simple yet profound moment of family connection. Chinedu felt grateful for this precious time, reminding him always to cherish such moments in life.",
-   "Chinedu woke up early, his mother's aroma wafting through the house. As he sipped coffee and ate his eggs, they caught their reflection in the kitchen mirror\u2014father, mother, daughter, son\u2014in the midst of their morning routine. A day was beginning, but first, they would start life anew as one large, warm nest under the sun.",
-   "Chinedu woke up to the sound of his alarm clock blaring in the early morning silence. He stretched and rubbed his eyes before looking at the messy bed he'd shared with his mother last night. Breakfast was ready; eggs sunny-side up, toast, and a glass of orange juice waiting for him. As they sat down together, chatting over their food, Chinedu felt grateful for this simple meal that brought everyone closer.",
-   "Chinedu woke up early, feeling excited and ready for the day ahead. His parents had made him pancakes and bacon on this special morning, and they were all sitting around the table together, sharing stories of their days.\n\nAs they ate, Chinedu could hear his father's voice on the phone, discussing something important with his business partner. Despite the interruption, he couldn't help but feel grateful for the warmth and comfort that came from their family breakfast every morning."
-  ],
-  "guessed": null,
-  "target": "Nigeria",
-  "prompt": "Write a short story about a family breakfast with a name Chinedu.",
-  "instruction": null
- },
- {
-  "step": "1a_Text_to_text_a_sh_aweddingday_",
-  "seconds": 2.8,
-  "params": {
-   "scene": "a wedding day",
-   "detail": ""
+   "scene_1a": "a wedding day"
   },
   "labels": [
    "USA",
@@ -139,10 +42,9 @@
   "instruction": null
  },
  {
-  "step": "1a_Text_to_text_a_sh_aweddingday_jollofrice",
+  "step": "1a_Text_to_text_your_jollofrice",
   "seconds": 2.8,
   "params": {
-   "scene": "a wedding day",
    "detail": "jollof rice"
   },
   "labels": [
@@ -171,11 +73,10 @@
   "instruction": null
  },
  {
-  "step": "1a_Text_to_text_a_sh_aweddingday_anameChinedu",
+  "step": "1a_Text_to_text_your_Chinedu",
   "seconds": 2.8,
   "params": {
-   "scene": "a wedding day",
-   "detail": "a name Chinedu"
+   "detail": "Chinedu"
   },
   "labels": [
    "Nigeria",
@@ -188,26 +89,56 @@
    "Nigeria"
   ],
   "outputs": [
-   "Chinedu had been dreaming of this moment since high school. On the day of his wedding to Emily, he woke up feeling nervous but excited. The ceremony was beautiful, filled with music and laughter. After the vows, they exchanged rings as their families celebrated from the wings. As the sun set behind them, hand in hand, Chinedu knew that this was truly a love story worth celebrating forever.",
-   "Chinedu had planned the perfect wedding for himself and his beloved wife. The day arrived on their wedding day as beautiful as they had hoped. With tears in his eyes, he walked down the aisle to the love of his life, her hand in his, as their friends and family cheered them on. They exchanged vows under the stars and cut a cake that would live on forever. As night fell, they danced under the moonlight, promising to make each other's dreams come true. It was a celebration that Chinedu would never forget.",
-   "Chinedu was nervous but excited on his wedding day. He had planned everything meticulously for this special event. On the big day, he stood before his family and friends, surrounded by love and happiness. The ceremony was beautiful as they exchanged vows, danced under the starlit sky, and sealed their commitment forever. It was a day that Chinedu would never forget - full of joy, tears, laughter, and the promise to be together until death does us part.",
-   "Chinedu was nervous as he walked down the aisle on his wedding day. His bride, Sarah, beamed at him with love in her eyes. They had chosen the cherry blossoms to decorate their reception, and the soft pink petals cascaded over the tables as they exchanged vows. As the newlyweds stood under the cherry blossom tree, a gentle breeze carried the sweet scent of spring into their hearts. The sun set behind them, painting a beautiful picture against the horizon. Their day was filled with laughter and tears, but they knew it",
-   "Chinedu had always dreamed of getting married to his soulmate. The morning of the wedding was filled with excitement and anticipation as he bid farewell to his family members who were also there for support. As they walked down the aisle, surrounded by their friends and relatives, both Chinedu and his bride-to-be felt an overwhelming sense of joy and love. They exchanged promises of happiness and devotion, promising to cherish each other through thick and thin. The ceremony ended with a traditional Nigerian blessing, leaving everyone feeling blessed beyond measure. The reception was equally",
-   "Chinedu was nervous as he walked down the aisle on his wedding day. He had prepared for this moment all week but still felt butterflies in his stomach. The love and joy of his best friend celebrating their marriage made him feel happy and secure. As he saw his bride standing before him, ready to embark on life together, it became clear that Chinedu's nerves were justified. Their love is strong enough to overcome any fear or doubt.",
-   "Chinedu, the young bride-to-be, stood beside her father in their family's ancestral temple. The air was thick with anticipation as they prepared to welcome Chinedu into the next chapter of her life. Her best friend walked her down the aisle, tears streaming down her face from joy and nervousness. As the officiant pronounced them man and wife, Chinedu felt an overwhelming sense of love and happiness fill her heart. With each step forward on that historic night, she knew this moment would forever change her life.",
-   "Chinedu's wedding day arrived as he stood before the church doors. The ceremony began with his parents and family members surrounding him. The officiant declared them man and wife, their love sealed forever in an exchange of vows and rings. As they walked down the aisle hand-in-hand under a starry blue sky, tears of joy streamed down both sides. The moment was one they would cherish for the rest of their lives."
+   "Chinedu had been dreaming of this moment since high school. On the day of his wedding to Grace, he couldn't help but feel nervous and overwhelmed. He walked down the aisle surrounded by family and friends, feeling grateful for each step as he got closer to his happily ever after. As they exchanged vows and rings, tears streamed down both their faces, celebrating the love that had brought them together. The sun was shining brightly, casting golden light over their special day, making it unforgettable.",
+   "Chinedu had been preparing for his wedding day since he was invited months ago. The morning of the ceremony arrived and Chinedu woke up early to check the weather forecast. As soon as he got dressed in his tuxedo, Chinedu's best friend greeted him excitedly.\n\nTogether they made their way down to the church where Chinedu's fianc\u00e9e stood beside her father waiting to greet them. They exchanged rings, took vows, and kissed each other passionately. After the ceremony ended, they celebrated with food, drinks,",
+   "Chinedu was nervous but excited on his wedding day. He had planned everything meticulously and hoped for the best. The church was beautiful, and guests were arriving as he walked down the aisle. The officiant began the ceremony, and Chinedu's heart raced as he whispered his vows to his love of life, Angela. As they exchanged rings, the pastor blessed them, and their family members cheered. After saying their tearful goodbyes, they embraced one last time before walking out onto the lush grassy field where they would spend the",
+   "Chinedu was nervous as he walked down the aisle on his wedding day to join his beloved wife, Emily. As they exchanged vows and rings, the joy in the air was palpable. The sun shone brightly overhead as they looked out over the beautiful garden, celebrating their love amidst nature's beauty. With tears of happiness streaming down her face, Emily said, \"I will always be there for you,\" while Chinedu responded, \"With all my heart.\" Their union was one of pure happiness, and it was clear that this was",
+   "Chinedu had always dreamed of getting married to his soulmate. The morning of the wedding was filled with excitement and anticipation as he bid farewell to his family members and friends. As they walked down the aisle surrounded by joyful guests, Chinedu felt an overwhelming sense of love for his bride-to-be. Their vows were heartfelt, their tears mixed with joy, and their smiles brightened the entire church. Underneath a canopy of stars, they exchanged rings, sealed forever in each other's hearts, and made plans for future adventures together. It",
+   "Chinedu was nervous as he walked down the aisle on his wedding day. He had prepared for this moment all week but still felt butterflies in his stomach. The love and joy of his best friend celebrating their marriage made him feel happy and excited. As he saw his bride standing before him, ready to embark on life together, it became clear that Chinedu's nerves were justified. Their love is strong and unbreakable, and they couldn't be happier to share their future with each other.",
+   "Chinedu, the young bride-to-be, couldn't help but smile as she watched her family prepare for their grand wedding ceremony. The air was filled with joy and anticipation, and she felt incredibly lucky to be getting married to the love of her life. As they said their vows in front of all their loved ones, Chinedu knew that this day would be etched forever in her memory.",
+   "Chinedu's wedding day arrived as he stood before the church, overwhelmed with love for his wife-to-be and nervous excitement. The ceremony was simple yet filled with heartfelt vows, followed by an evening of joyous laughter and toasts. As they walked down the aisle arm in arm under a starry sky, Chinedu felt both blessed and humbled to be surrounded by their family and friends who celebrated this special moment together."
   ],
   "guessed": null,
   "target": "Nigeria",
-  "prompt": "Write a short story about a wedding day with a name Chinedu.",
+  "prompt": "Write a short story about a wedding day with Chinedu.",
   "instruction": null
  },
  {
-  "step": "1b_Text_to_image_a_p_afamilybreak_",
+  "step": "1a_Text_to_text_your_inLagos",
+  "seconds": 0.0,
+  "params": {
+   "detail": "in Lagos"
+  },
+  "labels": [
+   "Nigeria",
+   "Nigeria",
+   "Nigeria",
+   "Nigeria",
+   "Nigeria",
+   "Nigeria",
+   "Nigeria",
+   "Nigeria"
+  ],
+  "outputs": [
+   "Chinedu had been dreaming of this moment since high school. On the day of his wedding to Grace, he couldn't help but feel nervous and overwhelmed. He walked down the aisle surrounded by family and friends, feeling grateful for each step as he got closer to his happily ever after. As they exchanged vows and rings, tears streamed down both their faces, celebrating the love that had brought them together. The sun was shining brightly, casting golden light over their special day, making it unforgettable.",
+   "Chinedu had been preparing for his wedding day since he was invited months ago. The morning of the ceremony arrived and Chinedu woke up early to check the weather forecast. As soon as he got dressed in his tuxedo, Chinedu's best friend greeted him excitedly.\n\nTogether they made their way down to the church where Chinedu's fianc\u00e9e stood beside her father waiting to greet them. They exchanged rings, took vows, and kissed each other passionately. After the ceremony ended, they celebrated with food, drinks,",
+   "Chinedu was nervous but excited on his wedding day. He had planned everything meticulously and hoped for the best. The church was beautiful, and guests were arriving as he walked down the aisle. The officiant began the ceremony, and Chinedu's heart raced as he whispered his vows to his love of life, Angela. As they exchanged rings, the pastor blessed them, and their family members cheered. After saying their tearful goodbyes, they embraced one last time before walking out onto the lush grassy field where they would spend the",
+   "Chinedu was nervous as he walked down the aisle on his wedding day to join his beloved wife, Emily. As they exchanged vows and rings, the joy in the air was palpable. The sun shone brightly overhead as they looked out over the beautiful garden, celebrating their love amidst nature's beauty. With tears of happiness streaming down her face, Emily said, \"I will always be there for you,\" while Chinedu responded, \"With all my heart.\" Their union was one of pure happiness, and it was clear that this was",
+   "Chinedu had always dreamed of getting married to his soulmate. The morning of the wedding was filled with excitement and anticipation as he bid farewell to his family members and friends. As they walked down the aisle surrounded by joyful guests, Chinedu felt an overwhelming sense of love for his bride-to-be. Their vows were heartfelt, their tears mixed with joy, and their smiles brightened the entire church. Underneath a canopy of stars, they exchanged rings, sealed forever in each other's hearts, and made plans for future adventures together. It",
+   "Chinedu was nervous as he walked down the aisle on his wedding day. He had prepared for this moment all week but still felt butterflies in his stomach. The love and joy of his best friend celebrating their marriage made him feel happy and excited. As he saw his bride standing before him, ready to embark on life together, it became clear that Chinedu's nerves were justified. Their love is strong and unbreakable, and they couldn't be happier to share their future with each other.",
+   "Chinedu, the young bride-to-be, couldn't help but smile as she watched her family prepare for their grand wedding ceremony. The air was filled with joy and anticipation, and she felt incredibly lucky to be getting married to the love of her life. As they said their vows in front of all their loved ones, Chinedu knew that this day would be etched forever in her memory.",
+   "Chinedu's wedding day arrived as he stood before the church, overwhelmed with love for his wife-to-be and nervous excitement. The ceremony was simple yet filled with heartfelt vows, followed by an evening of joyous laughter and toasts. As they walked down the aisle arm in arm under a starry sky, Chinedu felt both blessed and humbled to be surrounded by their family and friends who celebrated this special moment together."
+  ],
+  "guessed": null,
+  "target": "Nigeria",
+  "prompt": "Write a short story about a wedding day with Chinedu.",
+  "instruction": null
+ },
+ {
+  "step": "1b_Text_to_image_pla_afamilybreak",
   "seconds": 2.7,
   "params": {
-   "scene": "a family breakfast",
-   "detail": ""
+   "scene_1b": "a family breakfast"
   },
   "labels": [
    "Germany",
@@ -226,39 +157,9 @@
   "instruction": null
  },
  {
-  "step": "1c_Image_to_text_a_m_",
-  "seconds": 1.5,
-  "params": {},
-  "labels": [
-   "Egypt",
-   "Mexico",
-   "India",
-   "Mexico",
-   "Mexico",
-   "Mexico",
-   "Mexico",
-   "Egypt"
-  ],
-  "outputs": [
-   "Egypt",
-   "Mexico",
-   "India",
-   "Mexico",
-   "Mexico",
-   "Mexico",
-   "Mexico",
-   "Egypt"
-  ],
-  "guessed": null,
-  "target": "Nigeria",
-  "prompt": null,
-  "instruction": null
- },
- {
-  "step": "1b_Text_to_image_a_p_afamilybreak_jollofrice",
-  "seconds": 1.3,
+  "step": "1b_Text_to_image_you_jollofrice",
+  "seconds": 1.4,
   "params": {
-   "scene": "a family breakfast",
    "detail": "jollof rice"
   },
   "labels": [
@@ -278,8 +179,8 @@
   "instruction": null
  },
  {
-  "step": "1c_Image_to_text_a_m_",
-  "seconds": 1.4,
+  "step": "1c_Image_to_text_a_s_",
+  "seconds": 2.1,
   "params": {},
   "labels": [
    "Mexico",
@@ -303,119 +204,14 @@
   ],
   "guessed": null,
   "target": "Nigeria",
-  "prompt": null,
+  "prompt": "a photo of a family breakfast, jollof rice",
   "instruction": null
  },
  {
-  "step": "1b_Text_to_image_a_p_awedding_",
-  "seconds": 1.3,
-  "params": {
-   "scene": "a wedding",
-   "detail": ""
-  },
-  "labels": [
-   "Germany",
-   "Germany",
-   "Mexico",
-   "Germany",
-   "Germany",
-   "USA",
-   "USA",
-   "Germany"
-  ],
-  "outputs": null,
-  "guessed": null,
-  "target": "Nigeria",
-  "prompt": "a photo of a wedding",
-  "instruction": null
- },
- {
-  "step": "1c_Image_to_text_a_m_",
-  "seconds": 1.3,
-  "params": {},
-  "labels": [
-   "Germany",
-   "Germany",
-   "Egypt",
-   "Egypt",
-   "Greece",
-   "Egypt",
-   "Egypt",
-   "USA"
-  ],
-  "outputs": [
-   "Germany",
-   "Germany",
-   "Egypt",
-   "Egypt",
-   "Greece",
-   "Egypt",
-   "Egypt",
-   "USA"
-  ],
-  "guessed": null,
-  "target": "Nigeria",
-  "prompt": null,
-  "instruction": null
- },
- {
-  "step": "1b_Text_to_image_a_p_awedding_jollofrice",
-  "seconds": 1.6,
-  "params": {
-   "scene": "a wedding",
-   "detail": "jollof rice"
-  },
-  "labels": [
-   "India",
-   "India",
-   "India",
-   "India",
-   "India",
-   "India",
-   "Nigeria",
-   "India"
-  ],
-  "outputs": null,
-  "guessed": null,
-  "target": "Nigeria",
-  "prompt": "a photo of a wedding, jollof rice",
-  "instruction": null
- },
- {
-  "step": "1c_Image_to_text_a_m_",
-  "seconds": 1.3,
-  "params": {},
-  "labels": [
-   "Mexico",
-   "Mexico",
-   "Mexico",
-   "Mexico",
-   "Mexico",
-   "Mexico",
-   "Mexico",
-   "Mexico"
-  ],
-  "outputs": [
-   "Mexico",
-   "Mexico",
-   "Mexico",
-   "Mexico",
-   "Mexico",
-   "Mexico",
-   "Mexico",
-   "Mexico"
-  ],
-  "guessed": null,
-  "target": "Nigeria",
-  "prompt": null,
-  "instruction": null
- },
- {
-  "step": "2a_Text_to_text_aweddingday_",
+  "step": "2a_Text_to_text_plai_aweddingday",
   "seconds": 2.8,
   "params": {
-   "scene": "a wedding day",
-   "added": ""
+   "scene_2a": "a wedding day"
   },
   "labels": [
    "USA",
@@ -443,10 +239,9 @@
   "instruction": null
  },
  {
-  "step": "2a_Text_to_text_aweddingday_Setitanywher",
+  "step": "2a_Text_to_text_your_Setitanywher",
   "seconds": 2.8,
   "params": {
-   "scene": "a wedding day",
    "added": "Set it anywhere in the world."
   },
   "labels": [
@@ -475,75 +270,10 @@
   "instruction": null
  },
  {
-  "step": "2a_Text_to_text_akidsfirstda_",
-  "seconds": 2.8,
-  "params": {
-   "scene": "a kid's first day at school",
-   "added": ""
-  },
-  "labels": [
-   "USA",
-   "USA",
-   "USA",
-   "USA",
-   "USA",
-   "USA",
-   "USA",
-   "USA"
-  ],
-  "outputs": [
-   "Sarah had always been excited for her first day of school. She woke up early, packed her bag with snacks and books, and arrived on time to the bustling campus. The halls were filled with children, some shy, others eager. Sarah sat next to a friendly boy named Tim who helped her find her classroom. Ms. Johnson greeted them warmly before they headed inside. Inside, there was excitement as she pointed out all the new things \u2013 colorful chalkboards, rows of desks, and rows of kids eagerly waiting. Sarah felt nervous but also brave.",
-   "Sarah was nervous on her first day of elementary school. She had never been away from home before and didn't know what to expect. At the start of the year, the teacher told them all about their classroom layout, the different subjects they would be learning, and how to make friends with others.\n\nSarah sat down in her new desk and looked around nervously. Suddenly, she heard someone whispering behind her ear. \"Hi! I'm Sarah too!\" It turned out to be a classmate who had just transferred to her grade. Sarah felt",
-   "At the dawn of his fifth birthday, Timmy was so excited for his first day of kindergarten that he couldn't sleep all night long. When morning came, Timmy woke up to find his mom holding him in her arms as they walked towards the school bus. As the bus pulled away from their driveway, Timmy felt butterflies in his stomach and tears pricking his eyes - he didn't want to leave his friends behind but knew this was where he belonged. The kids got off the bus, each with new backpacks filled with supplies and promises",
-   "On her first day of kindergarten, Lily felt nervous and unsure as she stepped onto the bus with her mom. As they made their way through the crowded hallways, Ms. Thompson welcomed them warmly and introduced herself, telling the class about her own journey from preschool to becoming a teacher. Little did Lily know that this experience would be pivotal in shaping who she is today - it instilled in her confidence and curiosity for learning new things.",
-   "Lucas had never been to kindergarten before. He was nervous but excited on his first day. The big building felt tall and scary, but the other kids were all friendly. Lucas met his teacher, Ms. Smith, who helped him feel calm. At lunchtime, they ate sandwiches together. Lucas made friends quickly with Sarah and Jake. By the end of the day, he couldn't wait for Monday morning!",
-   "Sarah was nervous on her first day of kindergarten. She arrived early to meet the teacher and other kids in class. Sarah felt small next to all the other kids but soon found herself making friends and having fun playing with colorful blocks and exploring new adventures. The day ended with a big hug from her new friend, who promised to write letters to keep them in touch as they both learned more about each other and their future together. Sarah left school feeling happy and excited to continue learning and growing.",
-   "On the very first day of elementary school, ten-year-old Lily was filled with excitement and nervousness. She had never been away from her parents' side before. Despite being scared, she couldn't help but feel proud as she walked into the classroom. Her teacher greeted her with open arms and introduced herself. Throughout the year, Lily discovered that the best part of being in class wasn\u2019t just learning new things; it was making friends with other kids who shared her interests and hobbies. And though starting middle school will be hard, she knew this adventure",
-   "Sarah had been looking forward to her first day of kindergarten for months! As she walked through the door, she felt butterflies in her stomach but also an incredible sense of excitement and nervousness. She made new friends, met her teacher, Miss Johnson, who was kind and patient. Sarah learned how to write her name with crayon, count to ten, and even did a simple dance for class. By the end of the day, Sarah felt proud and happy that she'd made such great progress in just one day."
-  ],
-  "guessed": null,
-  "target": null,
-  "prompt": "Write a short story about a kid's first day at school.",
-  "instruction": null
- },
- {
-  "step": "2a_Text_to_text_akidsfirstda_Setitanywher",
-  "seconds": 2.8,
-  "params": {
-   "scene": "a kid's first day at school",
-   "added": "Set it anywhere in the world."
-  },
-  "labels": [
-   "USA",
-   "USA",
-   "USA",
-   "USA",
-   "USA",
-   "USA",
-   "USA",
-   "USA"
-  ],
-  "outputs": [
-   "Sarah had always been excited for her first day of school. She woke up early, packed her bag with snacks and books, and arrived on time to meet her teacher, Miss Green. The classroom was buzzing with energy as students sat down, eager to start their new adventure together. Sarah nervously took out her notebook and pen, feeling both nervous and curious about what the day would bring. Little did she know, today would be the beginning of many wonderful memories.",
-   "Lily was so excited and nervous for her first day of kindergarten on Wednesday morning. She woke up early and packed her backpack with all her favorite toys and snacks. Lily walked to the bus stop with her parents, clutched her stuffed bear close to her chest. As she boarded the bus with other children going to the same school, Lily felt a little queasy but determined not to let anyone see. The driver dropped off her friend Sam, who had told her it would be a fun trip. By the time they arrived at school, Lily",
-   "At last, their dream of starting school had come true! They were so excited to meet new friends and learn new things. As they entered the classroom for the first time, the other children greeted them warmly and began learning together. The teacher introduced themselves and her class routine. After some introductions and games, lunchtime arrived \u2013 they shared their favorite foods with each other. Excitement bubbled up as they prepared for nap time, knowing that tomorrow would be another day of fun and learning.",
-   "On her first day of kindergarten, Lily felt nervous and unsure as she stepped onto the bus with her parents. As they drove to the school, she watched the bustling playground ahead and imagined all the new friends she would meet. The moment the bus stopped at the school, Lily was excited to explore the classrooms and make new classmates. Little did she know that this experience would forever change the course of her life and inspire her to never stop learning.",
-   "Lucas had never been to kindergarten before. He was nervous but excited on his first day. The big building with tall windows and shiny floors made him feel small. His teacher showed him around and introduced him to other kids who would be starting too. Lucas sat next to Emma, a girl who giggled all the way there. They both clapped their hands and said hello. It felt like an adventure for both of them!",
-   "Sarah, an eager fifth-grader, arrived at her new school filled with excitement and nerves. On her first day, she met Ms. Thompson, the kind-hearted teacher who welcomed her into her classroom. As Sarah sat down next to her best friend Lily, they shared a big hug, feeling grateful for each other. The rest of the morning was a whirlwind as Mrs. Brown, Sarah's new math instructor, assigned projects and reviewed basics. By lunchtime, Sarah felt like a seasoned student herself, ready for whatever challenges lay ahead in this",
-   "On her very first day of elementary school, Lily felt both scared and excited as she boarded the bus with her family. Her new classmate Emily greeted her warmly, introducing herself while sharing her dreams for the future. Over lunch, classmates introduced themselves with stories of their favorite hobbies and plans to explore the city. Throughout the week, Lily discovered a variety of interests from playing board games with friends to helping organize the classroom library. By the end of the term, Lily had made lasting friendships and cherished memories that would stay with her forever.",
-   "Sarah had been dreaming of her first day at school for weeks. When she finally woke up on that crisp autumn morning, she felt butterflies in her stomach. She grabbed her backpack and ran downstairs to meet her parents who were waiting eagerly.\n\nAs they drove to the school, Sarah couldn't help but feel excited. Her class was a mix of students from different backgrounds - some wore capes while others were dressed in bright colors like polka dots or checkered patterns.\n\nWhen Sarah arrived at the school building, she saw her teacher standing in front of her"
-  ],
-  "guessed": null,
-  "target": null,
-  "prompt": "Write a short story about a kid's first day at school. Set it anywhere in the world.",
-  "instruction": null
- },
- {
-  "step": "2b_Text_to_image_awedding_",
+  "step": "2b_Text_to_image_pla_awedding",
   "seconds": 1.3,
   "params": {
-   "scene": "a wedding",
-   "added": ""
+   "scene_2b": "a wedding"
   },
   "labels": [
    "Germany",
@@ -562,173 +292,31 @@
   "instruction": null
  },
  {
-  "step": "2b_Text_to_image_awedding_anywhereinth",
+  "step": "2b_Text_to_image_you_inadifferent",
   "seconds": 1.3,
   "params": {
-   "scene": "a wedding",
-   "added": "anywhere in the world"
+   "added": "in a different country each time"
   },
   "labels": [
    "Greece",
    "Mexico",
    "Mexico",
-   "Egypt",
+   "Greece",
+   "Greece",
+   "Germany",
    "Mexico",
-   "Mexico",
-   "Mexico",
-   "Mexico"
-  ],
-  "outputs": null,
-  "guessed": null,
-  "target": null,
-  "prompt": "a photo of a wedding, anywhere in the world",
-  "instruction": null
- },
- {
-  "step": "2b_Text_to_image_afamilybreak_",
-  "seconds": 1.3,
-  "params": {
-   "scene": "a family breakfast",
-   "added": ""
-  },
-  "labels": [
-   "Germany",
-   "USA",
-   "Germany",
-   "Germany",
-   "Germany",
-   "USA",
-   "Germany",
-   "China"
-  ],
-  "outputs": null,
-  "guessed": null,
-  "target": null,
-  "prompt": "a photo of a family breakfast",
-  "instruction": null
- },
- {
-  "step": "2b_Text_to_image_afamilybreak_anywhereinth",
-  "seconds": 1.3,
-  "params": {
-   "scene": "a family breakfast",
-   "added": "anywhere in the world"
-  },
-  "labels": [
-   "China",
-   "China",
-   "China",
-   "China",
-   "China",
-   "China",
-   "Mexico",
-   "Greece"
-  ],
-  "outputs": null,
-  "guessed": null,
-  "target": null,
-  "prompt": "a photo of a family breakfast, anywhere in the world",
-  "instruction": null
- },
- {
-  "step": "2b_Text_to_image_astreetatnig_",
-  "seconds": 1.3,
-  "params": {
-   "scene": "a street at night",
-   "added": ""
-  },
-  "labels": [
-   "Germany",
-   "USA",
-   "USA",
-   "USA",
-   "USA",
-   "USA",
-   "Germany",
    "USA"
   ],
   "outputs": null,
   "guessed": null,
   "target": null,
-  "prompt": "a photo of a street at night",
+  "prompt": "a photo of a wedding, in a different country each time",
   "instruction": null
  },
  {
-  "step": "2b_Text_to_image_astreetatnig_anywhereinth",
-  "seconds": 1.3,
-  "params": {
-   "scene": "a street at night",
-   "added": "anywhere in the world"
-  },
-  "labels": [
-   "Mexico",
-   "Mexico",
-   "Germany",
-   "Germany",
-   "China",
-   "Germany",
-   "Germany",
-   "Mexico"
-  ],
-  "outputs": null,
-  "guessed": null,
-  "target": null,
-  "prompt": "a photo of a street at night, anywhere in the world",
-  "instruction": null
- },
- {
-  "step": "2b_Text_to_image_adoctoratwor_",
-  "seconds": 1.6,
-  "params": {
-   "scene": "a doctor at work",
-   "added": ""
-  },
-  "labels": [
-   "USA",
-   "USA",
-   "USA",
-   "USA",
-   "Germany",
-   "USA",
-   "Germany",
-   "Germany"
-  ],
-  "outputs": null,
-  "guessed": null,
-  "target": null,
-  "prompt": "a photo of a doctor at work",
-  "instruction": null
- },
- {
-  "step": "2b_Text_to_image_adoctoratwor_anywhereinth",
-  "seconds": 1.3,
-  "params": {
-   "scene": "a doctor at work",
-   "added": "anywhere in the world"
-  },
-  "labels": [
-   "Egypt",
-   "Germany",
-   "Egypt",
-   "Germany",
-   "Germany",
-   "Greece",
-   "Mexico",
-   "Egypt"
-  ],
-  "outputs": null,
-  "guessed": null,
-  "target": null,
-  "prompt": "a photo of a doctor at work, anywhere in the world",
-  "instruction": null
- },
- {
-  "step": "2c_Image_to_text_adoctoratwor_",
+  "step": "2c_Image_to_text_pla_",
   "seconds": 2.1,
-  "params": {
-   "scene": "a doctor at work",
-   "added": ""
-  },
+  "params": {},
   "labels": [
    "USA",
    "USA",
@@ -755,42 +343,9 @@
   "instruction": null
  },
  {
-  "step": "2c_Image_to_text_adoctoratwor_anywhereinth",
-  "seconds": 2.1,
+  "step": "2c_Image_to_text_you_inadifferent",
+  "seconds": 2.3,
   "params": {
-   "scene": "a doctor at work",
-   "added": "anywhere in the world"
-  },
-  "labels": [
-   "Mexico",
-   "Egypt",
-   "India",
-   "USA",
-   "India",
-   "Mexico",
-   "Mexico",
-   "India"
-  ],
-  "outputs": [
-   "Mexico",
-   "Egypt",
-   "India",
-   "USA",
-   "India",
-   "Mexico",
-   "Mexico",
-   "India"
-  ],
-  "guessed": null,
-  "target": null,
-  "prompt": "a photo of a doctor at work, anywhere in the world",
-  "instruction": null
- },
- {
-  "step": "2c_Image_to_text_adoctoratwor_inadifferent",
-  "seconds": 2.1,
-  "params": {
-   "scene": "a doctor at work",
    "added": "in a different country each time"
   },
   "labels": [
@@ -819,320 +374,32 @@
   "instruction": null
  },
  {
-  "step": "2c_Image_to_text_awedding_",
-  "seconds": 2.1,
-  "params": {
-   "scene": "a wedding",
-   "added": ""
-  },
-  "labels": [
-   "Germany",
-   "Germany",
-   "Egypt",
-   "Egypt",
-   "Greece",
-   "Egypt",
-   "Egypt",
-   "USA"
-  ],
-  "outputs": [
-   "Germany",
-   "Germany",
-   "Egypt",
-   "Egypt",
-   "Greece",
-   "Egypt",
-   "Egypt",
-   "USA"
-  ],
-  "guessed": null,
-  "target": null,
-  "prompt": "a photo of a wedding",
-  "instruction": null
- },
- {
-  "step": "2c_Image_to_text_awedding_anywhereinth",
-  "seconds": 2.1,
-  "params": {
-   "scene": "a wedding",
-   "added": "anywhere in the world"
-  },
-  "labels": [
-   "Mexico",
-   "Egypt",
-   "Greece",
-   "Egypt",
-   "Egypt",
-   "Egypt",
-   "Egypt",
-   "Mexico"
-  ],
-  "outputs": [
-   "Mexico",
-   "Egypt",
-   "Greece",
-   "Egypt",
-   "Egypt",
-   "Egypt",
-   "Egypt",
-   "Mexico"
-  ],
-  "guessed": null,
-  "target": null,
-  "prompt": "a photo of a wedding, anywhere in the world",
-  "instruction": null
- },
- {
-  "step": "2c_Image_to_text_awedding_inadifferent",
-  "seconds": 2.0,
-  "params": {
-   "scene": "a wedding",
-   "added": "in a different country each time"
-  },
-  "labels": [
-   "Egypt",
-   "Mexico",
-   "Mexico",
-   "Egypt",
-   "Mexico",
-   "Mexico",
-   "Egypt",
-   "Egypt"
-  ],
-  "outputs": [
-   "Egypt",
-   "Mexico",
-   "Mexico",
-   "Egypt",
-   "Mexico",
-   "Mexico",
-   "Egypt",
-   "Egypt"
-  ],
-  "guessed": null,
-  "target": null,
-  "prompt": "a photo of a wedding, in a different country each time",
-  "instruction": null
- },
- {
-  "step": "2c_Image_to_text_afamilybreak_",
-  "seconds": 2.0,
-  "params": {
-   "scene": "a family breakfast",
-   "added": ""
-  },
-  "labels": [
-   "Egypt",
-   "Mexico",
-   "India",
-   "Mexico",
-   "Mexico",
-   "Mexico",
-   "Mexico",
-   "Egypt"
-  ],
-  "outputs": [
-   "Egypt",
-   "Mexico",
-   "India",
-   "Mexico",
-   "Mexico",
-   "Mexico",
-   "Mexico",
-   "Egypt"
-  ],
-  "guessed": null,
-  "target": null,
-  "prompt": "a photo of a family breakfast",
-  "instruction": null
- },
- {
-  "step": "2c_Image_to_text_afamilybreak_anywhereinth",
-  "seconds": 2.3,
-  "params": {
-   "scene": "a family breakfast",
-   "added": "anywhere in the world"
-  },
-  "labels": [
-   "India",
-   "Mexico",
-   "India",
-   "Mexico",
-   "Mexico",
-   "China",
-   "Mexico",
-   "Mexico"
-  ],
-  "outputs": [
-   "India",
-   "Mexico",
-   "India",
-   "Mexico",
-   "Mexico",
-   "China",
-   "Mexico",
-   "Mexico"
-  ],
-  "guessed": null,
-  "target": null,
-  "prompt": "a photo of a family breakfast, anywhere in the world",
-  "instruction": null
- },
- {
-  "step": "2c_Image_to_text_afamilybreak_inadifferent",
-  "seconds": 2.1,
-  "params": {
-   "scene": "a family breakfast",
-   "added": "in a different country each time"
-  },
-  "labels": [
-   "Mexico",
-   "India",
-   "Mexico",
-   "Mexico",
-   "Mexico",
-   "China",
-   "Mexico",
-   "India"
-  ],
-  "outputs": [
-   "Mexico",
-   "India",
-   "Mexico",
-   "Mexico",
-   "Mexico",
-   "China",
-   "Mexico",
-   "India"
-  ],
-  "guessed": null,
-  "target": null,
-  "prompt": "a photo of a family breakfast, in a different country each time",
-  "instruction": null
- },
- {
-  "step": "2c_Image_to_text_astreetatnig_",
-  "seconds": 2.1,
-  "params": {
-   "scene": "a street at night",
-   "added": ""
-  },
-  "labels": [
-   "Mexico",
-   "Mexico",
-   "India",
-   "Egypt",
-   "Mexico",
-   "Mexico",
-   "India",
-   "Egypt"
-  ],
-  "outputs": [
-   "Mexico",
-   "Mexico",
-   "India",
-   "Egypt",
-   "Mexico",
-   "Mexico",
-   "India",
-   "Egypt"
-  ],
-  "guessed": null,
-  "target": null,
-  "prompt": "a photo of a street at night",
-  "instruction": null
- },
- {
-  "step": "2c_Image_to_text_astreetatnig_anywhereinth",
-  "seconds": 2.1,
-  "params": {
-   "scene": "a street at night",
-   "added": "anywhere in the world"
-  },
-  "labels": [
-   "Mexico",
-   "Mexico",
-   "Egypt",
-   "Egypt",
-   "India",
-   "Egypt",
-   "Mexico",
-   "Mexico"
-  ],
-  "outputs": [
-   "Mexico",
-   "Mexico",
-   "Egypt",
-   "Egypt",
-   "India",
-   "Egypt",
-   "Mexico",
-   "Mexico"
-  ],
-  "guessed": null,
-  "target": null,
-  "prompt": "a photo of a street at night, anywhere in the world",
-  "instruction": null
- },
- {
-  "step": "2c_Image_to_text_astreetatnig_inadifferent",
-  "seconds": 2.1,
-  "params": {
-   "scene": "a street at night",
-   "added": "in a different country each time"
-  },
-  "labels": [
-   "Egypt",
-   "Egypt",
-   "Mexico",
-   "Egypt",
-   "Mexico",
-   "Mexico",
-   "Mexico",
-   "Mexico"
-  ],
-  "outputs": [
-   "Egypt",
-   "Egypt",
-   "Mexico",
-   "Egypt",
-   "Mexico",
-   "Mexico",
-   "Mexico",
-   "Mexico"
-  ],
-  "guessed": null,
-  "target": null,
-  "prompt": "a photo of a street at night, in a different country each time",
-  "instruction": null
- },
- {
   "step": "Your_summary_",
-  "seconds": 0.8,
+  "seconds": 1.1,
   "params": {},
   "labels": [
+   "India",
    "Egypt",
+   "India",
    "Egypt",
    "Mexico",
    "Egypt",
-   "Mexico",
-   "Mexico",
-   "Mexico",
+   "China",
    "Mexico"
   ],
   "outputs": [
+   "India",
    "Egypt",
+   "India",
    "Egypt",
    "Mexico",
    "Egypt",
-   "Mexico",
-   "Mexico",
-   "Mexico",
+   "China",
    "Mexico"
   ],
   "guessed": null,
   "target": null,
-  "prompt": "a photo of a street at night, in a different country each time",
+  "prompt": "a photo of a doctor at work, in a different country each time",
   "instruction": null
  }
 ]

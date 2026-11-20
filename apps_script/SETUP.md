@@ -14,7 +14,8 @@ About 5 minutes, once, in the Google account that should own the data.
 
 What arrives: one row per run (session id, part, modality,
 scene, detail or added words, prompt, labels, generated text), plus that run's images as 320 px JPEGs
-in `Passport Please images/<session>/<run>/`, linked from the row.
+in `Passport Please images/<session>/<run>/`, linked from the row. A Part 1 detail that was rejected (a place word, or more than
+three words) still gets a row; its `labels` cell says `rejected: place word` or `rejected: too long`.
 
 The same web app also hands out the Part 1 country to each student in rotation (`doGet`), so
 countries are balanced. To restart the rotation, delete the `ASSIGN_COUNT` script property

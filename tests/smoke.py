@@ -46,34 +46,30 @@ def run(title, **params):
     t = time.time()
     exec(compile(src, title, "exec"), ns)
     dt = time.time() - t
-    rec = ns["RECORDS"][-1] if ns.get("RECORDS") and title not in ("Setup (run once, takes about 3 minutes)",) else {}
+    rec = ns["RECORDS"][-1] if ns.get("RECORDS") and title not in ("Setup (run once, takes about 4 minutes)",) else {}
     entry = {"step": STEP, "seconds": round(dt, 1), "params": params,
              **{k: rec.get(k) for k in ("labels", "outputs", "guessed", "target", "prompt", "instruction")}}
     log.append(entry)
     print(f"[{dt:6.1f}s] {STEP}: {entry.get('labels') or entry.get('guessed')}", flush=True)
     json.dump(log, open(out / "log.json", "w"), indent=1)
 
-run("Setup (run once, takes about 3 minutes)")
+run("Setup (run once, takes about 4 minutes)")
 if not share:
     ns["LOG_URL"] = ""
 ns["MY_COUNTRY"] = "Nigeria"
 print("target", ns["MY_COUNTRY"])
-for scene in ["a family breakfast", "a wedding day"]:
-    for detail in ["", "jollof rice", "a name Chinedu"[:20]]:
-        run("1a. Text to text: a short story", scene=scene, detail=detail)
-for scene in ["a family breakfast", "a wedding"]:
-    for detail in ["", "jollof rice"]:
-        run("1b. Text to image: a picture", scene=scene, detail=detail)
-        run("1c. Image to text: a model looks at the picture")
-for scene in ["a wedding day", "a kid's first day at school"]:
-    for added in ["", "Set it anywhere in the world."]:
-        run("2a. Text to text", scene=scene, added=added)
-for scene in ["a wedding", "a family breakfast", "a street at night", "a doctor at work"]:
-    for added in ["", "anywhere in the world"]:
-        run("2b. Text to image", scene=scene, added=added)
-for scene in ["a doctor at work", "a wedding", "a family breakfast", "a street at night"]:
-    for added in ["", "anywhere in the world", "in a different country each time"]:
-        run("2c. Image to text", scene=scene, added=added)
+run("1a. Text to text, plain scene", scene_1a="a wedding day")
+for detail in ["jollof rice", "Chinedu", "in Lagos"]:
+    run("1a. Text to text, your turn", detail=detail)
+run("1b. Text to image, plain scene", scene_1b="a family breakfast")
+run("1b. Text to image, your turn", detail="jollof rice")
+run("1c. Image to text: a second model reads your pictures")
+run("2a. Text to text, plain scene", scene_2a="a wedding day")
+run("2a. Text to text, your turn", added="Set it anywhere in the world.")
+run("2b. Text to image, plain scene", scene_2b="a wedding")
+run("2b. Text to image, your turn", added="in a different country each time")
+run("2c. Image to text, plain scene")
+run("2c. Image to text, your turn", added="in a different country each time")
 run("Your summary")
 time.sleep(15)  # let background uploads finish
 print("done")
