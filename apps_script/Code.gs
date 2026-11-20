@@ -7,6 +7,13 @@ const HEADER = ['time', 'session', 'run', 'part', 'modality', 'scene', 'target',
                 'prompt', 'question / instruction', 'labels', 'guessed origin', 'outputs',
                 'image folder', 'image links'];
 
+// Run this once from the editor to grant permissions and create the sheet and folder.
+function setup() {
+  getSheet_();
+  getRunFolder_('setup-test', 'test');
+}
+
+// Called by the notebook. Do not run this from the editor.
 function doPost(e) {
   const lock = LockService.getScriptLock();
   lock.waitLock(30000);
@@ -57,10 +64,4 @@ function getRunFolder_(session, run) {
   const it = root.getFoldersByName(session);
   const sessionFolder = it.hasNext() ? it.next() : root.createFolder(session);
   return sessionFolder.createFolder(run);
-}
-
-// Run this once from the editor to grant permissions and create the sheet and folder.
-function setup() {
-  getSheet_();
-  getRunFolder_('setup-test', 'test');
 }
