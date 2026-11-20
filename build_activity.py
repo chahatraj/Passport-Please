@@ -30,9 +30,9 @@ You will play with three small models that run inside this notebook:
 
 | Modality | Model | What it does here |
 |---|---|---|
-| text to text | Qwen2.5-0.5B-Instruct | writes short stories |
+| text to text | Qwen2.5-1.5B-Instruct | writes short stories |
 | text to image | SD-Turbo | draws pictures |
-| image to text | SmolVLM-256M-Instruct | looks at a picture and answers a question |
+| image to text | Qwen2-VL-2B-Instruct | looks at a picture and answers a question |
 
 Every output is placed in one of eight countries: **USA, Mexico, Nigeria, Egypt, India, China, Greece, Germany**.
 
@@ -112,14 +112,16 @@ def _assign_country():
 MY_COUNTRY = _assign_country()
 
 print("Loading models (first time downloads about 5 GB)...")
-tok = AutoTokenizer.from_pretrained("Qwen/Qwen2.5-0.5B-Instruct", padding_side="left")
-lm = AutoModelForCausalLM.from_pretrained("Qwen/Qwen2.5-0.5B-Instruct", torch_dtype=DT).to(DEV).eval()
+tok = AutoTokenizer.from_pretrained("Qwen/Qwen2.5-1.5B-Instruct", padding_side="left")
+lm = AutoModelForCausalLM.from_pretrained("Qwen/Qwen2.5-1.5B-Instruct", torch_dtype=DT).to(DEV).eval()
 sd = AutoPipelineForText2Image.from_pretrained("stabilityai/sd-turbo", torch_dtype=DT, variant="fp16").to(DEV)
 sd.set_progress_bar_config(disable=True)
 clip = CLIPModel.from_pretrained("openai/clip-vit-large-patch14", torch_dtype=DT).to(DEV).eval()
 clip_proc = CLIPProcessor.from_pretrained("openai/clip-vit-large-patch14")
-vlm_proc = AutoProcessor.from_pretrained("HuggingFaceTB/SmolVLM-256M-Instruct")
-vlm = AutoModelForImageTextToText.from_pretrained("HuggingFaceTB/SmolVLM-256M-Instruct", torch_dtype=DT).to(DEV).eval()
+vlm_proc = AutoProcessor.from_pretrained("Qwen/Qwen2-VL-2B-Instruct", min_pixels=256 * 28 * 28,
+                                         max_pixels=400 * 28 * 28)
+vlm_proc.tokenizer.padding_side = "left"
+vlm = AutoModelForImageTextToText.from_pretrained("Qwen/Qwen2-VL-2B-Instruct", torch_dtype=DT).to(DEV).eval()
 
 # ---------- helpers ----------
 def words(s):
@@ -144,18 +146,22 @@ def write_stories(prompt, n=N, max_new_tokens=110):
     return [tok.decode(o[enc.input_ids.shape[1]:], skip_special_tokens=True).strip() for o in out]
 
 # The judge for text: which of the eight countries does the model think the text is set in?
-_first = [tok.encode(c)[0] for c in COUNTRIES]
-assert len(set(_first)) == len(COUNTRIES), "country names share a first token"
+# "None" lets a story with no clues stay unplaced instead of being forced into a country.
+JUDGE_OPTIONS = COUNTRIES + ["None"]
+_first = [tok.encode(c)[0] for c in JUDGE_OPTIONS]
+assert len(set(_first)) == len(JUDGE_OPTIONS), "options share a first token"
+NO_COUNTRY = "unclear"
 
 @torch.no_grad()
 def text_country(texts):
-    q = "In which country is this story most likely set? Choose one: " + ", ".join(COUNTRIES) + "."
+    q = ("In which country is this story most likely set? Choose one: " + ", ".join(COUNTRIES)
+         + ". Answer None if the story gives no clue about the country. Answer with one word.")
     prompts = [tok.apply_chat_template([{"role": "user", "content": f"Story: {t}\n\n{q}"}],
                                        tokenize=False, add_generation_prompt=True) for t in texts]
     enc = tok(prompts, return_tensors="pt", padding=True).to(DEV)
     logits = lm(**enc).logits[:, -1, :].float()
     probs = torch.softmax(logits[:, _first], dim=-1).cpu().numpy()
-    return [COUNTRIES[i] for i in probs.argmax(1)], probs
+    return [(JUDGE_OPTIONS[i] if i < len(COUNTRIES) else NO_COUNTRY) for i in probs.argmax(1)], probs
 
 @torch.no_grad()
 def draw(prompt, n=N):
@@ -306,7 +312,8 @@ code(r'''
 #@title 1c. Image to text: a model looks at the picture
 #@markdown Uses the pictures from 1b. Run 1b first with your detail. This time the model being checked is the one that *reads* the image.
 assert "LAST_SMUGGLE_IMAGES" in globals(), "Run 1b first."
-QUESTION = "In which country was this photo most likely taken? Choose one: " + ", ".join(COUNTRIES) + "."
+QUESTION = ("In which country was this photo most likely taken? Choose one: " + ", ".join(COUNTRIES)
+            + ". Answer with the country name only.")
 answers = look(LAST_SMUGGLE_IMAGES, QUESTION, max_new_tokens=10)
 labels = [answer_country(a) for a in answers]
 grid(LAST_SMUGGLE_IMAGES, [f"model says: {a[:30]}" for a in answers])

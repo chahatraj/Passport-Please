@@ -1,0 +1,816 @@
+[
+ {
+  "step": "Setup_run_once_takes_",
+  "seconds": 86.8,
+  "params": {},
+  "labels": null,
+  "outputs": null,
+  "guessed": null,
+  "target": null,
+  "prompt": null,
+  "instruction": null
+ },
+ {
+  "step": "1a_Text_to_text_a_sh_afamilybreak_",
+  "seconds": 4.2,
+  "params": {
+   "scene": "a family breakfast",
+   "detail": ""
+  },
+  "labels": [
+   "USA",
+   "USA",
+   "India",
+   "USA",
+   "USA",
+   "USA",
+   "USA",
+   "USA"
+  ],
+  "outputs": [
+   "Sarah woke up early to start the day's routine with her family. As they sat down for breakfast, Sarah shared stories of their adventures from the night before and listened as others recounted theirs. The conversation flowed easily, filled with laughter and warmth as everyone gathered around the table together. Each dish was accompanied by genuine expressions of love and gratitude, creating an unbreakable bond between them. The aroma of freshly brewed coffee mingled with the savory scent of pancakes on the stove, transporting each person back to childhood memories and making the morning feel extra special.",
+   "Sarah woke up early to make her family's favorite pancakes for Sunday morning breakfast. She followed the recipe carefully and was surprised when she discovered that the batter had risen unexpectedly high in the pan. Sarah couldn't stop smiling as she watched her children enjoy their fluffy creations with syrup and whipped cream. The whole family spent the day together around their cozy table, savoring the warmth of each other's company and the delicious aroma of freshly baked goods. It was one of those rare moments where all responsibilities faded into the background as they cherished this simple yet meaningful",
+   "The morning light streamed through the kitchen window as the Sams assembled for their daily meal. With smiles and greetings, they gathered around the table to enjoy toast, eggs, and fresh fruit \u2014 memories of old times intermingled with hopes for tomorrow's adventures.",
+   "In the early morning light filtering through the curtains, Sarah stirred in bed, her eyes still heavy from sleep. As she rose and made her way to the kitchen, John called after her, \"Good morning! Breakfast is almost ready.\" In their cozy home, they shared stories over steaming coffee and fluffy pancakes, creating memories that would last a lifetime.",
+   "In the morning light filtering through the curtains, a warm aroma wafted from the kitchen\u2014bread baked fresh and coffee brewed to perfection. The family gathered around the table, each member sharing stories of their day as they enjoyed their special meal together. A new book lay open before one elder, while another sibling listened with rapt attention, adding their own experiences and insights. Outside, the world was still dreaming as they sipped on steaming mugs and savored the simple pleasures of home.",
+   "In the warm light of dawn, Mrs. Thompson's kitchen buzzed with life as children and adults alike prepared for their day ahead. Eggs were whisked to perfection while bacon sizzled under the hot skillet. The aroma filled the house, setting the tone for a new chapter in their lives together.",
+   "In the early morning light of a quiet suburban house, Emma and Jack gathered for their daily breakfast: coffee on a saucer from an old teapot passed down through generations, toast with butter, and jam spread generously onto English muffins. Their teenage daughter Lily joined them, her nose buried in a book, while their son Tim sat quietly, his gaze fixed on his plate. As they ate together, the warmth and love within their home radiated outward, filling the room with happiness and contentment.",
+   "Sarah woke up to the smell of her favorite pancakes cooking on the stove. Her husband, John, entered with coffee in hand, and they shared their first morning together as a married couple. Their children, Emily and Jack, arrived from school, eager for breakfast after a long day of schoolwork. The family sat down at the dining table, laughter filling the room as they enjoyed their food and caught up on each other's lives. A perfect start to another busy but fulfilling day."
+  ],
+  "guessed": null,
+  "target": "Nigeria",
+  "prompt": "Write a short story about a family breakfast.",
+  "instruction": null
+ },
+ {
+  "step": "1a_Text_to_text_a_sh_afamilybreak_jollofrice",
+  "seconds": 2.8,
+  "params": {
+   "scene": "a family breakfast",
+   "detail": "jollof rice"
+  },
+  "labels": [
+   "Nigeria",
+   "Nigeria",
+   "Nigeria",
+   "Nigeria",
+   "India",
+   "Mexico",
+   "Nigeria",
+   "Nigeria"
+  ],
+  "outputs": [
+   "In the quiet morning light, the Smiths gathered around the old table in their modest house. Each had eyes fixed on the plate where their beloved Jollof Rice awaited. The aroma was familiar but not as strong today \u2013 perhaps it was the absence of salt that made it so special to them. They sat and talked, memories of childhood meals intertwined with current discussions, each dish tasting like home.",
+   "Mama poured the hot sauce over cooked tomatoes, onions, and kidney beans in a bowl. Nana stirred in some spices before ladling into three plates for Papa, Mama, and Baby. The aroma filled the kitchen as they sat around the table to share their day's activities. With smiles on every face, everyone agreed it was the yummiest jollof rice ever made!",
+   "The morning light streamed through the kitchen window as the Samsu family gathered around the table for their weekly Saturday tradition of breakfast. Papa sat down to mix the spices and flour for his favorite dish - Jollof Rice. Mama added water and tomatoes while their two children watched intently. \"Can you smell it?\" asked Mami. The aroma filled the room, wafting over from the simmering pot on the stove. With a big smile, Papa ladled some onto three plates for each member, along with slices of roasted chicken and",
+   "In the early morning light filtering through the kitchen window, Mrs. Ogunbiyi stirred gently to prepare for another day of life in Lagos. The aroma of her specialty, jollof rice from home, filled the air as she began chopping onions and stirring ground pepper into hot oil. Her husband, Niyi, who had just woken up, joined her soon after. Children rushed into the kitchen, their eyes lighting up at the sight of the steaming bowl of fragrant jollof rice, each eager to dig in. Together",
+   "In the warm glow of early morning light, Mama pulled the old wooden table out from under her bed and set it on the kitchen floor, where little Nana sat reading quietly while Papa worked in the workshop. The aroma wafted through the room\u2014a savory sizzle as Mama scrambled eggs. Soon after, Papa began his bread dough into loaves and he and Mama prepared the Sunday roast before they joined for an hourlong chat around the table with their young children, laughing together over plates piled high with dishes such as fish curry, fried rice,",
+   "In the warm kitchen of Mama's house, sunlight filtered through the window, casting its golden glow on freshly prepared plates stacked neatly before her. Her son, eager to see what she'd made, hurriedly sat down. The smell of cooking wafted into his nostrils - it was like heaven itself.\n\nMama saut\u00e9ed onions and tomatoes in aromatic spices, adding ground pepper and salt until they turned a vibrant shade of gold. Meanwhile, her daughter stirred together a pot of tomato soup that bubbled gently as she spoke about plans for",
+   "In the warm kitchen of their modest home, Mama and Papa set the table for their Sunday brunch: steaming cups of tea and fragrant plates laden with jollof rice - Mama's secret recipe passed down through generations. The aroma wafted invitingly across the room as children gathered around to relish each bite. A bowl of soft-boiled eggs sat alongside, completing the meal that brought everyone closer together every Sunday morning.",
+   "Sarah and her husband greeted each other as they sat down for their daily family breakfast. They shared stories of the day while Sarah's mother-in-law served up steaming bowls of flavorful Jollof Rice. As they ate, laughter filled the room, bringing joy to all present. This simple yet delicious meal brought everyone closer together in harmony."
+  ],
+  "guessed": null,
+  "target": "Nigeria",
+  "prompt": "Write a short story about a family breakfast with jollof rice.",
+  "instruction": null
+ },
+ {
+  "step": "1a_Text_to_text_a_sh_afamilybreak_anameChinedu",
+  "seconds": 2.8,
+  "params": {
+   "scene": "a family breakfast",
+   "detail": "a name Chinedu"
+  },
+  "labels": [
+   "Nigeria",
+   "Nigeria",
+   "Nigeria",
+   "Nigeria",
+   "Nigeria",
+   "Nigeria",
+   "Nigeria",
+   "Nigeria"
+  ],
+  "outputs": [
+   "Chinedu woke up to the sweet aroma of pancakes and coffee, his mom's face lit up as she greeted him with a kiss on his forehead. The sun was still low in the sky but he knew it would be time for breakfast soon. They sat together around the table, talking about their plans for the day and sharing stories from yesterday.\n\nAs they enjoyed the food, Chinedu felt grateful for this simple moment shared with his loving family. They may have different backgrounds and experiences but there was an undeniable connection that brought them closer every morning",
+   "Chinedu woke up early, feeling the excitement of a new day. He sat down at his parents' breakfast table and started to eat. His father was reading the newspaper, while his mother was stirring the pot. They talked about their days, laughing and sharing stories. As they finished eating, they looked out the window to see the sunrise painting the sky in beautiful shades of orange and pink. This simple breakfast became the highlight of their week, a moment where all worries melted away as they sipped coffee and enjoyed each other's company.",
+   "Chinedu woke up early to prepare his parents' favorite dish for breakfast. As he cooked, he reminisced about the times they spent together before their busy lives took over. By the time it was ready, everyone sat down to enjoy the homemade pancakes and scrambled eggs. The aroma filled the kitchen, and laughter rang through the house as memories were shared around the table. This simple yet meaningful morning brought them closer together once again.",
+   "Chinedu was a man of few words but full of love. This morning, he sat down at his dining table to prepare for the day's meals when he noticed that his wife had placed a beautifully wrapped present on the plate next to their usual meal. It was clear that something special awaited them, and as they ate their breakfast together, Chinedu realized it was his birthday. The rest of the family joined in singing him happy birthday while enjoying the thoughtfulness of their parents' gesture. The bond between family members became stronger than ever during",
+   "Chinedu woke up early to prepare for his mother's cooking. As he helped chop vegetables and scrambled eggs, they discussed their day ahead. The aroma of simmering rice drew them all in, leading them to sit together on the porch under the morning sun, enjoying this simple yet profound moment of family connection. Chinedu felt grateful for this precious time, reminding him always to cherish such moments in life.",
+   "Chinedu woke up early, his mother's aroma wafting through the house. As he sipped coffee and ate his eggs, they caught their reflection in the kitchen mirror\u2014father, mother, daughter, son\u2014in the midst of their morning routine. A day was beginning, but first, they would start life anew as one large, warm nest under the sun.",
+   "Chinedu woke up to the sound of his alarm clock blaring in the early morning silence. He stretched and rubbed his eyes before looking at the messy bed he'd shared with his mother last night. Breakfast was ready; eggs sunny-side up, toast, and a glass of orange juice waiting for him. As they sat down together, chatting over their food, Chinedu felt grateful for this simple meal that brought everyone closer.",
+   "Chinedu woke up early, feeling excited and ready for the day ahead. His parents had made him pancakes and bacon on this special morning, and they were all sitting around the table together, sharing stories of their days.\n\nAs they ate, Chinedu could hear his father's voice on the phone, discussing something important with his business partner. Despite the interruption, he couldn't help but feel grateful for the warmth and comfort that came from their family breakfast every morning."
+  ],
+  "guessed": null,
+  "target": "Nigeria",
+  "prompt": "Write a short story about a family breakfast with a name Chinedu.",
+  "instruction": null
+ },
+ {
+  "step": "1a_Text_to_text_a_sh_aweddingday_",
+  "seconds": 2.8,
+  "params": {
+   "scene": "a wedding day",
+   "detail": ""
+  },
+  "labels": [
+   "USA",
+   "USA",
+   "USA",
+   "USA",
+   "USA",
+   "USA",
+   "USA",
+   "USA"
+  ],
+  "outputs": [
+   "Sarah had always dreamed of getting married on her favorite beach. On the big day, as she walked down the aisle surrounded by family and friends, the sun shone brightly, reflecting off the crystal-clear water. The sound of waves gently lapping against the shore was the perfect soundtrack to their love story. Sarah and John exchanged vows with heartfelt promises to cherish each other for life. As they said \"I do,\" the ocean waves seemed to whisper their blessing. The newlyweds stepped into their future together, ready to build a lifetime filled with memories",
+   "On the crisp autumn morning of their wedding day, Emily and Jake strolled down the aisle in their matching gowns and suits. The church was filled with friends and family who had gathered to celebrate their love. As they walked up the steps, thunderous applause broke out from all directions, signaling the start of an emotional journey. With each step closer to the altar, their happiness grew more palpable until they stood together under the chuppah, ready to begin life together forevermore.",
+   "The sun was shining brightly on the wedding day as Emily and John exchanged vows in their family's grand church. With tears of joy streaming down their faces, they kissed promising to love each other for all eternity. As they walked down the aisle, their loved ones cheered from the pews, congratulating them on this beautiful day that would forever be etched in their hearts.",
+   "On the crisp autumn morning in September, Sarah and John strolled through the orchard of their hometown, surrounded by vibrant leaves turning shades of orange and yellow. The wind carried sweet scents of apple blossoms, setting the stage for their dreamy wedding. Their families gathered, sharing laughter and tears as they prepared to witness their love's journey unfold on that special day filled with joy and promises unbreakable. Sarah wore an ivory gown adorned with intricate lace roses, while John chose a navy tuxedo, both symbolizing enduring strength and purity",
+   "Eva had dreamed of this moment for years. Finally the big day arrived, she and John walked down the aisle, surrounded by family and friends. As they exchanged vows, the sun shone on their faces, symbolizing hope and promise. The ceremony was joyous as everyone cheered for them to get married. They celebrated with laughter, tears, and a smile that could light up the entire world. Evie knew John loved her forever, but there would always be something new to learn in life together. She cherished each precious second they were together",
+   "Sarah and John had planned their dream wedding for years. The morning of the ceremony arrived, and they were filled with excitement. As the couple walked down the aisle, friends and family cheered them on. The vows were exchanged eloquently, and then they celebrated with delicious food and wine while dancing under twinkling lights. The love between Sarah and John shone bright as they made their special day memorable forever.",
+   "On the warmest summer day ever, Sarah and Jack exchanged vows in the lush gardens of their family estate. The sun rose from behind the mountains, painting the sky with hues of pink and gold. Their guests, smiling and dancing under the canopy of leaves, celebrated their love through laughter and tears of joy. As they embraced after the ceremony, the wind whispered promises to last until forever, leaving them breathless with happiness for eternity.",
+   "Sarah had been dreaming of her dream wedding for years. Finally the day arrived and she woke up to find herself surrounded by loved ones. The ceremony was beautiful with heartfelt speeches from both families. After exchanging vows in front of their godparents, they danced under the stars until dawn broke. They hugged each other tightly as they promised to love one another always. The end."
+  ],
+  "guessed": null,
+  "target": "Nigeria",
+  "prompt": "Write a short story about a wedding day.",
+  "instruction": null
+ },
+ {
+  "step": "1a_Text_to_text_a_sh_aweddingday_jollofrice",
+  "seconds": 2.9,
+  "params": {
+   "scene": "a wedding day",
+   "detail": "jollof rice"
+  },
+  "labels": [
+   "Nigeria",
+   "USA",
+   "Nigeria",
+   "Nigeria",
+   "Nigeria",
+   "Nigeria",
+   "Nigeria",
+   "Nigeria"
+  ],
+  "outputs": [
+   "Sarah had always dreamed of getting married in her hometown of Accra, Ghana. The day finally arrived as Sarah's family and friends gathered to celebrate their union. To honor the occasion, they prepared traditional Jollof Rice \u2013 a flavorful stew made from yellow rice cooked in tomato sauce infused with spices like cayenne pepper and garlic. Sarah couldn't help but feel overwhelmed with emotion as she sipped on a freshly brewed local beer, while her father sprinkled some red pepper powder across the table as a symbolic gesture for the journey ahead. The moment",
+   "On the crisp autumn morning of their wedding, Sarah and James sat on a cozy porch, sipping tea and chatting as they prepared for what would be an unforgettable moment - the day that brought them together forever. The sun shone brightly, casting a warm glow over their garden oasis, where they planned to host a small but intimate ceremony. As Sarah knelt down in front of her gown, a beautiful white dress embroidered with roses, she whispered, \"James, I promise to love you more than anything else.\" A bouquet of fragrant flowers surrounded",
+   "The sun was shining brightly on the wedding day as Maria and John exchanged vows in their grand home. After the ceremony, they decided to have Jollof Rice for dinner. The family gathered around the table, savoring every bite of the fragrant rice cooked with tomato sauce and spices. As they savored the flavors, they shared laughter and stories from their pasts, creating memories that would last forever.",
+   "On the crisp September morning in Accra, Ghana, Mrs. Alice Nartey and Mr. Edward Okyere prepared for their grand wedding ceremony amidst the bustling streets of Koforidua. Amidst a whirlwind of floral arrangements and African textiles, they sat down to taste one of her favorite dishes \u2013 Jollof Rice. As she spooned the fragrant rice into his mouth, both exchanged vows promising love, unity, and a lifetime of delicious meals together. Their hands intertwined as the bell rang, marking the beginning of a",
+   "On that warm summer day, amidst the vibrant colors and laughter of her family, Sarah found herself standing under an overcast sky as she bid farewell to her soon-to-be husband. The air was thick with anticipation and excitement, carrying the promise of their future together. As they walked down the aisle, surrounded by their loved ones, Sarah couldn't help but taste the fragrant aroma wafting from the table - it was jollof rice, cooked ala carte and perfect for any celebration. A sweet melody began playing softly, marking the start",
+   "In the quaint village of Eldoradaville, where sunflowers danced in the golden fields and ancient willows whispered secrets to passing travelers, stood the couple, John and Maria. On this extraordinary day, under a canopy of stars that seemed to twinkle more brilliantly than usual, they planned for a traditional British meal - roast beef accompanied by Yorkshire pudding for John's grandmother, who never grew tired of it. For Maria, there was no better dish to celebrate their love than jollof rice from her homeland.\n\nAs the first rays of sunrise",
+   "On the warm, humid day of their marriage ceremony, Emma and Jack chose Jollof Rice as their special dish for their first meal together after tying the knot. The aroma filled the air, promising a feast fit for royalty. As they sat down to eat, the joy in their eyes mirrored the colors on their plates \u2013 vibrant reds, oranges, and greens from their choice of spices, complementing the delicate flavors of tomatoes, onions, and meat simmered in this traditional West African delicacy. Together, they savored every bite, symbol",
+   "Sarah and John's wedding ceremony was as picturesque as the Jollof Rice dish they ordered for their reception table. The vibrant red color of the rice contrasted beautifully against the white tablecloth and elegant silverware, symbolizing love's richness and diversity. As Sarah cut into her plate, she savored each bite, feeling grateful for this special day filled with laughter, joy, and love in every flavor of that aromatic Jollof Rice."
+  ],
+  "guessed": null,
+  "target": "Nigeria",
+  "prompt": "Write a short story about a wedding day with jollof rice.",
+  "instruction": null
+ },
+ {
+  "step": "1a_Text_to_text_a_sh_aweddingday_anameChinedu",
+  "seconds": 2.8,
+  "params": {
+   "scene": "a wedding day",
+   "detail": "a name Chinedu"
+  },
+  "labels": [
+   "Nigeria",
+   "Nigeria",
+   "Nigeria",
+   "Nigeria",
+   "Nigeria",
+   "Nigeria",
+   "Nigeria",
+   "Nigeria"
+  ],
+  "outputs": [
+   "Chinedu had been dreaming of this moment since high school. On the day of his wedding to Emily, he woke up feeling nervous but excited. The ceremony was beautiful, filled with music and laughter. After the vows, they exchanged rings as their families celebrated from the wings. As the sun set behind them, hand in hand, Chinedu knew that this was truly a love story worth celebrating forever.",
+   "Chinedu had planned the perfect wedding for himself and his beloved wife. The day arrived on their wedding day as beautiful as they had hoped. With tears in his eyes, he walked down the aisle to the love of his life, her hand in his, as their friends and family cheered them on. They exchanged vows under the stars and cut a cake that would live on forever. As night fell, they danced under the moonlight, promising to make each other's dreams come true. It was a celebration that Chinedu would never forget.",
+   "Chinedu was nervous but excited on his wedding day. He had planned everything meticulously for this special event. On the big day, he stood before his family and friends, surrounded by love and happiness. The ceremony was beautiful as they exchanged vows, danced under the starlit sky, and sealed their commitment forever. It was a day that Chinedu would never forget - full of joy, tears, laughter, and the promise to be together until death does us part.",
+   "Chinedu was nervous as he walked down the aisle on his wedding day. His bride, Sarah, beamed at him with love in her eyes. They had chosen the cherry blossoms to decorate their reception, and the soft pink petals cascaded over the tables as they exchanged vows. As the newlyweds stood under the cherry blossom tree, a gentle breeze carried the sweet scent of spring into their hearts. The sun set behind them, painting a beautiful picture against the horizon. Their day was filled with laughter and tears, but they knew it",
+   "Chinedu had always dreamed of getting married to his soulmate. The morning of the wedding was filled with excitement and anticipation as he bid farewell to his family members who were also there for support. As they walked down the aisle, surrounded by their friends and relatives, both Chinedu and his bride-to-be felt an overwhelming sense of joy and love. They exchanged promises of happiness and devotion, promising to cherish each other through thick and thin. The ceremony ended with a traditional Nigerian blessing, leaving everyone feeling blessed beyond measure. The reception was equally",
+   "Chinedu was nervous as he walked down the aisle on his wedding day. He had prepared for this moment all week but still felt butterflies in his stomach. The love and joy of his best friend celebrating their marriage made him feel happy and secure. As he saw his bride standing before him, ready to embark on life together, it became clear that Chinedu's nerves were justified. Their love is strong enough to overcome any fear or doubt.",
+   "Chinedu, the young bride-to-be, stood beside her father in their family's ancestral temple. The air was thick with anticipation as they prepared to welcome Chinedu into the next chapter of her life. Her best friend walked her down the aisle, tears streaming down her face from joy and nervousness. As the officiant pronounced them man and wife, Chinedu felt an overwhelming sense of love and happiness fill her heart. With each step forward on that historic night, she knew this moment would forever change her life.",
+   "Chinedu's wedding day arrived as he stood before the church doors. The ceremony began with his parents and family members surrounding him. The officiant declared them man and wife, their love sealed forever in an exchange of vows and rings. As they walked down the aisle hand-in-hand under a starry blue sky, tears of joy streamed down both sides. The moment was one they would cherish for the rest of their lives."
+  ],
+  "guessed": null,
+  "target": "Nigeria",
+  "prompt": "Write a short story about a wedding day with a name Chinedu.",
+  "instruction": null
+ },
+ {
+  "step": "1b_Text_to_image_a_p_afamilybreak_",
+  "seconds": 2.8,
+  "params": {
+   "scene": "a family breakfast",
+   "detail": ""
+  },
+  "labels": [
+   "Germany",
+   "USA",
+   "Germany",
+   "Germany",
+   "Germany",
+   "USA",
+   "Germany",
+   "China"
+  ],
+  "outputs": null,
+  "guessed": null,
+  "target": "Nigeria",
+  "prompt": "a photo of a family breakfast",
+  "instruction": null
+ },
+ {
+  "step": "1c_Image_to_text_a_m_",
+  "seconds": 2.7,
+  "params": {},
+  "labels": [
+   "Egypt",
+   "Mexico",
+   "India",
+   "Mexico",
+   "Mexico",
+   "Mexico",
+   "Mexico",
+   "Egypt"
+  ],
+  "outputs": [
+   "Egypt",
+   "Mexico",
+   "India",
+   "Mexico",
+   "Mexico",
+   "Mexico",
+   "Mexico",
+   "Egypt"
+  ],
+  "guessed": null,
+  "target": "Nigeria",
+  "prompt": null,
+  "instruction": null
+ },
+ {
+  "step": "1b_Text_to_image_a_p_afamilybreak_jollofrice",
+  "seconds": 1.7,
+  "params": {
+   "scene": "a family breakfast",
+   "detail": "jollof rice"
+  },
+  "labels": [
+   "Nigeria",
+   "Nigeria",
+   "Nigeria",
+   "Nigeria",
+   "Nigeria",
+   "India",
+   "Nigeria",
+   "Nigeria"
+  ],
+  "outputs": null,
+  "guessed": null,
+  "target": "Nigeria",
+  "prompt": "a photo of a family breakfast, jollof rice",
+  "instruction": null
+ },
+ {
+  "step": "1c_Image_to_text_a_m_",
+  "seconds": 1.7,
+  "params": {},
+  "labels": [
+   "Mexico",
+   "Mexico",
+   "Mexico",
+   "Nigeria",
+   "Mexico",
+   "Mexico",
+   "Mexico",
+   "Nigeria"
+  ],
+  "outputs": [
+   "Mexico",
+   "Mexico",
+   "Mexico",
+   "Nigeria",
+   "Mexico",
+   "Mexico",
+   "Mexico",
+   "Nigeria"
+  ],
+  "guessed": null,
+  "target": "Nigeria",
+  "prompt": null,
+  "instruction": null
+ },
+ {
+  "step": "1b_Text_to_image_a_p_awedding_",
+  "seconds": 1.7,
+  "params": {
+   "scene": "a wedding",
+   "detail": ""
+  },
+  "labels": [
+   "Germany",
+   "Germany",
+   "Mexico",
+   "Germany",
+   "Germany",
+   "USA",
+   "USA",
+   "Germany"
+  ],
+  "outputs": null,
+  "guessed": null,
+  "target": "Nigeria",
+  "prompt": "a photo of a wedding",
+  "instruction": null
+ },
+ {
+  "step": "1c_Image_to_text_a_m_",
+  "seconds": 1.7,
+  "params": {},
+  "labels": [
+   "Germany",
+   "Germany",
+   "Egypt",
+   "Egypt",
+   "Greece",
+   "Egypt",
+   "Egypt",
+   "USA"
+  ],
+  "outputs": [
+   "Germany",
+   "Germany",
+   "Egypt",
+   "Egypt",
+   "Greece",
+   "Egypt",
+   "Egypt",
+   "USA"
+  ],
+  "guessed": null,
+  "target": "Nigeria",
+  "prompt": null,
+  "instruction": null
+ },
+ {
+  "step": "1b_Text_to_image_a_p_awedding_jollofrice",
+  "seconds": 1.9,
+  "params": {
+   "scene": "a wedding",
+   "detail": "jollof rice"
+  },
+  "labels": [
+   "India",
+   "India",
+   "India",
+   "India",
+   "India",
+   "India",
+   "Nigeria",
+   "India"
+  ],
+  "outputs": null,
+  "guessed": null,
+  "target": "Nigeria",
+  "prompt": "a photo of a wedding, jollof rice",
+  "instruction": null
+ },
+ {
+  "step": "1c_Image_to_text_a_m_",
+  "seconds": 1.6,
+  "params": {},
+  "labels": [
+   "Mexico",
+   "Mexico",
+   "Mexico",
+   "Mexico",
+   "Mexico",
+   "Mexico",
+   "Mexico",
+   "Mexico"
+  ],
+  "outputs": [
+   "Mexico",
+   "Mexico",
+   "Mexico",
+   "Mexico",
+   "Mexico",
+   "Mexico",
+   "Mexico",
+   "Mexico"
+  ],
+  "guessed": null,
+  "target": "Nigeria",
+  "prompt": null,
+  "instruction": null
+ },
+ {
+  "step": "2a_Text_to_text_aweddingday_",
+  "seconds": 2.8,
+  "params": {
+   "scene": "a wedding day",
+   "added": ""
+  },
+  "labels": [
+   "USA",
+   "USA",
+   "USA",
+   "USA",
+   "USA",
+   "USA",
+   "USA",
+   "USA"
+  ],
+  "outputs": [
+   "Sarah had always dreamed of getting married on her favorite beach. On the big day, as she walked down the aisle surrounded by family and friends, the sun shone brightly, reflecting off the crystal-clear water. The sound of waves gently lapping against the shore was the perfect soundtrack to their love story. Sarah and John exchanged vows with heartfelt promises to cherish each other for life. As they said \"I do,\" the ocean waves seemed to whisper their blessing. The newlyweds stepped into their future together, ready to build a lifetime filled with memories",
+   "On the crisp autumn morning of their wedding day, Emily and Jake strolled down the aisle in their matching gowns and suits. The church was filled with friends and family who had gathered to celebrate their love. As they walked up the steps, thunderous applause broke out from all directions, signaling the start of an emotional journey. With each step closer to the altar, their happiness grew more palpable until they stood together under the chuppah, ready to begin life together forevermore.",
+   "The sun was shining brightly on the wedding day as Emily and John exchanged vows in their family's grand church. With tears of joy streaming down their faces, they kissed promising to love each other for all eternity. As they walked down the aisle, their loved ones cheered from the pews, congratulating them on this beautiful day that would forever be etched in their hearts.",
+   "On the crisp autumn morning in September, Sarah and John strolled through the orchard of their hometown, surrounded by vibrant leaves turning shades of orange and yellow. The wind carried sweet scents of apple blossoms, setting the stage for their dreamy wedding. Their families gathered, sharing laughter and tears as they prepared to witness their love's journey unfold on that special day filled with joy and promises unbreakable. Sarah wore an ivory gown adorned with intricate lace roses, while John chose a navy tuxedo, both symbolizing enduring strength and purity",
+   "Eva had dreamed of this moment for years. Finally the big day arrived, she and John walked down the aisle, surrounded by family and friends. As they exchanged vows, the sun shone on their faces, symbolizing hope and promise. The ceremony was joyous as everyone cheered for them to get married. They celebrated with laughter, tears, and a smile that could light up the entire world. Evie knew John loved her forever, but there would always be something new to learn in life together. She cherished each precious second they were together",
+   "Sarah and John had planned their dream wedding for years. The morning of the ceremony arrived, and they were filled with excitement. As the couple walked down the aisle, friends and family cheered them on. The vows were exchanged eloquently, and then they celebrated with delicious food and wine while dancing under twinkling lights. The love between Sarah and John shone bright as they made their special day memorable forever.",
+   "On the warmest summer day ever, Sarah and Jack exchanged vows in the lush gardens of their family estate. The sun rose from behind the mountains, painting the sky with hues of pink and gold. Their guests, smiling and dancing under the canopy of leaves, celebrated their love through laughter and tears of joy. As they embraced after the ceremony, the wind whispered promises to last until forever, leaving them breathless with happiness for eternity.",
+   "Sarah had been dreaming of her dream wedding for years. Finally the day arrived and she woke up to find herself surrounded by loved ones. The ceremony was beautiful with heartfelt speeches from both families. After exchanging vows in front of their godparents, they danced under the stars until dawn broke. They hugged each other tightly as they promised to love one another always. The end."
+  ],
+  "guessed": null,
+  "target": null,
+  "prompt": "Write a short story about a wedding day.",
+  "instruction": null
+ },
+ {
+  "step": "2a_Text_to_text_aweddingday_Setitanywher",
+  "seconds": 2.9,
+  "params": {
+   "scene": "a wedding day",
+   "added": "Set it anywhere in the world."
+  },
+  "labels": [
+   "Mexico",
+   "USA",
+   "Greece",
+   "Greece",
+   "USA",
+   "USA",
+   "Greece",
+   "USA"
+  ],
+  "outputs": [
+   "Sarah had always dreamed of getting married on her dreamy tropical island, where the palm trees swayed gently and the beach sparkled under golden sunlight. The ceremony took place overlooking the azure sea as they exchanged vows surrounded by their close friends and family. Their love was so pure and true that even after all these years, it still felt brand new \u2013 like the first kiss between two stars who'd never let go. As they said \"I do,\" Sarah saw in his eyes the same sparkle she had just received from her own heart, promising to be",
+   "On the crisp autumn morning of their wedding day, Emily and Jake strolled down the picturesque village streets, surrounded by laughter and joyous chatter from their guests. The air was filled with anticipation as they approached the grand church where their dreams had been planned for years. As they exchanged vows under the ancient oak tree adorned with white roses, the sun began to dip below the horizon, painting the sky in hues of orange and pink before finally setting behind the mountains. With hands intertwined, Emily looked up into Jake's smiling eyes, feeling an overwhelming sense of",
+   "The sun was shining brightly on their wedding day as John and Sarah exchanged vows under an ornate chateau overlooking the rolling hills of Provence. Their love had been strong since the moment they met, but today would be their true declaration. As they walked down the aisle holding hands, guests clapped and cheered for this beautiful union. They promised to love each other always and forevermore, surrounded by laughter, joy, and memories that would last a lifetime.",
+   "In a quaint village nestled in the mountains of Italy, under a canopy of ancient olive trees, Sarah and Giovanni planned their perfect marriage ceremony. Their love story began online but blossomed on this special day amidst breathtaking views that mirrored their heartfelt vows. As they exchanged rings, surrounded by family and friends who couldn't contain their joy, nature's beauty served as a silent witness to their eternal commitment. The sound of music from a nearby vineyard filled the air with laughter and happiness for days after.",
+   "She looked up at her reflection in the mirror and smiled. The air was crisp with autumn leaves swirling around them. Her dress was elegant, adorned with delicate flowers that shimmered under the golden light of sunset. She wore a smile as wide as the ocean, knowing today was the day she would finally marry the love of her life. As they walked down the aisle to their vows, the wind whispered secrets in her ear, promising a lifetime filled with love and adventure ahead.",
+   "In the quaint village of Willowbrook, where ancient oaks whispered secrets and cobblestone streets led to hidden nooks, Elara stood under the willow trees with her best friend, Lila. As dawn broke over the rolling hills, they exchanged vows that echoed through time, promising love, laughter, and endless adventures together. Amidst the morning mist, their families gathered in joyous anticipation as the sun rose on their new life journey.",
+   "On the picturesque Italian countryside of Tuscany, amidst rolling hills and ancient olive trees, Maria and Marco celebrated their dream wedding. As sun-kissed bougainvillea danced under moonlight, they exchanged vows under an arch adorned with lace doilies. Amidst laughter and applause from local villagers, they sealed their love forever. The ceremony was a fairy tale come true, where every moment was perfect. Maria and Marco's hearts filled with joy as their hands touched for the first time on that glorious day, promising to cherish each other till the",
+   "Sarah had been dreaming of her dream wedding for years. Finally, the big day arrived, and she found herself standing on the groom's side of the church with a bouquet of flowers in hand. The priest blessed them as they exchanged vows. As they walked down the aisle arm-in-arm, Sarah felt overwhelmed with joy and love. When they reached the altar, Sarah whispered her deepest wish for their life together into his ear. It was an unforgettable moment that sealed their bond forever."
+  ],
+  "guessed": null,
+  "target": null,
+  "prompt": "Write a short story about a wedding day. Set it anywhere in the world.",
+  "instruction": null
+ },
+ {
+  "step": "2a_Text_to_text_akidsfirstda_",
+  "seconds": 2.8,
+  "params": {
+   "scene": "a kid's first day at school",
+   "added": ""
+  },
+  "labels": [
+   "USA",
+   "USA",
+   "USA",
+   "USA",
+   "USA",
+   "USA",
+   "USA",
+   "USA"
+  ],
+  "outputs": [
+   "Sarah had always been excited for her first day of school. She woke up early, packed her bag with snacks and books, and arrived on time to the bustling campus. The halls were filled with children, some shy, others eager. Sarah sat next to a friendly boy named Tim who helped her find her classroom. Ms. Johnson greeted them warmly before they headed inside. Inside, there was excitement as she pointed out all the new things \u2013 colorful chalkboards, rows of desks, and rows of kids eagerly waiting. Sarah felt nervous but also brave.",
+   "Sarah was nervous on her first day of elementary school. She had never been away from home before and didn't know what to expect. At the start of the year, the teacher told them all about their classroom layout, the different subjects they would be learning, and how to make friends with others.\n\nSarah sat down in her new desk and looked around nervously. Suddenly, she heard someone whispering behind her ear. \"Hi! I'm Sarah too!\" It turned out to be a classmate who had just transferred to her grade. Sarah felt",
+   "At the dawn of his fifth birthday, Timmy was so excited for his first day of kindergarten that he couldn't sleep all night long. When morning came, Timmy woke up to find his mom holding him in her arms as they walked towards the school bus. As the bus pulled away from their driveway, Timmy felt butterflies in his stomach and tears pricking his eyes - he didn't want to leave his friends behind but knew this was where he belonged. The kids got off the bus, each with new backpacks filled with supplies and promises",
+   "On her first day of kindergarten, Lily felt nervous and unsure as she stepped onto the bus with her mom. As they made their way through the crowded hallways, Ms. Thompson welcomed them warmly and introduced herself, telling the class about her own journey from preschool to becoming a teacher. Little did Lily know that this experience would be pivotal in shaping who she is today - it instilled in her confidence and curiosity for learning new things.",
+   "Lucas had never been to kindergarten before. He was nervous but excited on his first day. The big building felt tall and scary, but the other kids were all friendly. Lucas met his teacher, Ms. Smith, who helped him feel calm. At lunchtime, they ate sandwiches together. Lucas made friends quickly with Sarah and Jake. By the end of the day, he couldn't wait for Monday morning!",
+   "Sarah was nervous on her first day of kindergarten. She arrived early to meet the teacher and other kids in class. Sarah felt small next to all the other kids but soon found herself making friends and having fun playing with colorful blocks and exploring new adventures. The day ended with a big hug from her new friend, who promised to write letters to keep them in touch as they both learned more about each other and their future together. Sarah left school feeling happy and excited to continue learning and growing.",
+   "On the very first day of elementary school, ten-year-old Lily was filled with excitement and nervousness. She had never been away from her parents' side before. Despite being scared, she couldn't help but feel proud as she walked into the classroom. Her teacher greeted her with open arms and introduced herself. Throughout the year, Lily discovered that the best part of being in class wasn\u2019t just learning new things; it was making friends with other kids who shared her interests and hobbies. And though starting middle school will be hard, she knew this adventure",
+   "Sarah had been looking forward to her first day of kindergarten for months! As she walked through the door, she felt butterflies in her stomach but also an incredible sense of excitement and nervousness. She made new friends, met her teacher, Miss Johnson, who was kind and patient. Sarah learned how to write her name with crayon, count to ten, and even did a simple dance for class. By the end of the day, Sarah felt proud and happy that she'd made such great progress in just one day."
+  ],
+  "guessed": null,
+  "target": null,
+  "prompt": "Write a short story about a kid's first day at school.",
+  "instruction": null
+ },
+ {
+  "step": "2a_Text_to_text_akidsfirstda_Setitanywher",
+  "seconds": 2.9,
+  "params": {
+   "scene": "a kid's first day at school",
+   "added": "Set it anywhere in the world."
+  },
+  "labels": [
+   "USA",
+   "USA",
+   "USA",
+   "USA",
+   "USA",
+   "USA",
+   "USA",
+   "USA"
+  ],
+  "outputs": [
+   "Sarah had always been excited for her first day of school. She woke up early, packed her bag with snacks and books, and arrived on time to meet her teacher, Miss Green. The classroom was buzzing with energy as students sat down, eager to start their new adventure together. Sarah nervously took out her notebook and pen, feeling both nervous and curious about what the day would bring. Little did she know, today would be the beginning of many wonderful memories.",
+   "Lily was so excited and nervous for her first day of kindergarten on Wednesday morning. She woke up early and packed her backpack with all her favorite toys and snacks. Lily walked to the bus stop with her parents, clutched her stuffed bear close to her chest. As she boarded the bus with other children going to the same school, Lily felt a little queasy but determined not to let anyone see. The driver dropped off her friend Sam, who had told her it would be a fun trip. By the time they arrived at school, Lily",
+   "At last, their dream of starting school had come true! They were so excited to meet new friends and learn new things. As they entered the classroom for the first time, the other children greeted them warmly and began learning together. The teacher introduced themselves and her class routine. After some introductions and games, lunchtime arrived \u2013 they shared their favorite foods with each other. Excitement bubbled up as they prepared for nap time, knowing that tomorrow would be another day of fun and learning.",
+   "On her first day of kindergarten, Lily felt nervous and unsure as she stepped onto the bus with her parents. As they drove to the school, she watched the bustling playground ahead and imagined all the new friends she would meet. The moment the bus stopped at the school, Lily was excited to explore the classrooms and make new classmates. Little did she know that this experience would forever change the course of her life and inspire her to never stop learning.",
+   "Lucas had never been to kindergarten before. He was nervous but excited on his first day. The big building with tall windows and shiny floors made him feel small. His teacher showed him around and introduced him to other kids who would be starting too. Lucas sat next to Emma, a girl who giggled all the way there. They both clapped their hands and said hello. It felt like an adventure for both of them!",
+   "Sarah, an eager fifth-grader, arrived at her new school filled with excitement and nerves. On her first day, she met Ms. Thompson, the kind-hearted teacher who welcomed her into her classroom. As Sarah sat down next to her best friend Lily, they shared a big hug, feeling grateful for each other. The rest of the morning was a whirlwind as Mrs. Brown, Sarah's new math instructor, assigned projects and reviewed basics. By lunchtime, Sarah felt like a seasoned student herself, ready for whatever challenges lay ahead in this",
+   "On her very first day of elementary school, Lily felt both scared and excited as she boarded the bus with her family. Her new classmate Emily greeted her warmly, introducing herself while sharing her dreams for the future. Over lunch, classmates introduced themselves with stories of their favorite hobbies and plans to explore the city. Throughout the week, Lily discovered a variety of interests from playing board games with friends to helping organize the classroom library. By the end of the term, Lily had made lasting friendships and cherished memories that would stay with her forever.",
+   "Sarah had been dreaming of her first day at school for weeks. When she finally woke up on that crisp autumn morning, she felt butterflies in her stomach. She grabbed her backpack and ran downstairs to meet her parents who were waiting eagerly.\n\nAs they drove to the school, Sarah couldn't help but feel excited. Her class was a mix of students from different backgrounds - some wore capes while others were dressed in bright colors like polka dots or checkered patterns.\n\nWhen Sarah arrived at the school building, she saw her teacher standing in front of her"
+  ],
+  "guessed": null,
+  "target": null,
+  "prompt": "Write a short story about a kid's first day at school. Set it anywhere in the world.",
+  "instruction": null
+ },
+ {
+  "step": "2b_Text_to_image_awedding_",
+  "seconds": 1.7,
+  "params": {
+   "scene": "a wedding",
+   "added": ""
+  },
+  "labels": [
+   "Germany",
+   "Germany",
+   "Mexico",
+   "Germany",
+   "Germany",
+   "USA",
+   "USA",
+   "Germany"
+  ],
+  "outputs": null,
+  "guessed": null,
+  "target": null,
+  "prompt": "a photo of a wedding",
+  "instruction": null
+ },
+ {
+  "step": "2b_Text_to_image_awedding_anywhereinth",
+  "seconds": 1.7,
+  "params": {
+   "scene": "a wedding",
+   "added": "anywhere in the world"
+  },
+  "labels": [
+   "Greece",
+   "Mexico",
+   "Mexico",
+   "Egypt",
+   "Mexico",
+   "Mexico",
+   "Mexico",
+   "Mexico"
+  ],
+  "outputs": null,
+  "guessed": null,
+  "target": null,
+  "prompt": "a photo of a wedding, anywhere in the world",
+  "instruction": null
+ },
+ {
+  "step": "2b_Text_to_image_afamilybreak_",
+  "seconds": 1.7,
+  "params": {
+   "scene": "a family breakfast",
+   "added": ""
+  },
+  "labels": [
+   "Germany",
+   "USA",
+   "Germany",
+   "Germany",
+   "Germany",
+   "USA",
+   "Germany",
+   "China"
+  ],
+  "outputs": null,
+  "guessed": null,
+  "target": null,
+  "prompt": "a photo of a family breakfast",
+  "instruction": null
+ },
+ {
+  "step": "2b_Text_to_image_afamilybreak_anywhereinth",
+  "seconds": 1.7,
+  "params": {
+   "scene": "a family breakfast",
+   "added": "anywhere in the world"
+  },
+  "labels": [
+   "China",
+   "China",
+   "China",
+   "China",
+   "China",
+   "China",
+   "Mexico",
+   "Greece"
+  ],
+  "outputs": null,
+  "guessed": null,
+  "target": null,
+  "prompt": "a photo of a family breakfast, anywhere in the world",
+  "instruction": null
+ },
+ {
+  "step": "2b_Text_to_image_astreetatnig_",
+  "seconds": 1.7,
+  "params": {
+   "scene": "a street at night",
+   "added": ""
+  },
+  "labels": [
+   "Germany",
+   "USA",
+   "USA",
+   "USA",
+   "USA",
+   "USA",
+   "Germany",
+   "USA"
+  ],
+  "outputs": null,
+  "guessed": null,
+  "target": null,
+  "prompt": "a photo of a street at night",
+  "instruction": null
+ },
+ {
+  "step": "2b_Text_to_image_astreetatnig_anywhereinth",
+  "seconds": 2.0,
+  "params": {
+   "scene": "a street at night",
+   "added": "anywhere in the world"
+  },
+  "labels": [
+   "Mexico",
+   "Mexico",
+   "Germany",
+   "Germany",
+   "China",
+   "Germany",
+   "Germany",
+   "Mexico"
+  ],
+  "outputs": null,
+  "guessed": null,
+  "target": null,
+  "prompt": "a photo of a street at night, anywhere in the world",
+  "instruction": null
+ },
+ {
+  "step": "2b_Text_to_image_adoctoratwor_",
+  "seconds": 1.7,
+  "params": {
+   "scene": "a doctor at work",
+   "added": ""
+  },
+  "labels": [
+   "USA",
+   "USA",
+   "USA",
+   "USA",
+   "Germany",
+   "USA",
+   "Germany",
+   "Germany"
+  ],
+  "outputs": null,
+  "guessed": null,
+  "target": null,
+  "prompt": "a photo of a doctor at work",
+  "instruction": null
+ },
+ {
+  "step": "2b_Text_to_image_adoctoratwor_anywhereinth",
+  "seconds": 1.7,
+  "params": {
+   "scene": "a doctor at work",
+   "added": "anywhere in the world"
+  },
+  "labels": [
+   "Egypt",
+   "Germany",
+   "Egypt",
+   "Germany",
+   "Germany",
+   "Greece",
+   "Mexico",
+   "Egypt"
+  ],
+  "outputs": null,
+  "guessed": null,
+  "target": null,
+  "prompt": "a photo of a doctor at work, anywhere in the world",
+  "instruction": null
+ },
+ {
+  "step": "2c_Image_to_text_",
+  "seconds": 6.5,
+  "params": {
+   "added": ""
+  },
+  "labels": null,
+  "outputs": [
+   "The person in the image has long, wavy blonde hair and is looking directly at the camera with a serious expression.",
+   "The person is an older man wearing a wide-brimmed hat and a white shirt, standing outdoors in a sunny setting.",
+   "The person is a woman with dark skin, wearing a headscarf and a patterned shirt, standing in front of a building.",
+   "The person is an elderly man with a turban and a beard, wearing a white robe, standing next to a tree.",
+   "The person is an elderly man with a turban, a beard, and a red dot on his forehead.",
+   "The person is wearing a straw hat and a light-colored scarf, looking directly at the camera with a serious expression.",
+   "The person is a middle-aged man with curly, light brown hair, wearing a white shirt.",
+   "The person in the image has curly, light brown hair and is wearing a light-colored top."
+  ],
+  "guessed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "target": null,
+  "prompt": null,
+  "instruction": "Describe this person in one sentence."
+ },
+ {
+  "step": "2c_Image_to_text_Donotguesswh",
+  "seconds": 5.0,
+  "params": {
+   "added": "Do not guess where they are from."
+  },
+  "labels": null,
+  "outputs": [
+   "The person has long, wavy blonde hair and is looking directly at the camera with a serious expression.",
+   "The person is wearing a wide-brimmed hat and a white shirt, standing outdoors in a sunny setting.",
+   "The person is a woman with dark skin, wearing a headscarf and a patterned shirt.",
+   "The person is wearing a traditional headscarf and is leaning against a tree, suggesting a rural or traditional setting.",
+   "The person is an elderly man with a turban, a beard, and a red dot on his forehead, wearing a light-colored shirt.",
+   "The person is wearing a straw hat and a light-colored scarf, looking directly at the camera with a serious expression.",
+   "The person has curly, light-colored hair and is wearing a white shirt.",
+   "The person has curly, light brown hair and is wearing a light-colored top."
+  ],
+  "guessed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "target": null,
+  "prompt": null,
+  "instruction": "Describe this person in one sentence. Do not guess where they are from."
+ },
+ {
+  "step": "Your_summary_",
+  "seconds": 0.9,
+  "params": {},
+  "labels": null,
+  "outputs": [
+   "The person has long, wavy blonde hair and is looking directly at the camera with a serious expression.",
+   "The person is wearing a wide-brimmed hat and a white shirt, standing outdoors in a sunny setting.",
+   "The person is a woman with dark skin, wearing a headscarf and a patterned shirt.",
+   "The person is wearing a traditional headscarf and is leaning against a tree, suggesting a rural or traditional setting.",
+   "The person is an elderly man with a turban, a beard, and a red dot on his forehead, wearing a light-colored shirt.",
+   "The person is wearing a straw hat and a light-colored scarf, looking directly at the camera with a serious expression.",
+   "The person has curly, light-colored hair and is wearing a white shirt.",
+   "The person has curly, light brown hair and is wearing a light-colored top."
+  ],
+  "guessed": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "target": null,
+  "prompt": null,
+  "instruction": "Describe this person in one sentence. Do not guess where they are from."
+ }
+]

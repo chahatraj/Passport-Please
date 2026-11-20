@@ -13,7 +13,8 @@ except ImportError:  # stand-in for Colab's display helpers
     disp = types.ModuleType("IPython.display")
     disp.display = lambda *a, **k: print(*[getattr(x, "data", x) for x in a])
     disp.Markdown = lambda s: types.SimpleNamespace(data=s)
-    sys.modules["IPython"] = types.ModuleType("IPython"); sys.modules["IPython.display"] = disp
+    ip = types.ModuleType("IPython"); ip.get_ipython = lambda: None; ip.display = disp
+    sys.modules["IPython"] = ip; sys.modules["IPython.display"] = disp
 
 import matplotlib
 matplotlib.use("Agg")
